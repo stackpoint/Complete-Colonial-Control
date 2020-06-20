@@ -1,0 +1,4491 @@
+########################################
+# Major Flavor Events                  #
+########################################
+
+namespace = flavor_cn
+# is_playing_historical_setup = yes
+
+# Colonial Nation
+country_event = {
+	id = flavor_cn.3011
+	title = "flavor_cn.3011"
+	desc = "flavor_cn.DESC"
+	picture = EXPLORERS_eventPicture
+	
+	trigger = {
+		is_colonial_nation = no
+	    NOT = { has_country_flag = colonized_mexico }
+		3011 = {
+		    is_city = no
+		}
+		calc_true_if = {
+			any_core_province = {
+				province_group = colonial_mexico_region
+				owned_by = ROOT
+				is_overseas = yes
+			}
+			amount = 1
+		}
+	}
+	
+	immediate = { set_country_flag = colonized_mexico }
+	
+	option = {			# Make a colonial nation
+		name = "flavor_cn.option1"
+		ai_chance = { 
+ 		factor = 70 
+			modifier = { 
+				factor = 0 
+				has_global_flag = no_ai_colonial 
+			} 	
+ 		}
+		add_adm_power = 10
+		add_prestige = 5
+		custom_tooltip = cn_toopltip_option1
+		hidden_effect = {
+			3011 = {
+				 cede_province = ROOT
+				 add_core = ROOT
+			}
+		}
+	}
+	
+	option = {			# All for us
+		name = "flavor_cn.option2"
+		ai_chance = { 
+ 		factor = 30 
+			modifier = { 
+				factor = 0 
+				has_global_flag = all_ai_colonial 
+			} 	
+ 		}
+		add_adm_power = -50
+		add_prestige = -10
+		custom_tooltip = cn_toopltip_option2
+	}
+}
+
+country_event = {
+	id = flavor_cn.3004
+	title = "flavor_cn.3004"
+	desc = "flavor_cn.DESC"
+	picture = EXPLORERS_eventPicture
+	
+	trigger = {
+		is_colonial_nation = no
+	    NOT = { has_country_flag = colonized_brazil }
+		3004 = {
+		    is_city = no
+		}
+		calc_true_if = {
+			any_core_province = {
+				province_group = colonial_brazil_region
+				owned_by = ROOT 
+				is_overseas = yes
+			}
+			amount = 1
+		}
+	}
+	
+	immediate = { set_country_flag = colonized_brazil }
+	
+	option = {			# Make a colonial nation
+		name = "flavor_cn.option1"
+		ai_chance = { 
+ 		factor = 70 
+			modifier = { 
+				factor = 0 
+				has_global_flag = no_ai_colonial 
+			} 	
+ 		}
+		add_adm_power = 10
+		add_prestige = 5
+		custom_tooltip = cn_toopltip_option1
+		hidden_effect = {
+			3004 = {
+				 cede_province = ROOT
+				 add_core = ROOT
+			}
+		}
+	}
+	
+	option = {			# All for us
+		name = "flavor_cn.option2"
+		ai_chance = { 
+ 		factor = 30 
+			modifier = { 
+				factor = 0 
+				has_global_flag = all_ai_colonial 
+			} 	
+ 		}
+		add_adm_power = -50
+		add_prestige = -10
+		custom_tooltip = cn_toopltip_option2
+	}
+}
+
+country_event = {
+	id = flavor_cn.3005
+	title = "flavor_cn.3005"
+	desc = "flavor_cn.DESC"
+	picture = EXPLORERS_eventPicture
+	
+	trigger = {
+		is_colonial_nation = no
+	    NOT = { has_country_flag = colonized_laplata }
+		3005 = {
+		    is_city = no
+		}
+		calc_true_if = {
+			any_core_province = {
+				province_group = colonial_laplata_region
+				owned_by = ROOT 
+				is_overseas = yes
+			}
+			amount = 1
+		}
+	}
+	
+	immediate = { set_country_flag = colonized_laplata }
+	
+	option = {			# Make a colonial nation
+		name = "flavor_cn.option1"
+		ai_chance = { 
+ 		factor = 70 
+			modifier = { 
+				factor = 0 
+				has_global_flag = no_ai_colonial 
+			} 	
+ 		}
+		add_adm_power = 10
+		add_prestige = 5
+		custom_tooltip = cn_toopltip_option1
+		hidden_effect = {
+			3005 = {
+				 cede_province = ROOT
+				 add_core = ROOT
+			}
+		}
+	}
+	
+	option = {			# All for us
+		name = "flavor_cn.option2"
+		ai_chance = { 
+ 		factor = 30 
+			modifier = { 
+				factor = 0 
+				has_global_flag = all_ai_colonial 
+			} 	
+ 		}
+		add_adm_power = -50
+		add_prestige = -10
+		custom_tooltip = cn_toopltip_option2
+	}
+}
+
+country_event = {
+	id = flavor_cn.3006
+	title = "flavor_cn.3006"
+	desc = "flavor_cn.DESC"
+	picture = EXPLORERS_eventPicture
+	
+	trigger = {
+		is_colonial_nation = no
+	    NOT = { has_country_flag = colonized_patagonia }
+		3006 = {
+		    is_city = no
+		}
+		calc_true_if = {
+			any_core_province = {
+				province_group = colonial_patagonia_region
+				owned_by = ROOT 
+				is_overseas = yes
+			}
+			amount = 1
+		}
+	}
+	
+	immediate = { set_country_flag = colonized_patagonia }
+	
+	option = {			# Make a colonial nation
+		name = "flavor_cn.option1"
+		ai_chance = { 
+ 		factor = 70 
+			modifier = { 
+				factor = 0 
+				has_global_flag = no_ai_colonial 
+			} 	
+ 		}
+		add_adm_power = 10
+		add_prestige = 5
+		custom_tooltip = cn_toopltip_option1
+		hidden_effect = {
+			3006 = {
+				 cede_province = ROOT
+				 add_core = ROOT
+			}
+		}
+	}
+	
+	option = {			# All for us
+		name = "flavor_cn.option2"
+		ai_chance = { 
+ 		factor = 30 
+			modifier = { 
+				factor = 0 
+				has_global_flag = all_ai_colonial 
+			} 	
+ 		}
+		add_adm_power = -50
+		add_prestige = -10
+		custom_tooltip = cn_toopltip_option2
+	}
+}
+
+country_event = {
+	id = flavor_cn.3007
+	title = "flavor_cn.3007"
+	desc = "flavor_cn.DESC"
+	picture = EXPLORERS_eventPicture
+	
+	trigger = {
+		is_colonial_nation = no
+	    NOT = { has_country_flag = colonized_cuiaba }
+		3007 = {
+		    is_city = no
+		}
+		calc_true_if = {
+			any_core_province = {
+				province_group = colonial_cuiaba_region
+				owned_by = ROOT 
+				is_overseas = yes
+			}
+			amount = 1
+		}
+	}
+	
+	immediate = { set_country_flag = colonized_cuiaba }
+	
+	option = {			# Make a colonial nation
+		name = "flavor_cn.option1"
+		ai_chance = { 
+ 		factor = 70 
+			modifier = { 
+				factor = 0 
+				has_global_flag = no_ai_colonial 
+			} 	
+ 		}
+		add_adm_power = 10
+		add_prestige = 5
+		custom_tooltip = cn_toopltip_option1
+		hidden_effect = {
+			3007 = {
+				 cede_province = ROOT
+				 add_core = ROOT
+			}
+		}
+	}
+	
+	option = {			# All for us
+		name = "flavor_cn.option2"
+		ai_chance = { 
+ 		factor = 30 
+			modifier = { 
+				factor = 0 
+				has_global_flag = all_ai_colonial 
+			} 	
+ 		}
+		add_adm_power = -50
+		add_prestige = -10
+		custom_tooltip = cn_toopltip_option2
+	}
+}
+
+country_event = {
+	id = flavor_cn.3008
+	title = "flavor_cn.3008"
+	desc = "flavor_cn.DESC"
+	picture = EXPLORERS_eventPicture
+	
+	trigger = {
+		is_colonial_nation = no
+	    NOT = { has_country_flag = colonized_peru }
+		3008 = {
+		    is_city = no
+		}
+		calc_true_if = {
+			any_core_province = {
+				province_group = colonial_peru_region
+				owned_by = ROOT 
+				is_overseas = yes
+			}
+			amount = 1
+		}
+	}
+	
+	immediate = { set_country_flag = colonized_peru }
+	
+	option = {			# Make a colonial nation
+		name = "flavor_cn.option1"
+		ai_chance = { 
+ 		factor = 70 
+			modifier = { 
+				factor = 0 
+				has_global_flag = no_ai_colonial 
+			} 	
+ 		}
+		add_adm_power = 10
+		add_prestige = 5
+		custom_tooltip = cn_toopltip_option1
+		hidden_effect = {
+			3008 = {
+				 cede_province = ROOT
+				 add_core = ROOT
+			}
+		}
+	}
+	
+	option = {			# All for us
+		name = "flavor_cn.option2"
+		ai_chance = { 
+ 		factor = 30 
+			modifier = { 
+				factor = 0 
+				has_global_flag = all_ai_colonial 
+			} 	
+ 		}
+		add_adm_power = -50
+		add_prestige = -10
+		custom_tooltip = cn_toopltip_option2
+	}
+}
+
+country_event = {
+	id = flavor_cn.3009
+	title = "flavor_cn.3009"
+	desc = "flavor_cn.DESC"
+	picture = EXPLORERS_eventPicture
+	
+	trigger = {
+		is_colonial_nation = no
+	    NOT = { has_country_flag = colonized_amazon }
+		3009 = {
+		    is_city = no
+		}
+		calc_true_if = {
+			any_core_province = {
+				province_group = colonial_amazon_region
+				owned_by = ROOT 
+				is_overseas = yes
+			}
+			amount = 1
+		}
+	}
+	
+	immediate = { set_country_flag = colonized_amazon }
+	
+	option = {			# Make a colonial nation
+		name = "flavor_cn.option1"
+		ai_chance = { 
+ 		factor = 70 
+			modifier = { 
+				factor = 0 
+				has_global_flag = no_ai_colonial 
+			} 	
+ 		}
+		add_adm_power = 10
+		add_prestige = 5
+		custom_tooltip = cn_toopltip_option1
+		hidden_effect = {
+			3009 = {
+				 cede_province = ROOT
+				 add_core = ROOT
+			}
+		}
+	}
+	
+	option = {			# All for us
+		name = "flavor_cn.option2"
+		ai_chance = { 
+ 		factor = 30 
+			modifier = { 
+				factor = 0 
+				has_global_flag = all_ai_colonial 
+			} 	
+ 		}
+		add_adm_power = -50
+		add_prestige = -10
+		custom_tooltip = cn_toopltip_option2
+	}
+}
+
+country_event = {
+	id = flavor_cn.3010
+	title = "flavor_cn.3010"
+	desc = "flavor_cn.DESC"
+	picture = EXPLORERS_eventPicture
+	
+	trigger = {
+		is_colonial_nation = no
+	    NOT = { has_country_flag = colonized_panama }
+		3010 = {
+		    is_city = no
+		}
+		calc_true_if = {
+			any_core_province = {
+				province_group = colonial_panama_region
+				owned_by = ROOT 
+				is_overseas = yes
+			}
+			amount = 1
+		}
+	}
+	
+	immediate = { set_country_flag = colonized_panama }
+	
+	option = {			# Make a colonial nation
+		name = "flavor_cn.option1"
+		ai_chance = { 
+ 		factor = 70 
+			modifier = { 
+				factor = 0 
+				has_global_flag = no_ai_colonial 
+			} 	
+ 		}
+		add_adm_power = 10
+		add_prestige = 5
+		custom_tooltip = cn_toopltip_option1
+		hidden_effect = {
+			3010 = {
+				 cede_province = ROOT
+				 add_core = ROOT
+			}
+		}
+	}
+	
+	option = {			# All for us
+		name = "flavor_cn.option2"
+		ai_chance = { 
+ 		factor = 30 
+			modifier = { 
+				factor = 0 
+				has_global_flag = all_ai_colonial 
+			} 	
+ 		}
+		add_adm_power = -50
+		add_prestige = -10
+		custom_tooltip = cn_toopltip_option2
+	}
+}
+
+country_event = {
+	id = flavor_cn.3012
+	title = "flavor_cn.3012"
+	desc = "flavor_cn.DESC"
+	picture = EXPLORERS_eventPicture
+	
+	trigger = {
+		is_colonial_nation = no
+	    NOT = { has_country_flag = colonized_carribean }
+		3012 = {
+		    is_city = no
+		}
+		calc_true_if = {
+			any_core_province = {
+				province_group = colonial_carribean_region
+				owned_by = ROOT 
+				is_overseas = yes
+			}
+			amount = 1
+		}
+	}
+	
+	immediate = { set_country_flag = colonized_carribean }
+	
+	option = {			# Make a colonial nation
+		name = "flavor_cn.option1"
+		ai_chance = { 
+ 		factor = 70 
+			modifier = { 
+				factor = 0 
+				has_global_flag = no_ai_colonial 
+			} 	
+ 		}
+		add_adm_power = 10
+		add_prestige = 5
+		custom_tooltip = cn_toopltip_option1
+		hidden_effect = {
+			3012 = {
+				 cede_province = ROOT
+				 add_core = ROOT
+			}
+		}
+	}
+	
+	option = {			# All for us
+		name = "flavor_cn.option2"
+		ai_chance = { 
+ 		factor = 30 
+			modifier = { 
+				factor = 0 
+				has_global_flag = all_ai_colonial 
+			} 	
+ 		}
+		add_adm_power = -50
+		add_prestige = -10
+		custom_tooltip = cn_toopltip_option2
+	}
+}
+
+country_event = {
+	id = flavor_cn.3013
+	title = "flavor_cn.3013"
+	desc = "flavor_cn.DESC"
+	picture = EXPLORERS_eventPicture
+	
+	trigger = {
+		is_colonial_nation = no
+	    NOT = { has_country_flag = colonized_riogrande }
+		3013 = {
+		    is_city = no
+		}
+		calc_true_if = {
+			any_core_province = {
+				province_group = colonial_riogrande_region
+				owned_by = ROOT 
+				is_overseas = yes
+			}
+			amount = 1
+		}
+	}
+	
+	immediate = { set_country_flag = colonized_riogrande }
+	
+	option = {			# Make a colonial nation
+		name = "flavor_cn.option1"
+		ai_chance = { 
+ 		factor = 70 
+			modifier = { 
+				factor = 0 
+				has_global_flag = no_ai_colonial 
+			} 	
+ 		}
+		add_adm_power = 10
+		add_prestige = 5
+		custom_tooltip = cn_toopltip_option1
+		hidden_effect = {
+			3013 = {
+				 cede_province = ROOT
+				 add_core = ROOT
+			}
+		}
+	}
+	
+	option = {			# All for us
+		name = "flavor_cn.option2"
+		ai_chance = { 
+ 		factor = 30 
+			modifier = { 
+				factor = 0 
+				has_global_flag = all_ai_colonial 
+			} 	
+ 		}
+		add_adm_power = -50
+		add_prestige = -10
+		custom_tooltip = cn_toopltip_option2
+	}
+}
+
+country_event = {
+	id = flavor_cn.3014
+	title = "flavor_cn.3014"
+	desc = "flavor_cn.DESC"
+	picture = EXPLORERS_eventPicture
+	
+	trigger = {
+		is_colonial_nation = no
+	    NOT = { has_country_flag = colonized_california }
+		3014 = {
+		    is_city = no
+		}
+		calc_true_if = {
+			any_core_province = {
+				province_group = colonial_california_region
+				owned_by = ROOT 
+				is_overseas = yes
+			}
+			amount = 1
+		}
+	}
+	
+	immediate = { set_country_flag = colonized_california }
+	
+	option = {			# Make a colonial nation
+		name = "flavor_cn.option1"
+		ai_chance = { 
+ 		factor = 70 
+			modifier = { 
+				factor = 0 
+				has_global_flag = no_ai_colonial 
+			} 	
+ 		}
+		add_adm_power = 10
+		add_prestige = 5
+		custom_tooltip = cn_toopltip_option1
+		hidden_effect = {
+			3014 = {
+				 cede_province = ROOT
+				 add_core = ROOT
+			}
+		}
+	}
+	
+	option = {			# All for us
+		name = "flavor_cn.option2"
+		ai_chance = { 
+ 		factor = 30 
+			modifier = { 
+				factor = 0 
+				has_global_flag = all_ai_colonial 
+			} 	
+ 		}
+		add_adm_power = -50
+		add_prestige = -10
+		custom_tooltip = cn_toopltip_option2
+	}
+}
+
+country_event = {
+	id = flavor_cn.3015
+	title = "flavor_cn.3015"
+	desc = "flavor_cn.DESC"
+	picture = EXPLORERS_eventPicture
+	
+	trigger = {
+		is_colonial_nation = no
+	    NOT = { has_country_flag = colonized_mississippi }
+		3015 = {
+		    is_city = no
+		}
+		calc_true_if = {
+			any_core_province = {
+				province_group = colonial_mississippi_region
+				owned_by = ROOT 
+				is_overseas = yes
+			}
+			amount = 1
+		}
+	}
+	
+	immediate = { set_country_flag = colonized_mississippi }
+	
+	option = {			# Make a colonial nation
+		name = "flavor_cn.option1"
+		ai_chance = { 
+ 		factor = 70 
+			modifier = { 
+				factor = 0 
+				has_global_flag = no_ai_colonial 
+			} 	
+ 		}
+		add_adm_power = 10
+		add_prestige = 5
+		custom_tooltip = cn_toopltip_option1
+		hidden_effect = {
+			3015 = {
+				 cede_province = ROOT
+				 add_core = ROOT
+			}
+		}
+	}
+	
+	option = {			# All for us
+		name = "flavor_cn.option2"
+		ai_chance = { 
+ 		factor = 30 
+			modifier = { 
+				factor = 0 
+				has_global_flag = all_ai_colonial 
+			} 	
+ 		}
+		add_adm_power = -50
+		add_prestige = -10
+		custom_tooltip = cn_toopltip_option2
+	}
+}
+
+country_event = {
+	id = flavor_cn.3016
+	title = "flavor_cn.3016"
+	desc = "flavor_cn.DESC"
+	picture = EXPLORERS_eventPicture
+	
+	trigger = {
+		is_colonial_nation = no
+	    NOT = { has_country_flag = colonized_ohio }
+		3016 = {
+		    is_city = no
+		}
+		calc_true_if = {
+			any_core_province = {
+				province_group = colonial_ohio_region
+				owned_by = ROOT 
+				is_overseas = yes
+			}
+			amount = 1
+		}
+	}
+	
+	immediate = { set_country_flag = colonized_ohio }
+	
+	option = {			# Make a colonial nation
+		name = "flavor_cn.option1"
+		ai_chance = { 
+ 		factor = 70 
+			modifier = { 
+				factor = 0 
+				has_global_flag = no_ai_colonial 
+			} 	
+ 		}
+		add_adm_power = 10
+		add_prestige = 5
+		custom_tooltip = cn_toopltip_option1
+		hidden_effect = {
+			3016 = {
+				 cede_province = ROOT
+				 add_core = ROOT
+			}
+		}
+	}
+	
+	option = {			# All for us
+		name = "flavor_cn.option2"
+		ai_chance = { 
+ 		factor = 30 
+			modifier = { 
+				factor = 0 
+				has_global_flag = all_ai_colonial 
+			} 	
+ 		}
+		add_adm_power = -50
+		add_prestige = -10
+		custom_tooltip = cn_toopltip_option2
+	}
+}
+
+country_event = {
+	id = flavor_cn.3017
+	title = "flavor_cn.3017"
+	desc = "flavor_cn.DESC"
+	picture = EXPLORERS_eventPicture
+	
+	trigger = {
+		is_colonial_nation = no
+	    NOT = { has_country_flag = colonized_hudson }
+		3017 = {
+		    is_city = no
+		}
+		calc_true_if = {
+			any_core_province = {
+				province_group = colonial_hudson_region
+				owned_by = ROOT 
+				is_overseas = yes
+			}
+			amount = 1
+		}
+	}
+	
+	immediate = { set_country_flag = colonized_hudson }
+	
+	option = {			# Make a colonial nation
+		name = "flavor_cn.option1"
+		ai_chance = { 
+ 		factor = 70 
+			modifier = { 
+				factor = 0 
+				has_global_flag = no_ai_colonial 
+			} 	
+ 		}
+		add_adm_power = 10
+		add_prestige = 5
+		custom_tooltip = cn_toopltip_option1
+		hidden_effect = {
+			3017 = {
+				 cede_province = ROOT
+				 add_core = ROOT
+			}
+		}
+	}
+	
+	option = {			# All for us
+		name = "flavor_cn.option2"
+		ai_chance = { 
+ 		factor = 30 
+			modifier = { 
+				factor = 0 
+				has_global_flag = all_ai_colonial 
+			} 	
+ 		}
+		add_adm_power = -50
+		add_prestige = -10
+		custom_tooltip = cn_toopltip_option2
+	}
+}
+
+country_event = {
+	id = flavor_cn.3018
+	title = "flavor_cn.3018"
+	desc = "flavor_cn.DESC"
+	picture = EXPLORERS_eventPicture
+	
+	trigger = {
+		is_colonial_nation = no
+	    NOT = { has_country_flag = colonized_chesapeake }
+		3018 = {
+		    is_city = no
+		}
+		calc_true_if = {
+			any_core_province = {
+				province_group = colonial_chesapeake_region
+				owned_by = ROOT 
+				is_overseas = yes
+			}
+			amount = 1
+		}
+	}
+	
+	immediate = { set_country_flag = colonized_chesapeake }
+	
+	option = {			# Make a colonial nation
+		name = "flavor_cn.option1"
+		ai_chance = { 
+ 		factor = 70 
+			modifier = { 
+				factor = 0 
+				has_global_flag = no_ai_colonial 
+			} 	
+ 		}
+		add_adm_power = 10
+		add_prestige = 5
+		custom_tooltip = cn_toopltip_option1
+		hidden_effect = {
+			3018 = {
+				 cede_province = ROOT
+				 add_core = ROOT
+			}
+		}
+	}
+	
+	option = {			# All for us
+		name = "flavor_cn.option2"
+		ai_chance = { 
+ 		factor = 30 
+			modifier = { 
+				factor = 0 
+				has_global_flag = all_ai_colonial 
+			} 	
+ 		}
+		add_adm_power = -50
+		add_prestige = -10
+		custom_tooltip = cn_toopltip_option2
+	}
+}
+
+country_event = {
+	id = flavor_cn.3019
+	title = "flavor_cn.3019"
+	desc = "flavor_cn.DESC"
+	picture = EXPLORERS_eventPicture
+	
+	trigger = {
+		is_colonial_nation = no
+	    NOT = { has_country_flag = colonized_lawrence }
+		3019 = {
+		    is_city = no
+		}
+		calc_true_if = {
+			any_core_province = {
+				province_group = colonial_lawrence_region
+				owned_by = ROOT 
+				is_overseas = yes
+			}
+			amount = 1
+		}
+	}
+	
+	immediate = { set_country_flag = colonized_lawrence }
+	
+	option = {			# Make a colonial nation
+		name = "flavor_cn.option1"
+		ai_chance = { 
+ 		factor = 70 
+			modifier = { 
+				factor = 0 
+				has_global_flag = no_ai_colonial 
+			} 	
+ 		}
+		add_adm_power = 10
+		add_prestige = 5
+		custom_tooltip = cn_toopltip_option1
+		hidden_effect = {
+			3019 = {
+				 cede_province = ROOT
+				 add_core = ROOT
+			}
+		}
+	}
+	
+	option = {			# All for us
+		name = "flavor_cn.option2"
+		ai_chance = { 
+ 		factor = 30 
+			modifier = { 
+				factor = 0 
+				has_global_flag = all_ai_colonial 
+			} 	
+ 		}
+		add_adm_power = -50
+		add_prestige = -10
+		custom_tooltip = cn_toopltip_option2
+	}
+}
+
+country_event = {
+	id = flavor_cn.3020
+	title = "flavor_cn.3020"
+	desc = "flavor_cn.DESC"
+	picture = EXPLORERS_eventPicture
+	
+	trigger = {
+		is_colonial_nation = no
+	    NOT = { has_country_flag = colonized_westafrica }
+		3020 = {
+		    is_city = no
+		}
+		calc_true_if = {
+			any_core_province = {
+				province_group = colonial_westafrica_region
+				owned_by = ROOT 
+				is_overseas = yes
+			}
+			amount = 1
+		}
+	}
+	
+	immediate = { set_country_flag = colonized_westafrica }
+	
+	option = {			# Make a colonial nation
+		name = "flavor_cn.option1"
+		ai_chance = { 
+ 		factor = 30 
+			modifier = { 
+				factor = 0 
+				has_global_flag = no_ai_colonial 
+			} 	
+ 		}
+		add_adm_power = 10
+		add_prestige = 5
+		custom_tooltip = cn_toopltip_option1
+		hidden_effect = {
+			3020 = {
+				 cede_province = ROOT
+				 add_core = ROOT
+			}
+		}
+	}
+	
+	option = {			# All for us
+		name = "flavor_cn.option2"
+		ai_chance = { 
+ 		factor = 70 
+			modifier = { 
+				factor = 0 
+				has_global_flag = all_ai_colonial 
+			} 	
+ 		}
+		add_adm_power = -50
+		add_prestige = -10
+		custom_tooltip = cn_toopltip_option2
+	}
+}
+
+country_event = {
+	id = flavor_cn.3021
+	title = "flavor_cn.3021"
+	desc = "flavor_cn.DESC"
+	picture = EXPLORERS_eventPicture
+	
+	trigger = {
+		is_colonial_nation = no
+	    NOT = { has_country_flag = colonized_southafrica }
+		3021 = {
+		    is_city = no
+		}
+		calc_true_if = {
+			any_core_province = {
+				province_group = colonial_southafrica_region
+				owned_by = ROOT 
+				is_overseas = yes
+			}
+			amount = 1
+		}
+	}
+	
+	immediate = { set_country_flag = colonized_southafrica }
+	
+	option = {			# Make a colonial nation
+		name = "flavor_cn.option1"
+		ai_chance = { 
+ 		factor = 30 
+			modifier = { 
+				factor = 0 
+				has_global_flag = no_ai_colonial 
+			} 	
+ 		}
+		add_adm_power = 10
+		add_prestige = 5
+		custom_tooltip = cn_toopltip_option1
+		hidden_effect = {
+			3021 = {
+				 cede_province = ROOT
+				 add_core = ROOT
+			}
+		}
+	}
+	
+	option = {			# All for us
+		name = "flavor_cn.option2"
+		ai_chance = { 
+ 		factor = 70 
+			modifier = { 
+				factor = 0 
+				has_global_flag = all_ai_colonial 
+			} 	
+ 		}
+		add_adm_power = -50
+		add_prestige = -10
+		custom_tooltip = cn_toopltip_option2
+	}
+}
+
+country_event = {
+	id = flavor_cn.3022
+	title = "flavor_cn.3022"
+	desc = "flavor_cn.DESC"
+	picture = EXPLORERS_eventPicture
+	
+	trigger = {
+		is_colonial_nation = no
+	    NOT = { has_country_flag = colonized_eastafrica }
+		3022 = {
+		    is_city = no
+		}
+		calc_true_if = {
+			any_core_province = {
+				province_group = colonial_eastafrica_region
+				owned_by = ROOT 
+				is_overseas = yes
+			}
+			amount = 1
+		}
+	}
+	
+	immediate = { set_country_flag = colonized_eastafrica }
+	
+	option = {			# Make a colonial nation
+		name = "flavor_cn.option1"
+		ai_chance = { 
+ 		factor = 30 
+			modifier = { 
+				factor = 0 
+				has_global_flag = no_ai_colonial 
+			} 	
+ 		}
+		add_adm_power = 10
+		add_prestige = 5
+		custom_tooltip = cn_toopltip_option1
+		hidden_effect = {
+			3022 = {
+				 cede_province = ROOT
+				 add_core = ROOT
+			}
+		}
+	}
+	
+	option = {			# All for us
+		name = "flavor_cn.option2"
+		ai_chance = { 
+ 		factor = 70 
+			modifier = { 
+				factor = 0 
+				has_global_flag = all_ai_colonial 
+			} 	
+ 		}
+		add_adm_power = -50
+		add_prestige = -10
+		custom_tooltip = cn_toopltip_option2
+	}
+}
+
+country_event = {
+	id = flavor_cn.3023
+	title = "flavor_cn.3023"
+	desc = "flavor_cn.DESC"
+	picture = EXPLORERS_eventPicture
+	
+	trigger = {
+		is_colonial_nation = no
+	    NOT = { has_country_flag = colonized_arabia }
+		3023 = {
+		    is_city = no
+		}
+		calc_true_if = {
+			any_core_province = {
+				province_group = colonial_arabia_region
+				owned_by = ROOT 
+				is_overseas = yes
+			}
+			amount = 1
+		}
+	}
+	
+	immediate = { set_country_flag = colonized_arabia }
+	
+	option = {			# Make a colonial nation
+		name = "flavor_cn.option1"
+		ai_chance = { 
+ 		factor = 30 
+			modifier = { 
+				factor = 0 
+				has_global_flag = no_ai_colonial 
+			} 	
+ 		}
+		add_adm_power = 10
+		add_prestige = 5
+		custom_tooltip = cn_toopltip_option1
+		hidden_effect = {
+			3023 = {
+				 cede_province = ROOT
+				 add_core = ROOT
+			}
+		}
+	}
+	
+	option = {			# All for us
+		name = "flavor_cn.option2"
+		ai_chance = { 
+ 		factor = 70 
+			modifier = { 
+				factor = 0 
+				has_global_flag = all_ai_colonial 
+			} 	
+ 		}
+		add_adm_power = -50
+		add_prestige = -10
+		custom_tooltip = cn_toopltip_option2
+	}
+}
+
+country_event = {
+	id = flavor_cn.3024
+	title = "flavor_cn.3024"
+	desc = "flavor_cn.DESC"
+	picture = EXPLORERS_eventPicture
+	
+	trigger = {
+		is_colonial_nation = no
+	    NOT = { has_country_flag = colonized_hormuz }
+		3024 = {
+		    is_city = no
+		}
+		calc_true_if = {
+			any_core_province = {
+				province_group = colonial_hormuz_region
+				owned_by = ROOT 
+				is_overseas = yes
+			}
+			amount = 1
+		}
+	}
+	
+	immediate = { set_country_flag = colonized_hormuz }
+	
+	option = {			# Make a colonial nation
+		name = "flavor_cn.option1"
+		ai_chance = { 
+ 		factor = 30 
+			modifier = { 
+				factor = 0 
+				has_global_flag = no_ai_colonial 
+			} 	
+ 		}
+		add_adm_power = 10
+		add_prestige = 5
+		custom_tooltip = cn_toopltip_option1
+		hidden_effect = {
+			3024 = {
+				 cede_province = ROOT
+				 add_core = ROOT
+			}
+		}
+	}
+	
+	option = {			# All for us
+		name = "flavor_cn.option2"
+		ai_chance = { 
+ 		factor = 70 
+			modifier = { 
+				factor = 0 
+				has_global_flag = all_ai_colonial 
+			} 	
+ 		}
+		add_adm_power = -50
+		add_prestige = -10
+		custom_tooltip = cn_toopltip_option2
+	}
+}
+
+country_event = {
+	id = flavor_cn.3025
+	title = "flavor_cn.3025"
+	desc = "flavor_cn.DESC"
+	picture = EXPLORERS_eventPicture
+	
+	trigger = {
+		is_colonial_nation = no
+	    NOT = { has_country_flag = colonized_konkan }
+		3025 = {
+		    is_city = no
+		}
+		calc_true_if = {
+			any_core_province = {
+				province_group = colonial_konkan_region
+				owned_by = ROOT 
+				is_overseas = yes
+			}
+			amount = 1
+		}
+	}
+	
+	immediate = { set_country_flag = colonized_konkan }
+	
+	option = {			# Make a colonial nation
+		name = "flavor_cn.option1"
+		ai_chance = { 
+ 		factor = 30 
+			modifier = { 
+				factor = 0 
+				has_global_flag = no_ai_colonial 
+			} 	
+ 		}
+		add_adm_power = 10
+		add_prestige = 5
+		custom_tooltip = cn_toopltip_option1
+		hidden_effect = {
+			3025 = {
+				 cede_province = ROOT
+				 add_core = ROOT
+			}
+		}
+	}
+	
+	option = {			# All for us
+		name = "flavor_cn.option2"
+		ai_chance = { 
+ 		factor = 70 
+			modifier = { 
+				factor = 0 
+				has_global_flag = all_ai_colonial 
+			} 	
+ 		}
+		add_adm_power = -50
+		add_prestige = -10
+		custom_tooltip = cn_toopltip_option2
+	}
+}
+
+country_event = {
+	id = flavor_cn.3026
+	title = "flavor_cn.3026"
+	desc = "flavor_cn.DESC"
+	picture = EXPLORERS_eventPicture
+	
+	trigger = {
+		is_colonial_nation = no
+	    NOT = { has_country_flag = colonized_coromandel }
+		3026 = {
+		    is_city = no
+		}
+		calc_true_if = {
+			any_core_province = {
+				province_group = colonial_coromandel_region
+				owned_by = ROOT 
+				is_overseas = yes
+			}
+			amount = 1
+		}
+	}
+	
+	immediate = { set_country_flag = colonized_coromandel }
+	
+	option = {			# Make a colonial nation
+		name = "flavor_cn.option1"
+		ai_chance = { 
+ 		factor = 30 
+			modifier = { 
+				factor = 0 
+				has_global_flag = no_ai_colonial 
+			} 	
+ 		}
+		add_adm_power = 10
+		add_prestige = 5
+		custom_tooltip = cn_toopltip_option1
+		hidden_effect = {
+			3026 = {
+				 cede_province = ROOT
+				 add_core = ROOT
+			}
+		}
+	}
+	
+	option = {			# All for us
+		name = "flavor_cn.option2"
+		ai_chance = { 
+ 		factor = 70 
+			modifier = { 
+				factor = 0 
+				has_global_flag = all_ai_colonial 
+			} 	
+ 		}
+		add_adm_power = -50
+		add_prestige = -10
+		custom_tooltip = cn_toopltip_option2
+	}
+}
+
+country_event = {
+	id = flavor_cn.3027
+	title = "flavor_cn.3027"
+	desc = "flavor_cn.DESC"
+	picture = EXPLORERS_eventPicture
+	
+	trigger = {
+		is_colonial_nation = no
+	    NOT = { has_country_flag = colonized_westindia }
+		3027 = {
+		    is_city = no
+		}
+		calc_true_if = {
+			any_core_province = {
+				province_group = colonial_westindia_region
+				owned_by = ROOT 
+				is_overseas = yes
+			}
+			amount = 1
+		}
+	}
+	
+	immediate = { set_country_flag = colonized_westindia }
+	
+	option = {			# Make a colonial nation
+		name = "flavor_cn.option1"
+		ai_chance = { 
+ 		factor = 30 
+			modifier = { 
+				factor = 0 
+				has_global_flag = no_ai_colonial 
+			} 	
+ 		}
+		add_adm_power = 10
+		add_prestige = 5
+		custom_tooltip = cn_toopltip_option1
+		hidden_effect = {
+			3027 = {
+				 cede_province = ROOT
+				 add_core = ROOT
+			}
+		}
+	}
+	
+	option = {			# All for us
+		name = "flavor_cn.option2"
+		ai_chance = { 
+ 		factor = 70 
+			modifier = { 
+				factor = 0 
+				has_global_flag = all_ai_colonial 
+			} 	
+ 		}
+		add_adm_power = -50
+		add_prestige = -10
+		custom_tooltip = cn_toopltip_option2
+	}
+}
+
+country_event = {
+	id = flavor_cn.3028
+	title = "flavor_cn.3028"
+	desc = "flavor_cn.DESC"
+	picture = EXPLORERS_eventPicture
+	
+	trigger = {
+		is_colonial_nation = no
+	    NOT = { has_country_flag = colonized_northindia }
+		3028 = {
+		    is_city = no
+		}
+		calc_true_if = {
+			any_core_province = {
+				province_group = colonial_northindia_region
+				owned_by = ROOT 
+				is_overseas = yes
+			}
+			amount = 1
+		}
+	}
+	
+	immediate = { set_country_flag = colonized_northindia }
+	
+	option = {			# Make a colonial nation
+		name = "flavor_cn.option1"
+		ai_chance = { 
+ 		factor = 30 
+			modifier = { 
+				factor = 0 
+				has_global_flag = no_ai_colonial 
+			} 	
+ 		}
+		add_adm_power = 10
+		add_prestige = 5
+		custom_tooltip = cn_toopltip_option1
+		hidden_effect = {
+			3028 = {
+				 cede_province = ROOT
+				 add_core = ROOT
+			}
+		}
+	}
+	
+	option = {			# All for us
+		name = "flavor_cn.option2"
+		ai_chance = { 
+ 		factor = 70 
+			modifier = { 
+				factor = 0 
+				has_global_flag = all_ai_colonial 
+			} 	
+ 		}
+		add_adm_power = -50
+		add_prestige = -10
+		custom_tooltip = cn_toopltip_option2
+	}
+}
+
+country_event = {
+	id = flavor_cn.3029
+	title = "flavor_cn.3029"
+	desc = "flavor_cn.DESC"
+	picture = EXPLORERS_eventPicture
+	
+	trigger = {
+		is_colonial_nation = no
+	    NOT = { has_country_flag = colonized_eastindia }
+		3029 = {
+		    is_city = no
+		}
+		calc_true_if = {
+			any_core_province = {
+				province_group = colonial_eastindia_region
+				owned_by = ROOT 
+				is_overseas = yes
+			}
+			amount = 1
+		}
+	}
+	
+	immediate = { set_country_flag = colonized_eastindia }
+	
+	option = {			# Make a colonial nation
+		name = "flavor_cn.option1"
+		ai_chance = { 
+ 		factor = 30 
+			modifier = { 
+				factor = 0 
+				has_global_flag = no_ai_colonial 
+			} 	
+ 		}
+		add_adm_power = 10
+		add_prestige = 5
+		custom_tooltip = cn_toopltip_option1
+		hidden_effect = {
+			3029 = {
+				 cede_province = ROOT
+				 add_core = ROOT
+			}
+		}
+	}
+	
+	option = {			# All for us
+		name = "flavor_cn.option2"
+		ai_chance = { 
+ 		factor = 70 
+			modifier = { 
+				factor = 0 
+				has_global_flag = all_ai_colonial 
+			} 	
+ 		}
+		add_adm_power = -50
+		add_prestige = -10
+		custom_tooltip = cn_toopltip_option2
+	}
+}
+
+country_event = {
+	id = flavor_cn.3030
+	title = "flavor_cn.3030"
+	desc = "flavor_cn.DESC"
+	picture = EXPLORERS_eventPicture
+	
+	trigger = {
+		is_colonial_nation = no
+	    NOT = { has_country_flag = colonized_indochina }
+		3030 = {
+		    is_city = no
+		}
+		calc_true_if = {
+			any_core_province = {
+				province_group = colonial_indochina_region
+				owned_by = ROOT 
+				is_overseas = yes
+			}
+			amount = 1
+		}
+	}
+	
+	immediate = { set_country_flag = colonized_indochina }
+	
+	option = {			# Make a colonial nation
+		name = "flavor_cn.option1"
+		ai_chance = { 
+ 		factor = 30 
+			modifier = { 
+				factor = 0 
+				has_global_flag = no_ai_colonial 
+			} 	
+ 		}
+		add_adm_power = 10
+		add_prestige = 5
+		custom_tooltip = cn_toopltip_option1
+		hidden_effect = {
+			3030 = {
+				 cede_province = ROOT
+				 add_core = ROOT
+			}
+		}
+	}
+	
+	option = {			# All for us
+		name = "flavor_cn.option2"
+		ai_chance = { 
+ 		factor = 70 
+			modifier = { 
+				factor = 0 
+				has_global_flag = all_ai_colonial 
+			} 	
+ 		}
+		add_adm_power = -50
+		add_prestige = -10
+		custom_tooltip = cn_toopltip_option2
+	}
+}
+
+country_event = {
+	id = flavor_cn.3031
+	title = "flavor_cn.3031"
+	desc = "flavor_cn.DESC"
+	picture = EXPLORERS_eventPicture
+	
+	trigger = {
+		is_colonial_nation = no
+	    NOT = { has_country_flag = colonized_indonesia }
+		3031 = {
+		    is_city = no
+		}
+		calc_true_if = {
+			any_core_province = {
+				province_group = colonial_indonesia_region
+				owned_by = ROOT 
+				is_overseas = yes
+			}
+			amount = 1
+		}
+	}
+	
+	immediate = { set_country_flag = colonized_indonesia }
+	
+	option = {			# Make a colonial nation
+		name = "flavor_cn.option1"
+		ai_chance = { 
+ 		factor = 30 
+			modifier = { 
+				factor = 0 
+				has_global_flag = no_ai_colonial 
+			} 	
+ 		}
+		add_adm_power = 10
+		add_prestige = 5
+		custom_tooltip = cn_toopltip_option1
+		hidden_effect = {
+			3031 = {
+				 cede_province = ROOT
+				 add_core = ROOT
+			}
+		}
+	}
+	
+	option = {			# All for us
+		name = "flavor_cn.option2"
+		ai_chance = { 
+ 		factor = 70 
+			modifier = { 
+				factor = 0 
+				has_global_flag = all_ai_colonial 
+			} 	
+ 		}
+		add_adm_power = -50
+		add_prestige = -10
+		custom_tooltip = cn_toopltip_option2
+	}
+}
+
+country_event = {
+	id = flavor_cn.3032
+	title = "flavor_cn.3032"
+	desc = "flavor_cn.DESC"
+	picture = EXPLORERS_eventPicture
+	
+	trigger = {
+		is_colonial_nation = no
+	    NOT = { has_country_flag = colonized_philippines }
+		3032 = {
+		    is_city = no
+		}
+		calc_true_if = {
+			any_core_province = {
+				province_group = colonial_philippines_region
+				owned_by = ROOT 
+				is_overseas = yes
+			}
+			amount = 1
+		}
+	}
+	
+	immediate = { set_country_flag = colonized_philippines }
+	
+	option = {			# Make a colonial nation
+		name = "flavor_cn.option1"
+		ai_chance = { 
+ 		factor = 30 
+			modifier = { 
+				factor = 0 
+				has_global_flag = no_ai_colonial 
+			} 	
+ 		}
+		add_adm_power = 10
+		add_prestige = 5
+		custom_tooltip = cn_toopltip_option1
+		hidden_effect = {
+			3032 = {
+				 cede_province = ROOT
+				 add_core = ROOT
+			}
+		}
+	}
+	
+	option = {			# All for us
+		name = "flavor_cn.option2"
+		ai_chance = { 
+ 		factor = 70 
+			modifier = { 
+				factor = 0 
+				has_global_flag = all_ai_colonial 
+			} 	
+ 		}
+		add_adm_power = -50
+		add_prestige = -10
+		custom_tooltip = cn_toopltip_option2
+	}
+}
+
+country_event = {
+	id = flavor_cn.3033
+	title = "flavor_cn.3033"
+	desc = "flavor_cn.DESC"
+	picture = EXPLORERS_eventPicture
+	
+	trigger = {
+		is_colonial_nation = no
+	    NOT = { has_country_flag = colonized_malacca }
+		3033 = {
+		    is_city = no
+		}
+		calc_true_if = {
+			any_core_province = {
+				province_group = colonial_malacca_region
+				owned_by = ROOT 
+				is_overseas = yes
+			}
+			amount = 1
+		}
+	}
+	
+	immediate = { set_country_flag = colonized_malacca }
+	
+	option = {			# Make a colonial nation
+		name = "flavor_cn.option1"
+		ai_chance = { 
+ 		factor = 30 
+			modifier = { 
+				factor = 0 
+				has_global_flag = no_ai_colonial 
+			} 	
+ 		}
+		add_adm_power = 10
+		add_prestige = 5
+		custom_tooltip = cn_toopltip_option1
+		hidden_effect = {
+			3033 = {
+				 cede_province = ROOT
+				 add_core = ROOT
+			}
+		}
+	}
+	
+	option = {			# All for us
+		name = "flavor_cn.option2"
+		ai_chance = { 
+ 		factor = 70 
+			modifier = { 
+				factor = 0 
+				has_global_flag = all_ai_colonial 
+			} 	
+ 		}
+		add_adm_power = -50
+		add_prestige = -10
+		custom_tooltip = cn_toopltip_option2
+	}
+}
+
+country_event = {
+	id = flavor_cn.3034
+	title = "flavor_cn.3034"
+	desc = "flavor_cn.DESC"
+	picture = EXPLORERS_eventPicture
+	
+	trigger = {
+		is_colonial_nation = no
+	    NOT = { has_country_flag = colonized_australia }
+		3034 = {
+		    is_city = no
+		}
+		calc_true_if = {
+			any_core_province = {
+				province_group = colonial_australia_region
+				owned_by = ROOT 
+				is_overseas = yes
+			}
+			amount = 1
+		}
+	}
+	
+	immediate = { set_country_flag = colonized_australia }
+	
+	option = {			# Make a colonial nation
+		name = "flavor_cn.option1"
+		ai_chance = { 
+ 		factor = 70 
+			modifier = { 
+				factor = 0 
+				has_global_flag = no_ai_colonial 
+			} 	
+ 		}
+		add_adm_power = 10
+		add_prestige = 5
+		custom_tooltip = cn_toopltip_option1
+		hidden_effect = {
+			3034 = {
+				 cede_province = ROOT
+				 add_core = ROOT
+			}
+		}
+	}
+	
+	option = {			# All for us
+		name = "flavor_cn.option2"
+		ai_chance = { 
+ 		factor = 30 
+			modifier = { 
+				factor = 0 
+				has_global_flag = all_ai_colonial 
+			} 	
+ 		}
+		add_adm_power = -50
+		add_prestige = -10
+		custom_tooltip = cn_toopltip_option2
+	}
+}
+
+country_event = {
+	id = flavor_cn.3035
+	title = "flavor_cn.3035"
+	desc = "flavor_cn.DESC"
+	picture = EXPLORERS_eventPicture
+	
+	trigger = {
+		is_colonial_nation = no
+	    NOT = { has_country_flag = colonized_southchina }
+		3035 = {
+		    is_city = no
+		}
+		calc_true_if = {
+			any_core_province = {
+				province_group = colonial_southchina_region
+				owned_by = ROOT 
+				is_overseas = yes
+			}
+			amount = 1
+		}
+	}
+	
+	immediate = { set_country_flag = colonized_southchina }
+	
+	option = {			# Make a colonial nation
+		name = "flavor_cn.option1"
+		ai_chance = { 
+ 		factor = 30 
+			modifier = { 
+				factor = 0 
+				has_global_flag = no_ai_colonial 
+			} 	
+ 		}
+		add_adm_power = 10
+		add_prestige = 5
+		custom_tooltip = cn_toopltip_option1
+		hidden_effect = {
+			3035 = {
+				 cede_province = ROOT
+				 add_core = ROOT
+			}
+		}
+	}
+	
+	option = {			# All for us
+		name = "flavor_cn.option2"
+		ai_chance = { 
+ 		factor = 70 
+			modifier = { 
+				factor = 0 
+				has_global_flag = all_ai_colonial 
+			} 	
+ 		}
+		add_adm_power = -50
+		add_prestige = -10
+		custom_tooltip = cn_toopltip_option2
+	}
+}
+
+country_event = {
+	id = flavor_cn.3036
+	title = "flavor_cn.3036"
+	desc = "flavor_cn.DESC"
+	picture = EXPLORERS_eventPicture
+	
+	trigger = {
+		is_colonial_nation = no
+	    NOT = { has_country_flag = colonized_eastchina }
+		3036 = {
+		    is_city = no
+		}
+		calc_true_if = {
+			any_core_province = {
+				province_group = colonial_eastchina_region
+				owned_by = ROOT 
+				is_overseas = yes
+			}
+			amount = 1
+		}
+	}
+	
+	immediate = { set_country_flag = colonized_eastchina }
+	
+	option = {			# Make a colonial nation
+		name = "flavor_cn.option1"
+		ai_chance = { 
+ 		factor = 30 
+			modifier = { 
+				factor = 0 
+				has_global_flag = no_ai_colonial 
+			} 	
+ 		}
+		add_adm_power = 10
+		add_prestige = 5
+		custom_tooltip = cn_toopltip_option1
+		hidden_effect = {
+			3036 = {
+				 cede_province = ROOT
+				 add_core = ROOT
+			}
+		}
+	}
+	
+	option = {			# All for us
+		name = "flavor_cn.option2"
+		ai_chance = { 
+ 		factor = 70 
+			modifier = { 
+				factor = 0 
+				has_global_flag = all_ai_colonial 
+			} 	
+ 		}
+		add_adm_power = -50
+		add_prestige = -10
+		custom_tooltip = cn_toopltip_option2
+	}
+}
+
+country_event = {
+	id = flavor_cn.3037
+	title = "flavor_cn.3037"
+	desc = "flavor_cn.DESC"
+	picture = EXPLORERS_eventPicture
+	
+	trigger = {
+		is_colonial_nation = no
+	    NOT = { has_country_flag = colonized_northchina }
+		3037 = {
+		    is_city = no
+		}
+		calc_true_if = {
+			any_core_province = {
+				province_group = colonial_northchina_region
+				owned_by = ROOT 
+				is_overseas = yes
+			}
+			amount = 1
+		}
+	}
+	
+	immediate = { set_country_flag = colonized_northchina }
+	
+	option = {			# Make a colonial nation
+		name = "flavor_cn.option1"
+		ai_chance = { 
+ 		factor = 30 
+			modifier = { 
+				factor = 0 
+				has_global_flag = no_ai_colonial 
+			} 	
+ 		}
+		add_adm_power = 10
+		add_prestige = 5
+		custom_tooltip = cn_toopltip_option1
+		hidden_effect = {
+			3037 = {
+				 cede_province = ROOT
+				 add_core = ROOT
+			}
+		}
+	}
+	
+	option = {			# All for us
+		name = "flavor_cn.option2"
+		ai_chance = { 
+ 		factor = 70 
+			modifier = { 
+				factor = 0 
+				has_global_flag = all_ai_colonial 
+			} 	
+ 		}
+		add_adm_power = -50
+		add_prestige = -10
+		custom_tooltip = cn_toopltip_option2
+	}
+}
+
+country_event = {
+	id = flavor_cn.3038
+	title = "flavor_cn.3038"
+	desc = "flavor_cn.DESC"
+	picture = EXPLORERS_eventPicture
+	
+	trigger = {
+		is_colonial_nation = no
+	    NOT = { has_country_flag = colonized_japan }
+		3038 = {
+		    is_city = no
+		}
+		calc_true_if = {
+			any_core_province = {
+				province_group = colonial_japan_region
+				owned_by = ROOT 
+				is_overseas = yes
+			}
+			amount = 1
+		}
+	}
+	
+	immediate = { set_country_flag = colonized_japan }
+	
+	option = {			# Make a colonial nation
+		name = "flavor_cn.option1"
+		ai_chance = { 
+ 		factor = 30 
+			modifier = { 
+				factor = 0 
+				has_global_flag = no_ai_colonial 
+			} 	
+ 		}
+		add_adm_power = 10
+		add_prestige = 5
+		custom_tooltip = cn_toopltip_option1
+		hidden_effect = {
+			3038 = {
+				 cede_province = ROOT
+				 add_core = ROOT
+			}
+		}
+	}
+	
+	option = {			# All for us
+		name = "flavor_cn.option2"
+		ai_chance = { 
+ 		factor = 70 
+			modifier = { 
+				factor = 0 
+				has_global_flag = all_ai_colonial 
+			} 	
+ 		}
+		add_adm_power = -50
+		add_prestige = -10
+		custom_tooltip = cn_toopltip_option2
+	}
+}
+
+country_event = {
+	id = flavor_cn.3039
+	title = "flavor_cn.3039"
+	desc = "flavor_cn.DESC"
+	picture = EXPLORERS_eventPicture
+	
+	trigger = {
+		is_colonial_nation = no
+	    NOT = { has_country_flag = colonized_safi }
+		3039 = {
+		    is_city = no
+		}
+		calc_true_if = {
+			any_core_province = {
+				province_group = colonial_safi_region
+				owned_by = ROOT 
+				is_overseas = yes
+			}
+			amount = 1
+		}
+	}
+	
+	immediate = { set_country_flag = colonized_safi }
+	
+	option = {			# Make a colonial nation
+		name = "flavor_cn.option1"
+		ai_chance = { 
+ 		factor = 30 
+			modifier = { 
+				factor = 0 
+				has_global_flag = no_ai_colonial 
+			} 	
+ 		}
+		add_adm_power = 10
+		add_prestige = 5
+		custom_tooltip = cn_toopltip_option1
+		hidden_effect = {
+			3039 = {
+				 cede_province = ROOT
+				 add_core = ROOT
+			}
+		}
+	}
+	
+	option = {			# All for us
+		name = "flavor_cn.option2"
+		ai_chance = { 
+ 		factor = 70 
+			modifier = { 
+				factor = 0 
+				has_global_flag = all_ai_colonial 
+			} 	
+ 		}
+		add_adm_power = -50
+		add_prestige = -10
+		custom_tooltip = cn_toopltip_option2
+	}
+}
+
+country_event = {
+	id = flavor_cn.3040
+	title = "flavor_cn.3040"
+	desc = "flavor_cn.DESC"
+	picture = EXPLORERS_eventPicture
+	
+	trigger = {
+		is_colonial_nation = no
+	    NOT = { has_country_flag = colonized_tunis }
+		3040 = {
+		    is_city = no
+		}
+		calc_true_if = {
+			any_core_province = {
+				province_group = colonial_tunis_region
+				owned_by = ROOT 
+				is_overseas = yes
+			}
+			amount = 1
+		}
+	}
+	
+	immediate = { set_country_flag = colonized_tunis }
+	
+	option = {			# Make a colonial nation
+		name = "flavor_cn.option1"
+		ai_chance = { 
+ 		factor = 30 
+			modifier = { 
+				factor = 0 
+				has_global_flag = no_ai_colonial 
+			} 	
+ 		}
+		add_adm_power = 10
+		add_prestige = 5
+		custom_tooltip = cn_toopltip_option1
+		hidden_effect = {
+			3040 = {
+				 cede_province = ROOT
+				 add_core = ROOT
+			}
+		}
+	}
+	
+	option = {			# All for us
+		name = "flavor_cn.option2"
+		ai_chance = { 
+ 		factor = 70 
+			modifier = { 
+				factor = 0 
+				has_global_flag = all_ai_colonial 
+			} 	
+ 		}
+		add_adm_power = -50
+		add_prestige = -10
+		custom_tooltip = cn_toopltip_option2
+	}
+}
+
+country_event = {
+	id = flavor_cn.3041
+	title = "flavor_cn.3041"
+	desc = "flavor_cn.DESC"
+	picture = EXPLORERS_eventPicture
+	
+	trigger = {
+		is_colonial_nation = no
+	    NOT = { has_country_flag = colonized_alexandria }
+		3041 = {
+		    is_city = no
+		}
+		calc_true_if = {
+			any_core_province = {
+				province_group = colonial_alexandria_region
+				owned_by = ROOT 
+				is_overseas = yes
+			}
+			amount = 1
+		}
+	}
+	
+	immediate = { set_country_flag = colonized_alexandria }
+	
+	option = {			# Make a colonial nation
+		name = "flavor_cn.option1"
+		ai_chance = { 
+ 		factor = 30 
+			modifier = { 
+				factor = 0 
+				has_global_flag = no_ai_colonial 
+			} 	
+ 		}
+		add_adm_power = 10
+		add_prestige = 5
+		custom_tooltip = cn_toopltip_option1
+		hidden_effect = {
+			3041 = {
+				 cede_province = ROOT
+				 add_core = ROOT
+			}
+		}
+	}
+	
+	option = {			# All for us
+		name = "flavor_cn.option2"
+		ai_chance = { 
+ 		factor = 70 
+			modifier = { 
+				factor = 0 
+				has_global_flag = all_ai_colonial 
+			} 	
+ 		}
+		add_adm_power = -50
+		add_prestige = -10
+		custom_tooltip = cn_toopltip_option2
+	}
+}
+
+country_event = {
+	id = flavor_cn.3042
+	title = "flavor_cn.3042"
+	desc = "flavor_cn.DESC"
+	picture = EXPLORERS_eventPicture
+	
+	trigger = {
+		is_colonial_nation = no
+	    NOT = { has_country_flag = colonized_basra }
+		3042 = {
+		    is_city = no
+		}
+		calc_true_if = {
+			any_core_province = {
+				province_group = colonial_basra_region
+				owned_by = ROOT 
+				is_overseas = yes
+			}
+			amount = 1
+		}
+	}
+	
+	immediate = { set_country_flag = colonized_basra }
+	
+	option = {			# Make a colonial nation
+		name = "flavor_cn.option1"
+		ai_chance = { 
+ 		factor = 30 
+			modifier = { 
+				factor = 0 
+				has_global_flag = no_ai_colonial 
+			} 	
+ 		}
+		add_adm_power = 10
+		add_prestige = 5
+		custom_tooltip = cn_toopltip_option1
+		hidden_effect = {
+			3042 = {
+				 cede_province = ROOT
+				 add_core = ROOT
+			}
+		}
+	}
+	
+	option = {			# All for us
+		name = "flavor_cn.option2"
+		ai_chance = { 
+ 		factor = 70 
+			modifier = { 
+				factor = 0 
+				has_global_flag = all_ai_colonial 
+			} 	
+ 		}
+		add_adm_power = -50
+		add_prestige = -10
+		custom_tooltip = cn_toopltip_option2
+	}
+}
+
+country_event = {
+	id = flavor_cn.3043
+	title = "flavor_cn.3043"
+	desc = "flavor_cn.DESC"
+	picture = EXPLORERS_eventPicture
+	
+	trigger = {
+		is_colonial_nation = no
+	    NOT = { has_country_flag = colonized_girin }
+		3043 = {
+		    is_city = no
+		}
+		calc_true_if = {
+			any_core_province = {
+				province_group = colonial_girin_region
+				owned_by = ROOT 
+				is_overseas = yes
+			}
+			amount = 1
+		}
+	}
+	
+	immediate = { set_country_flag = colonized_girin }
+	
+	option = {			# Make a colonial nation
+		name = "flavor_cn.option1"
+		ai_chance = { 
+ 		factor = 30 
+			modifier = { 
+				factor = 0 
+				has_global_flag = no_ai_colonial 
+			} 	
+ 		}
+		add_adm_power = 10
+		add_prestige = 5
+		custom_tooltip = cn_toopltip_option1
+		hidden_effect = {
+			3043 = {
+				 cede_province = ROOT
+				 add_core = ROOT
+			}
+		}
+	}
+	
+	option = {			# All for us
+		name = "flavor_cn.option2"
+		ai_chance = { 
+ 		factor = 70 
+			modifier = { 
+				factor = 0 
+				has_global_flag = all_ai_colonial 
+			} 	
+ 		}
+		add_adm_power = -50
+		add_prestige = -10
+		custom_tooltip = cn_toopltip_option2
+	}
+}
+
+country_event = {
+	id = flavor_cn.3044
+	title = "flavor_cn.3044"
+	desc = "flavor_cn.DESC"
+	picture = EXPLORERS_eventPicture
+	
+	trigger = {
+		is_colonial_nation = no
+	    NOT = { has_country_flag = colonized_timbuktu }
+		3044 = {
+		    is_city = no
+		}
+		calc_true_if = {
+			any_core_province = {
+				province_group = colonial_timbuktu_region
+				owned_by = ROOT 
+				is_overseas = yes
+			}
+			amount = 1
+		}
+	}
+	
+	immediate = { set_country_flag = colonized_timbuktu }
+	
+	option = {			# Make a colonial nation
+		name = "flavor_cn.option1"
+		ai_chance = { 
+ 		factor = 30 
+			modifier = { 
+				factor = 0 
+				has_global_flag = no_ai_colonial 
+			} 	
+ 		}
+		add_adm_power = 10
+		add_prestige = 5
+		custom_tooltip = cn_toopltip_option1
+		hidden_effect = {
+			3044 = {
+				 cede_province = ROOT
+				 add_core = ROOT
+			}
+		}
+	}
+	
+	option = {			# All for us
+		name = "flavor_cn.option2"
+		ai_chance = { 
+ 		factor = 70 
+			modifier = { 
+				factor = 0 
+				has_global_flag = all_ai_colonial 
+			} 	
+ 		}
+		add_adm_power = -50
+		add_prestige = -10
+		custom_tooltip = cn_toopltip_option2
+	}
+}
+
+country_event = {
+	id = flavor_cn.3045
+	title = "flavor_cn.3045"
+	desc = "flavor_cn.DESC"
+	picture = EXPLORERS_eventPicture
+	
+	trigger = {
+		is_colonial_nation = no
+	    NOT = { has_country_flag = colonized_katsina }
+		3045 = {
+		    is_city = no
+		}
+		calc_true_if = {
+			any_core_province = {
+				province_group = colonial_katsina_region
+				owned_by = ROOT 
+				is_overseas = yes
+			}
+			amount = 1
+		}
+	}
+	
+	immediate = { set_country_flag = colonized_katsina }
+	
+	option = {			# Make a colonial nation
+		name = "flavor_cn.option1"
+		ai_chance = { 
+ 		factor = 30 
+			modifier = { 
+				factor = 0 
+				has_global_flag = no_ai_colonial 
+			} 	
+ 		}
+		add_adm_power = 10
+		add_prestige = 5
+		custom_tooltip = cn_toopltip_option1
+		hidden_effect = {
+			3045 = {
+				 cede_province = ROOT
+				 add_core = ROOT
+			}
+		}
+	}
+	
+	option = {			# All for us
+		name = "flavor_cn.option2"
+		ai_chance = { 
+ 		factor = 70 
+			modifier = { 
+				factor = 0 
+				has_global_flag = all_ai_colonial 
+			} 	
+ 		}
+		add_adm_power = -50
+		add_prestige = -10
+		custom_tooltip = cn_toopltip_option2
+	}
+}
+
+country_event = {
+	id = flavor_cn.3046
+	title = "flavor_cn.3046"
+	desc = "flavor_cn.DESC"
+	picture = EXPLORERS_eventPicture
+	
+	trigger = {
+		is_colonial_nation = no
+	    NOT = { has_country_flag = colonized_lhasa }
+		3046 = {
+		    is_city = no
+		}
+		calc_true_if = {
+			any_core_province = {
+				province_group = colonial_lhasa_region
+				owned_by = ROOT 
+				is_overseas = yes
+			}
+			amount = 1
+		}
+	}
+	
+	immediate = { set_country_flag = colonized_lhasa }
+	
+	option = {			# Make a colonial nation
+		name = "flavor_cn.option1"
+		ai_chance = { 
+ 		factor = 30 
+			modifier = { 
+				factor = 0 
+				has_global_flag = no_ai_colonial 
+			} 	
+ 		}
+		add_adm_power = 10
+		add_prestige = 5
+		custom_tooltip = cn_toopltip_option1
+		hidden_effect = {
+			3046 = {
+				 cede_province = ROOT
+				 add_core = ROOT
+			}
+		}
+	}
+	
+	option = {			# All for us
+		name = "flavor_cn.option2"
+		ai_chance = { 
+ 		factor = 70 
+			modifier = { 
+				factor = 0 
+				has_global_flag = all_ai_colonial 
+			} 	
+ 		}
+		add_adm_power = -50
+		add_prestige = -10
+		custom_tooltip = cn_toopltip_option2
+	}
+}
+
+country_event = {
+	id = flavor_cn.3047
+	title = "flavor_cn.3047"
+	desc = "flavor_cn.DESC"
+	picture = EXPLORERS_eventPicture
+	
+	trigger = {
+		is_colonial_nation = no
+	    NOT = { has_country_flag = colonized_xian }
+		3047 = {
+		    is_city = no
+		}
+		calc_true_if = {
+			any_core_province = {
+				province_group = colonial_xian_region
+				owned_by = ROOT 
+				is_overseas = yes
+			}
+			amount = 1
+		}
+	}
+	
+	immediate = { set_country_flag = colonized_xian }
+	
+	option = {			# Make a colonial nation
+		name = "flavor_cn.option1"
+		ai_chance = { 
+ 		factor = 30 
+			modifier = { 
+				factor = 0 
+				has_global_flag = no_ai_colonial 
+			} 	
+ 		}
+		add_adm_power = 10
+		add_prestige = 5
+		custom_tooltip = cn_toopltip_option1
+		hidden_effect = {
+			3047 = {
+				 cede_province = ROOT
+				 add_core = ROOT
+			}
+		}
+	}
+	
+	option = {			# All for us
+		name = "flavor_cn.option2"
+		ai_chance = { 
+ 		factor = 70 
+			modifier = { 
+				factor = 0 
+				has_global_flag = all_ai_colonial 
+			} 	
+ 		}
+		add_adm_power = -50
+		add_prestige = -10
+		custom_tooltip = cn_toopltip_option2
+	}
+}
+
+country_event = {
+	id = flavor_cn.3048
+	title = "flavor_cn.3048"
+	desc = "flavor_cn.DESC"
+	picture = EXPLORERS_eventPicture
+	
+	trigger = {
+		is_colonial_nation = no
+	    NOT = { has_country_flag = colonized_chengdu }
+		3048 = {
+		    is_city = no
+		}
+		calc_true_if = {
+			any_core_province = {
+				province_group = colonial_chengdu_region
+				owned_by = ROOT 
+				is_overseas = yes
+			}
+			amount = 1
+		}
+	}
+	
+	immediate = { set_country_flag = colonized_chengdu }
+	
+	option = {			# Make a colonial nation
+		name = "flavor_cn.option1"
+		ai_chance = { 
+ 		factor = 30 
+			modifier = { 
+				factor = 0 
+				has_global_flag = no_ai_colonial 
+			} 	
+ 		}
+		add_adm_power = 10
+		add_prestige = 5
+		custom_tooltip = cn_toopltip_option1
+		hidden_effect = {
+			3048 = {
+				 cede_province = ROOT
+				 add_core = ROOT
+			}
+		}
+	}
+	
+	option = {			# All for us
+		name = "flavor_cn.option2"
+		ai_chance = { 
+ 		factor = 70 
+			modifier = { 
+				factor = 0 
+				has_global_flag = all_ai_colonial 
+			} 	
+ 		}
+		add_adm_power = -50
+		add_prestige = -10
+		custom_tooltip = cn_toopltip_option2
+	}
+}
+
+country_event = {
+	id = flavor_cn.3049
+	title = "flavor_cn.3049"
+	desc = "flavor_cn.DESC"
+	picture = EXPLORERS_eventPicture
+	
+	trigger = {
+		is_colonial_nation = no
+	    NOT = { has_country_flag = colonized_yumen }
+		3049 = {
+		    is_city = no
+		}
+		calc_true_if = {
+			any_core_province = {
+				province_group = colonial_yumen_region
+				owned_by = ROOT 
+				is_overseas = yes
+			}
+			amount = 1
+		}
+	}
+	
+	immediate = { set_country_flag = colonized_yumen }
+	
+	option = {			# Make a colonial nation
+		name = "flavor_cn.option1"
+		ai_chance = { 
+ 		factor = 30 
+			modifier = { 
+				factor = 0 
+				has_global_flag = no_ai_colonial 
+			} 	
+ 		}
+		add_adm_power = 10
+		add_prestige = 5
+		custom_tooltip = cn_toopltip_option1
+		hidden_effect = {
+			3049 = {
+				 cede_province = ROOT
+				 add_core = ROOT
+			}
+		}
+	}
+	
+	option = {			# All for us
+		name = "flavor_cn.option2"
+		ai_chance = { 
+ 		factor = 70 
+			modifier = { 
+				factor = 0 
+				has_global_flag = all_ai_colonial 
+			} 	
+ 		}
+		add_adm_power = -50
+		add_prestige = -10
+		custom_tooltip = cn_toopltip_option2
+	}
+}
+
+country_event = {
+	id = flavor_cn.3050
+	title = "flavor_cn.3050"
+	desc = "flavor_cn.DESC"
+	picture = EXPLORERS_eventPicture
+	
+	trigger = {
+		is_colonial_nation = no
+	    NOT = { has_country_flag = colonized_kashmir }
+		3050 = {
+		    is_city = no
+		}
+		calc_true_if = {
+			any_core_province = {
+				province_group = colonial_kashmir_region
+				owned_by = ROOT 
+				is_overseas = yes
+			}
+			amount = 1
+		}
+	}
+	
+	immediate = { set_country_flag = colonized_kashmir }
+	
+	option = {			# Make a colonial nation
+		name = "flavor_cn.option1"
+		ai_chance = { 
+ 		factor = 30 
+			modifier = { 
+				factor = 0 
+				has_global_flag = no_ai_colonial 
+			} 	
+ 		}
+		add_adm_power = 10
+		add_prestige = 5
+		custom_tooltip = cn_toopltip_option1
+		hidden_effect = {
+			3050 = {
+				 cede_province = ROOT
+				 add_core = ROOT
+			}
+		}
+	}
+	
+	option = {			# All for us
+		name = "flavor_cn.option2"
+		ai_chance = { 
+ 		factor = 70 
+			modifier = { 
+				factor = 0 
+				has_global_flag = all_ai_colonial 
+			} 	
+ 		}
+		add_adm_power = -50
+		add_prestige = -10
+		custom_tooltip = cn_toopltip_option2
+	}
+}
+
+country_event = {
+	id = flavor_cn.3051
+	title = "flavor_cn.3051"
+	desc = "flavor_cn.DESC"
+	picture = EXPLORERS_eventPicture
+	
+	trigger = {
+		is_colonial_nation = no
+	    NOT = { has_country_flag = colonized_ethiopia }
+		3051 = {
+		    is_city = no
+		}
+		calc_true_if = {
+			any_core_province = {
+				province_group = colonial_ethiopia_region
+				owned_by = ROOT 
+				is_overseas = yes
+			}
+			amount = 1
+		}
+	}
+	
+	immediate = { set_country_flag = colonized_ethiopia }
+	
+	option = {			# Make a colonial nation
+		name = "flavor_cn.option1"
+		ai_chance = { 
+ 		factor = 30 
+			modifier = { 
+				factor = 0 
+				has_global_flag = no_ai_colonial 
+			} 	
+ 		}
+		add_adm_power = 10
+		add_prestige = 5
+		custom_tooltip = cn_toopltip_option1
+		hidden_effect = {
+			3051 = {
+				 cede_province = ROOT
+				 add_core = ROOT
+			}
+		}
+	}
+	
+	option = {			# All for us
+		name = "flavor_cn.option2"
+		ai_chance = { 
+ 		factor = 70 
+			modifier = { 
+				factor = 0 
+				has_global_flag = all_ai_colonial 
+			} 	
+ 		}
+		add_adm_power = -50
+		add_prestige = -10
+		custom_tooltip = cn_toopltip_option2
+	}
+}
+
+country_event = {
+	id = flavor_cn.3052
+	title = "flavor_cn.3052"
+	desc = "flavor_cn.DESC"
+	picture = EXPLORERS_eventPicture
+	
+	trigger = {
+		is_colonial_nation = no
+	    NOT = { has_country_flag = colonized_siberia }
+		3052 = {
+		    is_city = no
+		}
+		calc_true_if = {
+			any_core_province = {
+				province_group = colonial_siberia_region
+				owned_by = ROOT 
+				is_overseas = yes
+			}
+			amount = 1
+		}
+	}
+	
+	immediate = { set_country_flag = colonized_siberia }
+	
+	option = {			# Make a colonial nation
+		name = "flavor_cn.option1"
+		ai_chance = { 
+ 		factor = 30 
+			modifier = { 
+				factor = 0 
+				has_global_flag = no_ai_colonial 
+			} 	
+ 		}
+		add_adm_power = 10
+		add_prestige = 5
+		custom_tooltip = cn_toopltip_option1
+		hidden_effect = {
+			3052 = {
+				 cede_province = ROOT
+				 add_core = ROOT
+			}
+		}
+	}
+	
+	option = {			# All for us
+		name = "flavor_cn.option2"
+		ai_chance = { 
+ 		factor = 70 
+			modifier = { 
+				factor = 0 
+				has_global_flag = all_ai_colonial 
+			} 	
+ 		}
+		add_adm_power = -50
+		add_prestige = -10
+		custom_tooltip = cn_toopltip_option2
+	}
+}
+
+country_event = {
+	id = flavor_cn.3053
+	title = "flavor_cn.3053"
+	desc = "flavor_cn.DESC"
+	picture = EXPLORERS_eventPicture
+	
+	trigger = {
+		is_colonial_nation = no
+	    NOT = { has_country_flag = colonized_samarkand }
+		3053 = {
+		    is_city = no
+		}
+		calc_true_if = {
+			any_core_province = {
+				province_group = colonial_samarkand_region
+				owned_by = ROOT 
+				is_overseas = yes
+			}
+			amount = 1
+		}
+	}
+	
+	immediate = { set_country_flag = colonized_samarkand }
+	
+	option = {			# Make a colonial nation
+		name = "flavor_cn.option1"
+		ai_chance = { 
+ 		factor = 30 
+			modifier = { 
+				factor = 0 
+				has_global_flag = no_ai_colonial 
+			} 	
+ 		}
+		add_adm_power = 10
+		add_prestige = 5
+		custom_tooltip = cn_toopltip_option1
+		hidden_effect = {
+			3053 = {
+				 cede_province = ROOT
+				 add_core = ROOT
+			}
+		}
+	}
+	
+	option = {			# All for us
+		name = "flavor_cn.option2"
+		ai_chance = { 
+ 		factor = 70 
+			modifier = { 
+				factor = 0 
+				has_global_flag = all_ai_colonial 
+			} 	
+ 		}
+		add_adm_power = -50
+		add_prestige = -10
+		custom_tooltip = cn_toopltip_option2
+	}
+}
+
+country_event = {
+	id = flavor_cn.3054
+	title = "flavor_cn.3054"
+	desc = "flavor_cn.DESC"
+	picture = EXPLORERS_eventPicture
+	
+	trigger = {
+		is_colonial_nation = no
+	    NOT = { has_country_flag = colonized_persia }
+		3054 = {
+		    is_city = no
+		}
+		calc_true_if = {
+			any_core_province = {
+				province_group = colonial_persia_region
+				owned_by = ROOT 
+				is_overseas = yes
+			}
+			amount = 1
+		}
+	}
+	
+	immediate = { set_country_flag = colonized_persia }
+	
+	option = {			# Make a colonial nation
+		name = "flavor_cn.option1"
+		ai_chance = { 
+ 		factor = 30 
+			modifier = { 
+				factor = 0 
+				has_global_flag = no_ai_colonial 
+			} 	
+ 		}
+		add_adm_power = 10
+		add_prestige = 5
+		custom_tooltip = cn_toopltip_option1
+		hidden_effect = {
+			3054 = {
+				 cede_province = ROOT
+				 add_core = ROOT
+			}
+		}
+	}
+	
+	option = {			# All for us
+		name = "flavor_cn.option2"
+		ai_chance = { 
+ 		factor = 70 
+			modifier = { 
+				factor = 0 
+				has_global_flag = all_ai_colonial 
+			} 	
+ 		}
+		add_adm_power = -50
+		add_prestige = -10
+		custom_tooltip = cn_toopltip_option2
+	}
+}
+
+country_event = {
+	id = flavor_cn.3055
+	title = "flavor_cn.3055"
+	desc = "flavor_cn.DESC"
+	picture = EXPLORERS_eventPicture
+	
+	trigger = {
+		is_colonial_nation = no
+	    NOT = { has_country_flag = colonized_astrakhan }
+		3055 = {
+		    is_city = no
+		}
+		calc_true_if = {
+			any_core_province = {
+				province_group = colonial_astrakhan_region
+				owned_by = ROOT 
+				is_overseas = yes
+			}
+			amount = 1
+		}
+	}
+	
+	immediate = { set_country_flag = colonized_astrakhan }
+	
+	option = {			# Make a colonial nation
+		name = "flavor_cn.option1"
+		ai_chance = { 
+ 		factor = 30 
+			modifier = { 
+				factor = 0 
+				has_global_flag = no_ai_colonial 
+			} 	
+ 		}
+		add_adm_power = 10
+		add_prestige = 5
+		custom_tooltip = cn_toopltip_option1
+		hidden_effect = {
+			3055 = {
+				 cede_province = ROOT
+				 add_core = ROOT
+			}
+		}
+	}
+	
+	option = {			# All for us
+		name = "flavor_cn.option2"
+		ai_chance = { 
+ 		factor = 70 
+			modifier = { 
+				factor = 0 
+				has_global_flag = all_ai_colonial 
+			} 	
+ 		}
+		add_adm_power = -50
+		add_prestige = -10
+		custom_tooltip = cn_toopltip_option2
+	}
+}
+
+country_event = {
+	id = flavor_cn.3056
+	title = "flavor_cn.3056"
+	desc = "flavor_cn.DESC"
+	picture = EXPLORERS_eventPicture
+	
+	trigger = {
+		is_colonial_nation = no
+	    NOT = { has_country_flag = colonized_aleppo }
+		3056 = {
+		    is_city = no
+		}
+		calc_true_if = {
+			any_core_province = {
+				province_group = colonial_aleppo_region
+				owned_by = ROOT 
+				is_overseas = yes
+			}
+			amount = 1
+		}
+	}
+	
+	immediate = { set_country_flag = colonized_aleppo }
+	
+	option = {			# Make a colonial nation
+		name = "flavor_cn.option1"
+		ai_chance = { 
+ 		factor = 30 
+			modifier = { 
+				factor = 0 
+				has_global_flag = no_ai_colonial 
+			} 	
+ 		}
+		add_adm_power = 10
+		add_prestige = 5
+		custom_tooltip = cn_toopltip_option1
+		hidden_effect = {
+			3056 = {
+				 cede_province = ROOT
+				 add_core = ROOT
+			}
+		}
+	}
+	
+	option = {			# All for us
+		name = "flavor_cn.option2"
+		ai_chance = { 
+ 		factor = 70 
+			modifier = { 
+				factor = 0 
+				has_global_flag = all_ai_colonial 
+			} 	
+ 		}
+		add_adm_power = -50
+		add_prestige = -10
+		custom_tooltip = cn_toopltip_option2
+	}
+}
+
+country_event = {
+	id = flavor_cn.3057
+	title = "flavor_cn.3057"
+	desc = "flavor_cn.DESC"
+	picture = EXPLORERS_eventPicture
+	
+	trigger = {
+		is_colonial_nation = no
+	    NOT = { has_country_flag = colonized_crimea }
+		3057 = {
+		    is_city = no
+		}
+		calc_true_if = {
+			any_core_province = {
+				province_group = colonial_crimea_region
+				owned_by = ROOT 
+				is_overseas = yes
+			}
+			amount = 1
+		}
+	}
+	
+	immediate = { set_country_flag = colonized_crimea }
+	
+	option = {			# Make a colonial nation
+		name = "flavor_cn.option1"
+		ai_chance = { 
+ 		factor = 30 
+			modifier = { 
+				factor = 0 
+				has_global_flag = no_ai_colonial 
+			} 	
+ 		}
+		add_adm_power = 10
+		add_prestige = 5
+		custom_tooltip = cn_toopltip_option1
+		hidden_effect = {
+			3057 = {
+				 cede_province = ROOT
+				 add_core = ROOT
+			}
+		}
+	}
+	
+	option = {			# All for us
+		name = "flavor_cn.option2"
+		ai_chance = { 
+ 		factor = 70 
+			modifier = { 
+				factor = 0 
+				has_global_flag = all_ai_colonial 
+			} 	
+ 		}
+		add_adm_power = -50
+		add_prestige = -10
+		custom_tooltip = cn_toopltip_option2
+	}
+}
+
+country_event = {
+	id = flavor_cn.3058
+	title = "flavor_cn.3058"
+	desc = "flavor_cn.DESC"
+	picture = EXPLORERS_eventPicture
+	
+	trigger = {
+		is_colonial_nation = no
+	    NOT = { has_country_flag = colonized_kazan }
+		3058 = {
+		    is_city = no
+		}
+		calc_true_if = {
+			any_core_province = {
+				province_group = colonial_kazan_region
+				owned_by = ROOT 
+				is_overseas = yes
+			}
+			amount = 1
+		}
+	}
+	
+	immediate = { set_country_flag = colonized_kazan }
+	
+	option = {			# Make a colonial nation
+		name = "flavor_cn.option1"
+		ai_chance = { 
+ 		factor = 30 
+			modifier = { 
+				factor = 0 
+				has_global_flag = no_ai_colonial 
+			} 	
+ 		}
+		add_adm_power = 10
+		add_prestige = 5
+		custom_tooltip = cn_toopltip_option1
+		hidden_effect = {
+			3058 = {
+				 cede_province = ROOT
+				 add_core = ROOT
+			}
+		}
+	}
+	
+	option = {			# All for us
+		name = "flavor_cn.option2"
+		ai_chance = { 
+ 		factor = 70 
+			modifier = { 
+				factor = 0 
+				has_global_flag = all_ai_colonial 
+			} 	
+ 		}
+		add_adm_power = -50
+		add_prestige = -10
+		custom_tooltip = cn_toopltip_option2
+	}
+}
+
+country_event = {
+	id = flavor_cn.3059
+	title = "flavor_cn.3059"
+	desc = "flavor_cn.DESC"
+	picture = EXPLORERS_eventPicture
+	
+	trigger = {
+		is_colonial_nation = no
+	    NOT = { has_country_flag = colonized_whitesea }
+		3059 = {
+		    is_city = no
+		}
+		calc_true_if = {
+			any_core_province = {
+				province_group = colonial_whitesea_region
+				owned_by = ROOT 
+				is_overseas = yes
+			}
+			amount = 1
+		}
+	}
+	
+	immediate = { set_country_flag = colonized_whitesea }
+	
+	option = {			# Make a colonial nation
+		name = "flavor_cn.option1"
+		ai_chance = { 
+ 		factor = 30 
+			modifier = { 
+				factor = 0 
+				has_global_flag = no_ai_colonial 
+			} 	
+ 		}
+		add_adm_power = 10
+		add_prestige = 5
+		custom_tooltip = cn_toopltip_option1
+		hidden_effect = {
+			3059 = {
+				 cede_province = ROOT
+				 add_core = ROOT
+			}
+		}
+	}
+	
+	option = {			# All for us
+		name = "flavor_cn.option2"
+		ai_chance = { 
+ 		factor = 70 
+			modifier = { 
+				factor = 0 
+				has_global_flag = all_ai_colonial 
+			} 	
+ 		}
+		add_adm_power = -50
+		add_prestige = -10
+		custom_tooltip = cn_toopltip_option2
+	}
+}
+
+country_event = {
+	id = flavor_cn.3060
+	title = "flavor_cn.3060"
+	desc = "flavor_cn.DESC"
+	picture = EXPLORERS_eventPicture
+	
+	trigger = {
+		is_colonial_nation = no
+	    NOT = { has_country_flag = colonized_novgorod }
+		3060 = {
+		    is_city = no
+		}
+		calc_true_if = {
+			any_core_province = {
+				province_group = colonial_novgorod_region
+				owned_by = ROOT 
+				is_overseas = yes
+			}
+			amount = 1
+		}
+	}
+	
+	immediate = { set_country_flag = colonized_novgorod }
+	
+	option = {			# Make a colonial nation
+		name = "flavor_cn.option1"
+		ai_chance = { 
+ 		factor = 30 
+			modifier = { 
+				factor = 0 
+				has_global_flag = no_ai_colonial 
+			} 	
+ 		}
+		add_adm_power = 10
+		add_prestige = 5
+		custom_tooltip = cn_toopltip_option1
+		hidden_effect = {
+			3060 = {
+				 cede_province = ROOT
+				 add_core = ROOT
+			}
+		}
+	}
+	
+	option = {			# All for us
+		name = "flavor_cn.option2"
+		ai_chance = { 
+ 		factor = 70 
+			modifier = { 
+				factor = 0 
+				has_global_flag = all_ai_colonial 
+			} 	
+ 		}
+		add_adm_power = -50
+		add_prestige = -10
+		custom_tooltip = cn_toopltip_option2
+	}
+}
+
+country_event = {
+	id = flavor_cn.3061
+	title = "flavor_cn.3061"
+	desc = "flavor_cn.DESC"
+	picture = EXPLORERS_eventPicture
+	
+	trigger = {
+		is_colonial_nation = no
+	    NOT = { has_country_flag = colonized_kiev }
+		3061 = {
+		    is_city = no
+		}
+		calc_true_if = {
+			any_core_province = {
+				province_group = colonial_kiev_region
+				owned_by = ROOT 
+				is_overseas = yes
+			}
+			amount = 1
+		}
+	}
+	
+	immediate = { set_country_flag = colonized_kiev }
+	
+	option = {			# Make a colonial nation
+		name = "flavor_cn.option1"
+		ai_chance = { 
+ 		factor = 30 
+			modifier = { 
+				factor = 0 
+				has_global_flag = no_ai_colonial 
+			} 	
+ 		}
+		add_adm_power = 10
+		add_prestige = 5
+		custom_tooltip = cn_toopltip_option1
+		hidden_effect = {
+			3061 = {
+				 cede_province = ROOT
+				 add_core = ROOT
+			}
+		}
+	}
+	
+	option = {			# All for us
+		name = "flavor_cn.option2"
+		ai_chance = { 
+ 		factor = 70 
+			modifier = { 
+				factor = 0 
+				has_global_flag = all_ai_colonial 
+			} 	
+ 		}
+		add_adm_power = -50
+		add_prestige = -10
+		custom_tooltip = cn_toopltip_option2
+	}
+}
+
+country_event = {
+	id = flavor_cn.3062
+	title = "flavor_cn.3062"
+	desc = "flavor_cn.DESC"
+	picture = EXPLORERS_eventPicture
+	
+	trigger = {
+		is_colonial_nation = no
+	    NOT = { has_country_flag = colonized_constantinople }
+		3062 = {
+		    is_city = no
+		}
+		calc_true_if = {
+			any_core_province = {
+				province_group = colonial_constantinople_region
+				owned_by = ROOT 
+				is_overseas = yes
+			}
+			amount = 1
+		}
+	}
+	
+	immediate = { set_country_flag = colonized_constantinople }
+	
+	option = {			# Make a colonial nation
+		name = "flavor_cn.option1"
+		ai_chance = { 
+ 		factor = 30 
+			modifier = { 
+				factor = 0 
+				has_global_flag = no_ai_colonial 
+			} 	
+ 		}
+		add_adm_power = 10
+		add_prestige = 5
+		custom_tooltip = cn_toopltip_option1
+		hidden_effect = {
+			3062 = {
+				 cede_province = ROOT
+				 add_core = ROOT
+			}
+		}
+	}
+	
+	option = {			# All for us
+		name = "flavor_cn.option2"
+		ai_chance = { 
+ 		factor = 70 
+			modifier = { 
+				factor = 0 
+				has_global_flag = all_ai_colonial 
+			} 	
+ 		}
+		add_adm_power = -50
+		add_prestige = -10
+		custom_tooltip = cn_toopltip_option2
+	}
+}
+
+country_event = {
+	id = flavor_cn.3063
+	title = "flavor_cn.3063"
+	desc = "flavor_cn.DESC"
+	picture = EXPLORERS_eventPicture
+	
+	trigger = {
+		is_colonial_nation = no
+	    NOT = { has_country_flag = colonized_ragusa }
+		3063 = {
+		    is_city = no
+		}
+		calc_true_if = {
+			any_core_province = {
+				province_group = colonial_ragusa_region
+				owned_by = ROOT 
+				is_overseas = yes
+			}
+			amount = 1
+		}
+	}
+	
+	immediate = { set_country_flag = colonized_ragusa }
+	
+	option = {			# Make a colonial nation
+		name = "flavor_cn.option1"
+		ai_chance = { 
+ 		factor = 30 
+			modifier = { 
+				factor = 0 
+				has_global_flag = no_ai_colonial 
+			} 	
+ 		}
+		add_adm_power = 10
+		add_prestige = 5
+		custom_tooltip = cn_toopltip_option1
+		hidden_effect = {
+			3063 = {
+				 cede_province = ROOT
+				 add_core = ROOT
+			}
+		}
+	}
+	
+	option = {			# All for us
+		name = "flavor_cn.option2"
+		ai_chance = { 
+ 		factor = 70 
+			modifier = { 
+				factor = 0 
+				has_global_flag = all_ai_colonial 
+			} 	
+ 		}
+		add_adm_power = -50
+		add_prestige = -10
+		custom_tooltip = cn_toopltip_option2
+	}
+}
+
+country_event = {
+	id = flavor_cn.3064
+	title = "flavor_cn.3064"
+	desc = "flavor_cn.DESC"
+	picture = EXPLORERS_eventPicture
+	
+	trigger = {
+		is_colonial_nation = no
+	    NOT = { has_country_flag = colonized_balticsea }
+		3064 = {
+		    is_city = no
+		}
+		calc_true_if = {
+			any_core_province = {
+				province_group = colonial_balticsea_region
+				owned_by = ROOT 
+				is_overseas = yes
+			}
+			amount = 1
+		}
+	}
+	
+	immediate = { set_country_flag = colonized_balticsea }
+	
+	option = {			# Make a colonial nation
+		name = "flavor_cn.option1"
+		ai_chance = { 
+ 		factor = 30 
+			modifier = { 
+				factor = 0 
+				has_global_flag = no_ai_colonial 
+			} 	
+ 		}
+		add_adm_power = 10
+		add_prestige = 5
+		custom_tooltip = cn_toopltip_option1
+		hidden_effect = {
+			3064 = {
+				 cede_province = ROOT
+				 add_core = ROOT
+			}
+		}
+	}
+	
+	option = {			# All for us
+		name = "flavor_cn.option2"
+		ai_chance = { 
+ 		factor = 70 
+			modifier = { 
+				factor = 0 
+				has_global_flag = all_ai_colonial 
+			} 	
+ 		}
+		add_adm_power = -50
+		add_prestige = -10
+		custom_tooltip = cn_toopltip_option2
+	}
+}
+
+country_event = {
+	id = flavor_cn.3065
+	title = "flavor_cn.3065"
+	desc = "flavor_cn.DESC"
+	picture = EXPLORERS_eventPicture
+	
+	trigger = {
+		is_colonial_nation = no
+	    NOT = { has_country_flag = colonized_lubeck }
+		3065 = {
+		    is_city = no
+		}
+		calc_true_if = {
+			any_core_province = {
+				province_group = colonial_lubeck_region
+				owned_by = ROOT 
+				is_overseas = yes
+			}
+			amount = 1
+		}
+	}
+	
+	immediate = { set_country_flag = colonized_lubeck }
+	
+	option = {			# Make a colonial nation
+		name = "flavor_cn.option1"
+		ai_chance = { 
+ 		factor = 30 
+			modifier = { 
+				factor = 0 
+				has_global_flag = no_ai_colonial 
+			} 	
+ 		}
+		add_adm_power = 10
+		add_prestige = 5
+		custom_tooltip = cn_toopltip_option1
+		hidden_effect = {
+			3065 = {
+				 cede_province = ROOT
+				 add_core = ROOT
+			}
+		}
+	}
+	
+	option = {			# All for us
+		name = "flavor_cn.option2"
+		ai_chance = { 
+ 		factor = 70 
+			modifier = { 
+				factor = 0 
+				has_global_flag = all_ai_colonial 
+			} 	
+ 		}
+		add_adm_power = -50
+		add_prestige = -10
+		custom_tooltip = cn_toopltip_option2
+	}
+}
+
+country_event = {
+	id = flavor_cn.3066
+	title = "flavor_cn.3066"
+	desc = "flavor_cn.DESC"
+	picture = EXPLORERS_eventPicture
+	
+	trigger = {
+		is_colonial_nation = no
+	    NOT = { has_country_flag = colonized_krakow }
+		3066 = {
+		    is_city = no
+		}
+		calc_true_if = {
+			any_core_province = {
+				province_group = colonial_krakow_region
+				owned_by = ROOT 
+				is_overseas = yes
+			}
+			amount = 1
+		}
+	}
+	
+	immediate = { set_country_flag = colonized_krakow }
+	
+	option = {			# Make a colonial nation
+		name = "flavor_cn.option1"
+		ai_chance = { 
+ 		factor = 30 
+			modifier = { 
+				factor = 0 
+				has_global_flag = no_ai_colonial 
+			} 	
+ 		}
+		add_adm_power = 10
+		add_prestige = 5
+		custom_tooltip = cn_toopltip_option1
+		hidden_effect = {
+			3066 = {
+				 cede_province = ROOT
+				 add_core = ROOT
+			}
+		}
+	}
+	
+	option = {			# All for us
+		name = "flavor_cn.option2"
+		ai_chance = { 
+ 		factor = 70 
+			modifier = { 
+				factor = 0 
+				has_global_flag = all_ai_colonial 
+			} 	
+ 		}
+		add_adm_power = -50
+		add_prestige = -10
+		custom_tooltip = cn_toopltip_option2
+	}
+}
+
+country_event = {
+	id = flavor_cn.3067
+	title = "flavor_cn.3067"
+	desc = "flavor_cn.DESC"
+	picture = EXPLORERS_eventPicture
+	
+	trigger = {
+		is_colonial_nation = no
+	    NOT = { has_country_flag = colonized_wien }
+		3067 = {
+		    is_city = no
+		}
+		calc_true_if = {
+			any_core_province = {
+				province_group = colonial_wien_region
+				owned_by = ROOT 
+				is_overseas = yes
+			}
+			amount = 1
+		}
+	}
+	
+	immediate = { set_country_flag = colonized_wien }
+	
+	option = {			# Make a colonial nation
+		name = "flavor_cn.option1"
+		ai_chance = { 
+ 		factor = 30 
+			modifier = { 
+				factor = 0 
+				has_global_flag = no_ai_colonial 
+			} 	
+ 		}
+		add_adm_power = 10
+		add_prestige = 5
+		custom_tooltip = cn_toopltip_option1
+		hidden_effect = {
+			3067 = {
+				 cede_province = ROOT
+				 add_core = ROOT
+			}
+		}
+	}
+	
+	option = {			# All for us
+		name = "flavor_cn.option2"
+		ai_chance = { 
+ 		factor = 70 
+			modifier = { 
+				factor = 0 
+				has_global_flag = all_ai_colonial 
+			} 	
+ 		}
+		add_adm_power = -50
+		add_prestige = -10
+		custom_tooltip = cn_toopltip_option2
+	}
+}
+
+country_event = {
+	id = flavor_cn.3068
+	title = "flavor_cn.3068"
+	desc = "flavor_cn.DESC"
+	picture = EXPLORERS_eventPicture
+	
+	trigger = {
+		is_colonial_nation = no
+	    NOT = { has_country_flag = colonized_venice }
+		3068 = {
+		    is_city = no
+		}
+		calc_true_if = {
+			any_core_province = {
+				province_group = colonial_venice_region
+				owned_by = ROOT 
+				is_overseas = yes
+			}
+			amount = 1
+		}
+	}
+	
+	immediate = { set_country_flag = colonized_venice }
+	
+	option = {			# Make a colonial nation
+		name = "flavor_cn.option1"
+		ai_chance = { 
+ 		factor = 30 
+			modifier = { 
+				factor = 0 
+				has_global_flag = no_ai_colonial 
+			} 	
+ 		}
+		add_adm_power = 10
+		add_prestige = 5
+		custom_tooltip = cn_toopltip_option1
+		hidden_effect = {
+			3068 = {
+				 cede_province = ROOT
+				 add_core = ROOT
+			}
+		}
+	}
+	
+	option = {			# All for us
+		name = "flavor_cn.option2"
+		ai_chance = { 
+ 		factor = 70 
+			modifier = { 
+				factor = 0 
+				has_global_flag = all_ai_colonial 
+			} 	
+ 		}
+		add_adm_power = -50
+		add_prestige = -10
+		custom_tooltip = cn_toopltip_option2
+	}
+}
+
+country_event = {
+	id = flavor_cn.3069
+	title = "flavor_cn.3069"
+	desc = "flavor_cn.DESC"
+	picture = EXPLORERS_eventPicture
+	
+	trigger = {
+		is_colonial_nation = no
+	    NOT = { has_country_flag = colonized_genoa }
+		3069 = {
+		    is_city = no
+		}
+		calc_true_if = {
+			any_core_province = {
+				province_group = colonial_genoa_region
+				owned_by = ROOT 
+				is_overseas = yes
+			}
+			amount = 1
+		}
+	}
+	
+	immediate = { set_country_flag = colonized_genoa }
+	
+	option = {			# Make a colonial nation
+		name = "flavor_cn.option1"
+		ai_chance = { 
+ 		factor = 30 
+			modifier = { 
+				factor = 0 
+				has_global_flag = no_ai_colonial 
+			} 	
+ 		}
+		add_adm_power = 10
+		add_prestige = 5
+		custom_tooltip = cn_toopltip_option1
+		hidden_effect = {
+			3069 = {
+				 cede_province = ROOT
+				 add_core = ROOT
+			}
+		}
+	}
+	
+	option = {			# All for us
+		name = "flavor_cn.option2"
+		ai_chance = { 
+ 		factor = 70 
+			modifier = { 
+				factor = 0 
+				has_global_flag = all_ai_colonial 
+			} 	
+ 		}
+		add_adm_power = -50
+		add_prestige = -10
+		custom_tooltip = cn_toopltip_option2
+	}
+}
+
+country_event = {
+	id = flavor_cn.3070
+	title = "flavor_cn.3070"
+	desc = "flavor_cn.DESC"
+	picture = EXPLORERS_eventPicture
+	
+	trigger = {
+		is_colonial_nation = no
+	    NOT = { has_country_flag = colonized_sevilla }
+		3070 = {
+		    is_city = no
+		}
+		calc_true_if = {
+			any_core_province = {
+				province_group = colonial_sevilla_region
+				owned_by = ROOT 
+				is_overseas = yes
+			}
+			amount = 1
+		}
+	}
+	
+	immediate = { set_country_flag = colonized_sevilla }
+	
+	option = {			# Make a colonial nation
+		name = "flavor_cn.option1"
+		ai_chance = { 
+ 		factor = 30 
+			modifier = { 
+				factor = 0 
+				has_global_flag = no_ai_colonial 
+			} 	
+ 		}
+		add_adm_power = 10
+		add_prestige = 5
+		custom_tooltip = cn_toopltip_option1
+		hidden_effect = {
+			3070 = {
+				 cede_province = ROOT
+				 add_core = ROOT
+			}
+		}
+	}
+	
+	option = {			# All for us
+		name = "flavor_cn.option2"
+		ai_chance = { 
+ 		factor = 70 
+			modifier = { 
+				factor = 0 
+				has_global_flag = all_ai_colonial 
+			} 	
+ 		}
+		add_adm_power = -50
+		add_prestige = -10
+		custom_tooltip = cn_toopltip_option2
+	}
+}
+
+country_event = {
+	id = flavor_cn.3071
+	title = "flavor_cn.3071"
+	desc = "flavor_cn.DESC"
+	picture = EXPLORERS_eventPicture
+	
+	trigger = {
+		is_colonial_nation = no
+	    NOT = { has_country_flag = colonized_bordeaux }
+		3071 = {
+		    is_city = no
+		}
+		calc_true_if = {
+			any_core_province = {
+				province_group = colonial_bordeaux_region
+				owned_by = ROOT 
+				is_overseas = yes
+			}
+			amount = 1
+		}
+	}
+	
+	immediate = { set_country_flag = colonized_bordeaux }
+	
+	option = {			# Make a colonial nation
+		name = "flavor_cn.option1"
+		ai_chance = { 
+ 		factor = 30 
+			modifier = { 
+				factor = 0 
+				has_global_flag = no_ai_colonial 
+			} 	
+ 		}
+		add_adm_power = 10
+		add_prestige = 5
+		custom_tooltip = cn_toopltip_option1
+		hidden_effect = {
+			3071 = {
+				 cede_province = ROOT
+				 add_core = ROOT
+			}
+		}
+	}
+	
+	option = {			# All for us
+		name = "flavor_cn.option2"
+		ai_chance = { 
+ 		factor = 70 
+			modifier = { 
+				factor = 0 
+				has_global_flag = all_ai_colonial 
+			} 	
+ 		}
+		add_adm_power = -50
+		add_prestige = -10
+		custom_tooltip = cn_toopltip_option2
+	}
+}
+
+country_event = {
+	id = flavor_cn.3072
+	title = "flavor_cn.3072"
+	desc = "flavor_cn.DESC"
+	picture = EXPLORERS_eventPicture
+	
+	trigger = {
+		is_colonial_nation = no
+	    NOT = { has_country_flag = colonized_champagne }
+		3072 = {
+		    is_city = no
+		}
+		calc_true_if = {
+			any_core_province = {
+				province_group = colonial_champagne_region
+				owned_by = ROOT 
+				is_overseas = yes
+			}
+			amount = 1
+		}
+	}
+	
+	immediate = { set_country_flag = colonized_champagne }
+	
+	option = {			# Make a colonial nation
+		name = "flavor_cn.option1"
+		ai_chance = { 
+ 		factor = 30 
+			modifier = { 
+				factor = 0 
+				has_global_flag = no_ai_colonial 
+			} 	
+ 		}
+		add_adm_power = 10
+		add_prestige = 5
+		custom_tooltip = cn_toopltip_option1
+		hidden_effect = {
+			3072 = {
+				 cede_province = ROOT
+				 add_core = ROOT
+			}
+		}
+	}
+	
+	option = {			# All for us
+		name = "flavor_cn.option2"
+		ai_chance = { 
+ 		factor = 70 
+			modifier = { 
+				factor = 0 
+				has_global_flag = all_ai_colonial 
+			} 	
+ 		}
+		add_adm_power = -50
+		add_prestige = -10
+		custom_tooltip = cn_toopltip_option2
+	}
+}
+
+country_event = {
+	id = flavor_cn.3073
+	title = "flavor_cn.3073"
+	desc = "flavor_cn.DESC"
+	picture = EXPLORERS_eventPicture
+	
+	trigger = {
+		is_colonial_nation = no
+	    NOT = { has_country_flag = colonized_saxony }
+		3073 = {
+		    is_city = no
+		}
+		calc_true_if = {
+			any_core_province = {
+				province_group = colonial_saxony_region
+				owned_by = ROOT 
+				is_overseas = yes
+			}
+			amount = 1
+		}
+	}
+	
+	immediate = { set_country_flag = colonized_saxony }
+	
+	option = {			# Make a colonial nation
+		name = "flavor_cn.option1"
+		ai_chance = { 
+ 		factor = 30 
+			modifier = { 
+				factor = 0 
+				has_global_flag = no_ai_colonial 
+			} 	
+ 		}
+		add_adm_power = 10
+		add_prestige = 5
+		custom_tooltip = cn_toopltip_option1
+		hidden_effect = {
+			3073 = {
+				 cede_province = ROOT
+				 add_core = ROOT
+			}
+		}
+	}
+	
+	option = {			# All for us
+		name = "flavor_cn.option2"
+		ai_chance = { 
+ 		factor = 70 
+			modifier = { 
+				factor = 0 
+				has_global_flag = all_ai_colonial 
+			} 	
+ 		}
+		add_adm_power = -50
+		add_prestige = -10
+		custom_tooltip = cn_toopltip_option2
+	}
+}
+
+country_event = {
+	id = flavor_cn.3074
+	title = "flavor_cn.3074"
+	desc = "flavor_cn.DESC"
+	picture = EXPLORERS_eventPicture
+	
+	trigger = {
+		is_colonial_nation = no
+	    NOT = { has_country_flag = colonized_rhineland }
+		3074 = {
+		    is_city = no
+		}
+		calc_true_if = {
+			any_core_province = {
+				province_group = colonial_rhineland_region
+				owned_by = ROOT 
+				is_overseas = yes
+			}
+			amount = 1
+		}
+	}
+	
+	immediate = { set_country_flag = colonized_rhineland }
+	
+	option = {			# Make a colonial nation
+		name = "flavor_cn.option1"
+		ai_chance = { 
+ 		factor = 30 
+			modifier = { 
+				factor = 0 
+				has_global_flag = no_ai_colonial 
+			} 	
+ 		}
+		add_adm_power = 10
+		add_prestige = 5
+		custom_tooltip = cn_toopltip_option1
+		hidden_effect = {
+			3074 = {
+				 cede_province = ROOT
+				 add_core = ROOT
+			}
+		}
+	}
+	
+	option = {			# All for us
+		name = "flavor_cn.option2"
+		ai_chance = { 
+ 		factor = 70 
+			modifier = { 
+				factor = 0 
+				has_global_flag = all_ai_colonial 
+			} 	
+ 		}
+		add_adm_power = -50
+		add_prestige = -10
+		custom_tooltip = cn_toopltip_option2
+	}
+}
+
+country_event = {
+	id = flavor_cn.3075
+	title = "flavor_cn.3075"
+	desc = "flavor_cn.DESC"
+	picture = EXPLORERS_eventPicture
+	
+	trigger = {
+		is_colonial_nation = no
+	    NOT = { has_country_flag = colonized_northsea }
+		3075 = {
+		    is_city = no
+		}
+		calc_true_if = {
+			any_core_province = {
+				province_group = colonial_northsea_region
+				owned_by = ROOT 
+				is_overseas = yes
+			}
+			amount = 1
+		}
+	}
+	
+	immediate = { set_country_flag = colonized_northsea }
+	
+	option = {			# Make a colonial nation
+		name = "flavor_cn.option1"
+		ai_chance = { 
+ 		factor = 30 
+			modifier = { 
+				factor = 0 
+				has_global_flag = no_ai_colonial 
+			} 	
+ 		}
+		add_adm_power = 10
+		add_prestige = 5
+		custom_tooltip = cn_toopltip_option1
+		hidden_effect = {
+			3075 = {
+				 cede_province = ROOT
+				 add_core = ROOT
+			}
+		}
+	}
+	
+	option = {			# All for us
+		name = "flavor_cn.option2"
+		ai_chance = { 
+ 		factor = 70 
+			modifier = { 
+				factor = 0 
+				has_global_flag = all_ai_colonial 
+			} 	
+ 		}
+		add_adm_power = -50
+		add_prestige = -10
+		custom_tooltip = cn_toopltip_option2
+	}
+}
+
+country_event = {
+	id = flavor_cn.3076
+	title = "flavor_cn.3076"
+	desc = "flavor_cn.DESC"
+	picture = EXPLORERS_eventPicture
+	
+	trigger = {
+		is_colonial_nation = no
+	    NOT = { has_country_flag = colonized_englishchannel }
+		3076 = {
+		    is_city = no
+		}
+		calc_true_if = {
+			any_core_province = {
+				province_group = colonial_englishchannel_region
+				owned_by = ROOT 
+				is_overseas = yes
+			}
+			amount = 1
+		}
+	}
+	
+	immediate = { set_country_flag = colonized_englishchannel }
+	
+	option = {			# Make a colonial nation
+		name = "flavor_cn.option1"
+		ai_chance = { 
+ 		factor = 30 
+			modifier = { 
+				factor = 0 
+				has_global_flag = no_ai_colonial 
+			} 	
+ 		}
+		add_adm_power = 10
+		add_prestige = 5
+		custom_tooltip = cn_toopltip_option1
+		hidden_effect = {
+			3076 = {
+				 cede_province = ROOT
+				 add_core = ROOT
+			}
+		}
+	}
+	
+	option = {			# All for us
+		name = "flavor_cn.option2"
+		ai_chance = { 
+ 		factor = 70 
+			modifier = { 
+				factor = 0 
+				has_global_flag = all_ai_colonial 
+			} 	
+ 		}
+		add_adm_power = -50
+		add_prestige = -10
+		custom_tooltip = cn_toopltip_option2
+	}
+}
+
+country_event = {
+	id = flavor_cn.3077
+	title = "flavor_cn.3077"
+	desc = "flavor_cn.DESC"
+	picture = EXPLORERS_eventPicture
+	
+	trigger = {
+		is_colonial_nation = no
+	    NOT = { has_country_flag = colonized_greatlakes }
+		3077 = {
+		    is_city = no
+		}
+		calc_true_if = {
+			any_core_province = {
+				province_group = colonial_greatlakes_region
+				owned_by = ROOT 
+				is_overseas = yes
+			}
+			amount = 1
+		}
+	}
+	
+	immediate = { set_country_flag = colonized_greatlakes }
+	
+	option = {			# Make a colonial nation
+		name = "flavor_cn.option1"
+		ai_chance = { 
+ 		factor = 30 
+			modifier = { 
+				factor = 0 
+				has_global_flag = no_ai_colonial 
+			} 	
+ 		}
+		add_adm_power = 10
+		add_prestige = 5
+		custom_tooltip = cn_toopltip_option1
+		hidden_effect = {
+			3077 = {
+				 cede_province = ROOT
+				 add_core = ROOT
+			}
+		}
+	}
+	
+	option = {			# All for us
+		name = "flavor_cn.option2"
+		ai_chance = { 
+ 		factor = 70 
+			modifier = { 
+				factor = 0 
+				has_global_flag = all_ai_colonial 
+			} 	
+ 		}
+		add_adm_power = -50
+		add_prestige = -10
+		custom_tooltip = cn_toopltip_option2
+	}
+}
+
+country_event = {
+	id = flavor_cn.3078
+	title = "flavor_cn.3078"
+	desc = "flavor_cn.DESC"
+	picture = EXPLORERS_eventPicture
+	
+	trigger = {
+		is_colonial_nation = no
+	    NOT = { has_country_flag = colonized_kongo }
+		3078 = {
+		    is_city = no
+		}
+		calc_true_if = {
+			any_core_province = {
+				province_group = colonial_kongo_region
+				owned_by = ROOT 
+				is_overseas = yes
+			}
+			amount = 1
+		}
+	}
+	
+	immediate = { set_country_flag = colonized_kongo }
+	
+	option = {			# Make a colonial nation
+		name = "flavor_cn.option1"
+		ai_chance = { 
+ 		factor = 30 
+			modifier = { 
+				factor = 0 
+				has_global_flag = no_ai_colonial 
+			} 	
+ 		}
+		add_adm_power = 10
+		add_prestige = 5
+		custom_tooltip = cn_toopltip_option1
+		hidden_effect = {
+			3078 = {
+				 cede_province = ROOT
+				 add_core = ROOT
+			}
+		}
+	}
+	
+	option = {			# All for us
+		name = "flavor_cn.option2"
+		ai_chance = { 
+ 		factor = 70 
+			modifier = { 
+				factor = 0 
+				has_global_flag = all_ai_colonial 
+			} 	
+ 		}
+		add_adm_power = -50
+		add_prestige = -10
+		custom_tooltip = cn_toopltip_option2
+	}
+}
+
+country_event = {
+	id = flavor_cn.3079
+	title = "flavor_cn.3079"
+	desc = "flavor_cn.DESC"
+	picture = EXPLORERS_eventPicture
+	
+	trigger = {
+		is_colonial_nation = no
+	    NOT = { has_country_flag = colonized_zambezi }
+		3079 = {
+		    is_city = no
+		}
+		calc_true_if = {
+			any_core_province = {
+				province_group = colonial_zambezi_region
+				owned_by = ROOT 
+				is_overseas = yes
+			}
+			amount = 1
+		}
+	}
+	
+	immediate = { set_country_flag = colonized_zambezi }
+	
+	option = {			# Make a colonial nation
+		name = "flavor_cn.option1"
+		ai_chance = { 
+ 		factor = 30 
+			modifier = { 
+				factor = 0 
+				has_global_flag = no_ai_colonial 
+			} 	
+ 		}
+		add_adm_power = 10
+		add_prestige = 5
+		custom_tooltip = cn_toopltip_option1
+		hidden_effect = {
+			3079 = {
+				 cede_province = ROOT
+				 add_core = ROOT
+			}
+		}
+	}
+	
+	option = {			# All for us
+		name = "flavor_cn.option2"
+		ai_chance = { 
+ 		factor = 70 
+			modifier = { 
+				factor = 0 
+				has_global_flag = all_ai_colonial 
+			} 	
+ 		}
+		add_adm_power = -50
+		add_prestige = -10
+		custom_tooltip = cn_toopltip_option2
+	}
+}

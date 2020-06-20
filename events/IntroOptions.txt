@@ -1,0 +1,72 @@
+########################################
+# Major Flavor Events                  #
+########################################
+
+  namespace = intro_options
+# is_playing_historical_setup = yes
+
+# Complete Colonial Control Intro and Options Menu
+country_event = {
+	id = intro_options.1
+	title = "intro_options.1"
+	desc = "intro_options.DESC"
+	picture = CCC_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		ai = no
+	}
+	
+		
+	option = {			# Default Settings
+		name = "intro_options.option1"
+		custom_tooltip = io_toopltip_option1
+		clr_global_flag = all_ai_colonial
+		clr_global_flag = no_ai_colonial
+	}
+	
+	option = {			# All Colonial Nations
+		name = "intro_options.option2"
+		custom_tooltip = io_toopltip_option2
+		set_global_flag = all_ai_colonial
+		clr_global_flag = no_ai_colonial
+	}
+	
+	option = {			# No Colonial Nations
+		name = "intro_options.option3"
+		custom_tooltip = io_toopltip_option3
+		set_global_flag = no_ai_colonial 
+		clr_global_flag = all_ai_colonial
+	}
+}
+	
+country_event = {
+	id = intro_options.2
+	title = "intro_options.2"
+	desc = "intro_options.2_DESC"
+	picture = CCC_eventPicture
+	
+	is_triggered_only = yes
+		
+	option = {			# Default Settings
+		name = "intro_options.option1"
+		custom_tooltip = io_toopltip_option1
+		clr_global_flag = all_ai_colonial
+		clr_global_flag = no_ai_colonial
+	}
+	
+	option = {			# All Colonial Nations
+		name = "intro_options.option2"
+		custom_tooltip = io_toopltip_option2
+		set_global_flag = all_ai_colonial
+		clr_global_flag = no_ai_colonial
+	}
+	
+	option = {			# No Colonial Nations
+		name = "intro_options.option3"
+		custom_tooltip = io_toopltip_option3
+		set_global_flag = no_ai_colonial 
+		clr_global_flag = all_ai_colonial
+	}
+}

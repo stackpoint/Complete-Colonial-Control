@@ -1,0 +1,9 @@
+spriteTypes = {
+	
+	spriteType = {
+		name = "CCC_eventPicture"
+		texturefile = "gfx/event_pictures/event_pictures_EUROPEAN/CCC_eventPicture.dds"
+		allwaystransparent = yes
+	}
+
+}

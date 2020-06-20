@@ -1,0 +1,1701 @@
+colonial_cnmexico = {
+	color = { 140 150 70 }
+
+	provinces = {
+		3011
+	}
+	
+	# Specific
+	names = {
+		trigger = {
+			tag = SPA
+		}
+		name = "COLONIAL_MEXICO_New_Spain"
+	}
+	names = {
+		trigger = {
+			tag = CAS
+		}
+		name = "COLONIAL_MEXICO_New_Castile"
+	}
+	# Generic
+	names = {
+		name = "COLONIAL_MEXICO_Root_Culture_GetName_Mexico"
+	}
+	names = {
+		name = "COLONIAL_REGION_New_Root_GetName"
+	}
+}
+
+colonial_cnbrazil = {
+	color = { 100 250 140 }
+
+	provinces = {
+		3004
+	}
+	
+	# Specific
+	names = {
+		trigger = {
+			tag = POR
+		}
+		name = "COLONIAL_BRAZIL_Root_Culture_GetName_Brazil"
+	}
+	names = {
+		trigger = {
+			tag = POR
+			religion_group = christian
+		}
+		name = "COLONIAL_BRAZIL_Terra_de_Vera_Cruz"
+	}
+	names = {
+		trigger = {
+			OR = {
+				tag = MOR
+				tag = GRA
+				tag = ALG
+			}
+			religion_group = muslim			
+		}
+		name = "COLONIAL_BRAZIL_new_granada"
+	}
+	# Generic
+	names = {
+		name = "COLONIAL_BRAZIL_Root_Culture_GetName_Brazil"
+	}
+	names = {
+		name = "COLONIAL_REGION_New_Root_GetName"
+	}
+}
+
+colonial_cnlaplata = {
+	color = { 0 50 90 }
+
+	provinces = {
+		3005
+	}
+	
+	# Specific
+	names = {
+		trigger = {
+			culture_group = british
+		}
+		name = "COLONIAL_LA_PLATA_Argentine"
+	}
+	names = {
+		trigger = {
+			tag = POR
+		}
+		name = "COLONIAL_LA_PLATA_Rio_de_Prata"
+	}
+	names = {
+		trigger = {
+			tag = POR
+		}
+		name = "COLONIAL_LA_PLATA_Transplatina"
+	}
+	# Generic
+	names = {
+		name = "COLONIAL_LAPLATA_Root_Culture_GetName_Laplata"
+	}
+	names = {
+		name = "COLONIAL_REGION_New_Root_GetName"
+	}
+}
+
+colonial_cnwestafrica = {
+	color = { 50 0 200 }
+
+	provinces = {
+		3020
+	}
+	
+	# Specific
+	names = {
+		trigger = {
+			tag = FRA
+		}
+		name = "COLONIAL_WESTAFRICA_ivorycoast"
+	}
+	names = {
+		trigger = {
+			tag = POR
+		}
+		name = "COLONIAL_WESTAFRICA_angola"
+	}
+	names = {
+		trigger = {
+			culture_group = germanic
+		}
+		name = "COLONIAL_WESTAFRICA_kamerun"
+	}
+	names = {
+		trigger = {
+			OR = {
+				tag = ENG
+				tag = GBR
+			}		
+		}
+		name = "COLONIAL_WESTAFRICA_nigeria"
+	}
+	# Generic
+	names = {
+		name = "COLONIAL_WESTAFRICA_Root_Culture_GetName_Westafrica"
+	}
+	names = {
+		name = "COLONIAL_REGION_New_Root_GetName"
+	}
+}
+
+colonial_cnhormuz = {
+	color = { 90 20 210 }
+
+	provinces = {
+		3024
+	}
+	
+	# Specific
+	# Generic
+	names = {
+		name = "COLONIAL_HORMUZ_Root_Culture_GetName_Hormuz"
+	}
+	names = {
+		name = "COLONIAL_REGION_New_Root_GetName"
+	}
+}
+
+colonial_cnarabia = {
+	color = { 190 20 210 }
+
+	provinces = {
+		3023
+	}
+	
+	# Specific
+	# Generic
+	names = {
+		name = "COLONIAL_ARABIA_Root_Culture_GetName_Arabia"
+	}
+	names = {
+		name = "COLONIAL_REGION_New_Root_GetName"
+	}
+}
+
+colonial_cnpatagonia = {
+	color = { 100 220 10 }
+
+	provinces = {
+		3006
+	}
+	
+	# Specific
+	# Generic
+	names = {
+		name = "COLONIAL_PATAGONIA_Root_Culture_GetName_Patagonia"
+	}
+	names = {
+		name = "COLONIAL_REGION_New_Root_GetName"
+	}
+}
+
+colonial_cnamazon = {
+	color = { 190 20 10 }
+
+	provinces = {
+		3009
+	}
+	
+	# Specific
+	# Generic
+	names = {
+		name = "COLONIAL_AMAZON_Root_Culture_GetName_Amazon"
+	}
+	names = {
+		name = "COLONIAL_REGION_New_Root_GetName"
+	}
+}
+
+colonial_cnriogrande = {
+	color = { 120 20 170 }
+
+	provinces = {
+		3013
+	}
+	
+	# Specific
+	# Generic
+	names = {
+		name = "COLONIAL_RIOGRANDE_Root_Culture_GetName_Riogrande"
+	}
+	names = {
+		name = "COLONIAL_REGION_New_Root_GetName"
+	}
+}
+
+colonial_cncalifornia = {
+	color = { 40 220 70 }
+
+	provinces = {
+		3014
+	}
+	
+	# Specific
+	names = {
+		trigger = {
+			primary_culture = russian
+		}
+		name = "COLONIAL_ALASKA_Alyeska"
+	}
+	names = {
+		trigger = {
+			OR = {
+				tag = SPA
+				tag = CAS
+				tag = ARA
+			}
+		}
+		name = "COLONIAL_ALASKA_Pacifico_Norte"
+	}
+	# Generic
+	names = {
+		name = "COLONIAL_CALIFORNIA_Root_Culture_GetName_California"
+	}
+	names = {
+		name = "COLONIAL_REGION_New_Root_GetName"
+	}
+}
+
+colonial_cnmississippi = {
+	color = { 50 60 80 }
+
+	provinces = {
+		3015
+	}
+	
+	# Specific
+	names = {
+		trigger = {
+			OR = {
+				tag = FRA
+				culture_group = french
+			}
+		}
+		name = "COLONIAL_LOUISIANA_Root_Culture_GetGroupName_Louisiana"
+	}
+	names = {
+		trigger = {
+			OR = {
+				tag = FRA
+				culture_group = french
+			}
+		}
+		name = "COLONIAL_LOUISIANA_Manitounie"
+	}
+	names = {
+		trigger = {
+			OR = {
+				tag = FRA
+				culture_group = french
+			}
+			OR = {
+				owns = 915 # Illinois
+				owns = 916 # Kaskaskia
+				owns = 917 # Cahokia
+			}
+		}
+		name = "PROV915"
+	}
+	# Generic
+	names = {
+		name = "COLONIAL_MISSISSIPPI_Root_Culture_GetName_Mississippi"
+	}
+	names = {
+		name = "COLONIAL_REGION_New_Root_GetName"
+	}
+}
+
+colonial_cnohio = {
+	color = { 140 50 70 }
+
+	provinces = {
+		3016
+	}
+	
+	# Specific
+	# Generic
+	names = {
+		name = "COLONIAL_OHIO_Root_Culture_GetName_Ohio"
+	}
+	names = {
+		name = "COLONIAL_REGION_New_Root_GetName"
+	}
+}
+
+colonial_cnaustralia = {
+	color = { 110 140 70 }
+
+	provinces = {
+		3034
+	}
+	
+	# Specific
+	names = {
+		trigger = {
+			OR = {
+				tag = ENG
+				tag = GBR
+			}
+		}
+		name = "COLONIAL_AUSTRALIA_Australia"
+	}
+	names = {
+		trigger = {
+			OR = {
+				tag = SPA
+				tag = CAS
+				tag = ARA
+			}
+		}
+		name = "COLONIAL_AUSTRALIA_Tierra_Austral"
+	}
+	names = {
+		trigger = {
+			OR = {
+				tag = FRA
+				culture_group = french
+			}
+		}
+		name = "COLONIAL_AUSTRALIA_Terre_Australe"
+	}
+	names = {
+		trigger = {
+			OR = {
+				tag = NED
+				tag = HOL
+				primary_culture = dutch
+			}
+		}
+		name = "COLONIAL_AUSTRALIA_New_Holland"
+	}
+	# Generic
+	names = {
+		name = "COLONIAL_AUSTRALIA_Root_Culture_GetName_Australia"
+	}
+	names = {
+		name = "COLONIAL_REGION_New_Root_GetName"
+	}
+}
+
+colonial_cnnippon = {
+	color = { 200 200 170 }
+
+	provinces = {
+		3038
+	}
+	
+	# Specific
+	# Generic
+	names = {
+		name = "COLONIAL_JAPAN_Root_Culture_GetName_Japan"
+	}
+	names = {
+		name = "COLONIAL_REGION_New_Root_GetName"
+	}
+}
+
+colonial_cncuiaba = {
+	color = { 140 150 170 }
+
+	provinces = {
+		3007
+	}
+	
+	# Specific
+	# Generic
+	names = {
+		name = "COLONIAL_CUIABA_Root_Culture_GetName_Cuiaba"
+	}
+	names = {
+		name = "COLONIAL_REGION_New_Root_GetName"
+	}
+}
+
+colonial_cnperu = {
+	color = { 40 150 170 }
+
+	provinces = {
+		3008
+	}
+	
+	# Specific
+	# Generic
+	names = {
+		name = "COLONIAL_PERU_Root_Culture_GetName_Peru"
+	}
+	names = {
+		name = "COLONIAL_REGION_New_Root_GetName"
+	}
+}
+
+colonial_cnpanama = {
+	color = { 200 0 130 }
+
+	provinces = {
+		3010
+	}
+	
+	# Specific
+	# Generic
+	names = {
+		name = "COLONIAL_PANAMA_Root_Culture_GetName_Panama"
+	}
+	names = {
+		name = "COLONIAL_REGION_New_Root_GetName"
+	}
+}
+
+colonial_cncarribean = {
+	color = { 140 250 170 }
+
+	provinces = {
+		3012
+	}
+	
+	# Specific
+	names = {
+		trigger = {
+			OR = {
+				tag = SPA
+				tag = CAS
+				tag = ARA
+			}
+			owns = 488 # Les Cayes
+			owns = 489 # Barahonas
+			owns = 490 # Tortuga
+		}
+		name = "COLONIAL_THE_CARRIBEAN_Hispaniola"
+	}
+	names = {
+		trigger = {
+			OR = {
+				tag = SPA
+				tag = CAS
+				tag = ARA
+			}
+			owns = 484 # Havana
+			owns = 485 # Moron
+			owns = 486 # Guantanamo
+		}
+		name = "COLONIAL_THE_CARRIBEAN_Isla_Juana"
+	}
+	names = {
+		trigger = {
+			OR = {
+				tag = FRA
+				culture_group = french
+			}
+		}
+		name = "COLONIAL_THE_CARRIBEAN_Antilles"
+	}
+	names = {
+		trigger = {
+			owns = 484 # Havana
+			owns = 485 # Moron
+			owns = 486 # Guantanamo
+		}
+		name = "COLONIAL_THE_CARRIBEAN_Cuba"
+	}
+	names = {
+		trigger = {
+			tag = POR
+		}
+		name = "COLONIAL_THE_CARRIBEAN_Caraibas"
+	}
+	names = {
+		trigger = {
+			tag = POR
+		}
+		name = "COLONIAL_THE_CARRIBEAN_Antilhas"
+	}
+	# Generic
+	names = {
+		name = "COLONIAL_CARRIBEAN_Root_Culture_GetName_Carribean"
+	}
+	names = {
+		name = "COLONIAL_REGION_New_Root_GetName"
+	}
+}
+
+colonial_cnchesapeake = {
+	color = { 130 10 20 }
+
+	provinces = {
+		3018
+	}
+	
+	# Specific
+	names = {
+		trigger = {
+			OR = {
+				tag = GBR
+				tag = ENG
+			}
+		}
+		name = "COLONIAL_EASTERN_AMERICA_Thirteen_Colonies"
+	}
+	names = {
+		trigger = {
+			OR = {
+				tag = FRA
+				culture_group = french
+			}
+			owns = 90 # Vlaanderen
+		}
+		name = "COLONIAL_EASTERN_AMERICA_Nouvelle_Flandre"
+	}
+	names = {
+		trigger = {
+			OR = {
+				tag = FRA
+				culture_group = french
+			}
+		}
+		name = "COLONIAL_EASTERN_AMERICA_Floride"
+	}
+	names = {
+		trigger = {
+			OR = {
+				tag = SPA
+				tag = CAS
+				tag = ARA
+			}
+		}
+		name = "COLONIAL_EASTERN_AMERICA_Florida"
+	}
+	# Generic
+	names = {
+		name = "COLONIAL_CHESAPEAKE_Root_Culture_GetName_Chesapeake"
+	}
+	names = {
+		name = "COLONIAL_REGION_New_Root_GetName"
+	}
+}
+
+colonial_cnhudson = {
+	color = { 30 120 20 }
+
+	provinces = {
+		3017
+	}
+	
+	# Specific
+	names = {
+		trigger = {
+			OR = {
+				tag = FRA
+				culture_group = french
+			}
+		}
+		name = "COLONIAL_CANADA_Root_Culture_GetGroupName_Canada"
+	}
+	names = {
+		trigger = {
+			OR = {
+				tag = FRA
+				culture_group = french
+			}
+		}
+		name = "COLONIAL_CANADA_Acadia"
+	}
+	names = {
+		trigger = {
+			tag = FRA
+			OR = {
+				any_owned_province = {
+					OR = {
+						region = highlands
+						region = lowlands
+					}
+				}
+				overlord_of = SCO
+				alliance_with = SCO
+			}
+		}
+		name = "COLONIAL_CANADA_Nouvelle_Écosse"
+	}
+	names = {
+		trigger = {
+			tag = BRU
+		}
+		name = "COLONIAL_REGION_New_Root_GetName"
+	}
+	names = {
+		trigger = {
+			OR = {
+				tag = GBR
+				tag = ENG
+			}
+		}
+		name = "COLONIAL_CANADA_Newfoundland"
+	}
+	names = {
+		trigger = {
+			OR = {
+				tag = GBR
+				tag = ENG
+			}
+		}
+		name = "COLONIAL_CANADA_Root_Culture_GetName_Quebec"
+	}
+	names = {
+		trigger = {
+			OR = {
+				tag = GBR
+				tag = ENG
+			}
+		}
+		name = "COLONIAL_CANADA_Laurentia"
+	}
+	names = {
+		trigger = {
+			OR = {
+				tag = GBR
+				tag = ENG
+			}
+		}
+		name = "COLONIAL_CANADA_Borealia"
+	}
+	names = {
+		trigger = {
+			OR = {
+				tag = GBR
+				tag = ENG
+			}
+			SCO = {
+				exists = no
+			}
+			any_owned_province = {
+				OR = {
+					region = highlands
+					region = lowlands
+				}
+			}
+		}
+		name = "COLONIAL_CANADA_Nova_Scotia"
+	}
+	names = {
+		trigger = {
+			tag = POR
+		}
+		name = "COLONIAL_CANADA_Lavrador"
+	}
+	names = {
+		trigger = {
+			tag = SCO
+		}
+		name = "COLONIAL_CANADA_Nova_Scotia"
+	}
+	names = {
+		trigger = {
+			tag = SCO
+		}
+		name = "COLONIAL_CANADA_Nouvelle_Écosse"
+	}
+	names = {
+		trigger = {
+			tag = IRO
+		}
+		name = "COLONIAL_CANADA_Kanata"
+	}
+	names = {
+		trigger = {
+			culture_group = scandinavian
+		}
+		name = "COLONIAL_CANADA_Vinland"
+	}
+	names = {
+		trigger = {
+			OR = {
+				tag = NED
+				tag = HOL
+				primary_culture = dutch
+			}
+		}
+		name = "COLONIAL_CANADA_Nova_Hollandia"
+	}
+	# Generic
+	names = {
+		name = "COLONIAL_HUDSON_Root_Culture_GetName_Hudson"
+	}
+	names = {
+		name = "COLONIAL_REGION_New_Root_GetName"
+	}
+}
+
+colonial_cnlawrence = {
+	color = { 30 150 60 }
+
+	provinces = {
+		3019
+	}
+	
+	# Specific
+	# Generic
+	names = {
+		name = "COLONIAL_LAWRENCE_Root_Culture_GetName_Lawrence"
+	}
+	names = {
+		name = "COLONIAL_REGION_New_Root_GetName"
+	}
+}
+
+colonial_cnsouthafrica = {
+	color = { 0 175 0 }
+
+	provinces = {
+		3021
+	}
+	
+	# Specific
+	names = {
+		trigger = {
+			OR = {
+				tag = ENG
+				tag = GBR
+				primary_culture = dutch
+			}			
+		}
+		name = "COLONIAL_SOUTHAFRICA_cape_colony"
+	}
+	# Generic
+	names = {
+		name = "COLONIAL_SOUTHAFRICA_Root_Culture_GetName_Southafrica"
+	}
+	names = {
+		name = "COLONIAL_REGION_New_Root_GetName"
+	}
+}
+
+colonial_cneastafrica = {
+	color = { 200 0 0 }
+
+	provinces = {
+		3022
+	}
+	
+	# Specific
+	names = {
+		trigger = {
+			tag = POR
+		}
+		name = "COLONIAL_EASTAFRICA_mozambique"
+	}
+	# Generic
+	names = {
+		name = "COLONIAL_EASTAFRICA_Root_Culture_GetName_Eastafrica"
+	}
+	names = {
+		name = "COLONIAL_REGION_New_Root_GetName"
+	}
+}
+
+colonial_cnwestindia = {
+	color = { 135 104 85 }
+
+	provinces = {
+		3027
+	}
+	
+	# Specific
+	# Generic
+	names = {
+		name = "COLONIAL_WESTINDIA_Root_Culture_GetName_Westindia"
+	}
+	names = {
+		name = "COLONIAL_REGION_New_Root_GetName"
+	}
+}
+
+colonial_cnkonkan = {
+	color = { 135 150 0 }
+
+	provinces = {
+		3025
+	}
+	
+	# Specific
+	# Generic
+	names = {
+		name = "COLONIAL_KONKAN_Root_Culture_GetName_Konkan"
+	}
+	names = {
+		name = "COLONIAL_REGION_New_Root_GetName"
+	}
+}
+
+colonial_cneastindia = {
+	color = { 230 0 0 }
+
+	provinces = {
+		3029
+	}
+	
+	# Specific
+	# Generic
+	names = {
+		name = "COLONIAL_EASTINDIA_Root_Culture_GetName_Eastindia"
+	}
+	names = {
+		name = "COLONIAL_REGION_New_Root_GetName"
+	}
+}
+
+colonial_cncoromandel = {
+	color = { 50 30 210 }
+
+	provinces = {
+		3026
+	}
+	
+	# Specific
+	# Generic
+	names = {
+		name = "COLONIAL_COROMANDEL_Root_Culture_GetName_Coromandel"
+	}
+	names = {
+		name = "COLONIAL_REGION_New_Root_GetName"
+	}
+}
+
+colonial_cnnorthindia = {
+	color = { 220 150 10 }
+
+	provinces = {
+		3028
+	}
+	
+	# Specific
+	# Generic
+	names = {
+		name = "COLONIAL_NORTHINDIA_Root_Culture_GetName_Northindia"
+	}
+	names = {
+		name = "COLONIAL_REGION_New_Root_GetName"
+	}
+}
+
+colonial_cnindonesia = {
+	color = { 0 240 0 }
+
+	provinces = {
+		3031
+	}
+	
+	# Specific
+	# Generic
+	names = {
+		name = "COLONIAL_INDONESIA_Root_Culture_GetName_Indonesia"
+	}
+	names = {
+		name = "COLONIAL_REGION_New_Root_GetName"
+	}
+}
+
+colonial_cnphilippines = {
+	color = { 0 200 150 }
+
+	provinces = {
+		3032
+	}
+	
+	# Specific
+	# Generic
+	names = {
+		name = "COLONIAL_PHILIPPINES_Root_Culture_GetName_Philippines"
+	}
+	names = {
+		name = "COLONIAL_REGION_New_Root_GetName"
+	}
+}
+
+colonial_cnmoluccas = {
+	color = { 196 191 61 }
+
+	provinces = {
+		3033
+	}
+	
+	# Specific
+	# Generic
+	names = {
+		name = "COLONIAL_MALACCA_Root_Culture_GetName_Malacca"
+	}
+	names = {
+		name = "COLONIAL_REGION_New_Root_GetName"
+	}
+}
+
+colonial_cnindochina = {
+	color = { 84 152 93 }
+
+	provinces = {
+		3030
+	}
+	
+	# Specific
+	# Generic
+	names = {
+		name = "COLONIAL_INDOCHINA_Root_Culture_GetName_Indochina"
+	}
+	names = {
+		name = "COLONIAL_REGION_New_Root_GetName"
+	}
+}
+
+colonial_cnsouthchina = {
+	color = { 100 230 20 }
+
+	provinces = {
+		3035
+	}
+	
+	# Specific
+	# Generic
+	names = {
+		name = "COLONIAL_SOUTHCHINA_Root_Culture_GetName_Southchina"
+	}
+	names = {
+		name = "COLONIAL_REGION_New_Root_GetName"
+	}
+}
+
+colonial_cneastchina = {
+	color = { 178 34 34 }
+
+	provinces = {
+		3036
+	}
+	
+	# Specific
+	# Generic
+	names = {
+		name = "COLONIAL_EASTCHINA_Root_Culture_GetName_Eastchina"
+	}
+	names = {
+		name = "COLONIAL_REGION_New_Root_GetName"
+	}
+}
+
+colonial_cnnorthchina = {
+	color = { 60 60 255 }
+
+	provinces = {
+		3037
+	}
+	
+	# Specific
+	# Generic
+	names = {
+		name = "COLONIAL_NORTHCHINA_Root_Culture_GetName_Northchina"
+	}
+	names = {
+		name = "COLONIAL_REGION_New_Root_GetName"
+	}
+}
+
+colonial_cnsafi = {
+	color = { 230 0 0 }
+
+	provinces = {
+		3039
+	}
+	
+	# Specific
+	# Generic
+	names = {
+		name = "COLONIAL_SAFI_Root_Culture_GetName_Safi"
+	}
+	names = {
+		name = "COLONIAL_REGION_New_Root_GetName"
+	}
+}
+
+colonial_cntunis = {
+	color = { 50 30 210 }
+
+	provinces = {
+		3040
+	}
+	
+	# Specific
+	# Generic
+	names = {
+		name = "COLONIAL_TUNIS_Root_Culture_GetName_Tunis"
+	}
+	names = {
+		name = "COLONIAL_REGION_New_Root_GetName"
+	}
+}
+
+colonial_cnalexandria = {
+	color = { 220 150 10 }
+
+	provinces = {
+		3041
+	}
+	
+	# Specific
+	# Generic
+	names = {
+		name = "COLONIAL_ALEXANDRIA_Root_Culture_GetName_Alexandria"
+	}
+	names = {
+		name = "COLONIAL_REGION_New_Root_GetName"
+	}
+}
+
+colonial_cnbasra = {
+	color = { 0 240 0 }
+
+	provinces = {
+		3042
+	}
+	
+	# Specific
+	# Generic
+	names = {
+		name = "COLONIAL_BASRA_Root_Culture_GetName_Basra"
+	}
+	names = {
+		name = "COLONIAL_REGION_New_Root_GetName"
+	}
+}
+
+colonial_cngirin = {
+	color = { 0 200 150 }
+
+	provinces = {
+		3043
+	}
+	
+	# Specific
+	# Generic
+	names = {
+		name = "COLONIAL_GIRIN_Root_Culture_GetName_Girin"
+	}
+	names = {
+		name = "COLONIAL_REGION_New_Root_GetName"
+	}
+}
+
+colonial_cntimbuktu = {
+	color = { 196 191 61 }
+
+	provinces = {
+		3044
+	}
+	
+	# Specific
+	# Generic
+	names = {
+		name = "COLONIAL_TIMBUKTU_Root_Culture_GetName_Timbuktu"
+	}
+	names = {
+		name = "COLONIAL_REGION_New_Root_GetName"
+	}
+}
+
+colonial_cnkatsina = {
+	color = { 84 152 93 }
+
+	provinces = {
+		3045
+	}
+	
+	# Specific
+	# Generic
+	names = {
+		name = "COLONIAL_KATSINA_Root_Culture_GetName_Katsina"
+	}
+	names = {
+		name = "COLONIAL_REGION_New_Root_GetName"
+	}
+}
+
+colonial_cnlhasa = {
+	color = { 100 230 20 }
+
+	provinces = {
+		3046
+	}
+	
+	# Specific
+	# Generic
+	names = {
+		name = "COLONIAL_LHASA_Root_Culture_GetName_Lhasa"
+	}
+	names = {
+		name = "COLONIAL_REGION_New_Root_GetName"
+	}
+}
+
+colonial_cnxian = {
+	color = { 178 34 34 }
+
+	provinces = {
+		3047
+	}
+	
+	# Specific
+	# Generic
+	names = {
+		name = "COLONIAL_XIAN_Root_Culture_GetName_Xian"
+	}
+	names = {
+		name = "COLONIAL_REGION_New_Root_GetName"
+	}
+}
+
+colonial_cnchengdu = {
+	color = { 60 60 255 }
+
+	provinces = {
+		3048
+	}
+	
+	# Specific
+	# Generic
+	names = {
+		name = "COLONIAL_CHENGDU_Root_Culture_GetName_Chengdu"
+	}
+	names = {
+		name = "COLONIAL_REGION_New_Root_GetName"
+	}
+}
+
+colonial_cnyumen = {
+	color = { 100 230 20 }
+
+	provinces = {
+		3049
+	}
+	
+	# Specific
+	# Generic
+	names = {
+		name = "COLONIAL_YUMEN_Root_Culture_GetName_Yumen"
+	}
+	names = {
+		name = "COLONIAL_REGION_New_Root_GetName"
+	}
+}
+
+colonial_cnkashmir = {
+	color = { 178 34 34 }
+
+	provinces = {
+		3050
+	}
+	
+	# Specific
+	# Generic
+	names = {
+		name = "COLONIAL_KASHMIR_Root_Culture_GetName_Kashmir"
+	}
+	names = {
+		name = "COLONIAL_REGION_New_Root_GetName"
+	}
+}
+
+colonial_cnethiopia = {
+	color = { 60 60 255 }
+
+	provinces = {
+		3051
+	}
+	
+	# Specific
+	# Generic
+	names = {
+		name = "COLONIAL_ETHIOPIA_Root_Culture_GetName_Ethiopia"
+	}
+	names = {
+		name = "COLONIAL_REGION_New_Root_GetName"
+	}
+}
+
+colonial_cnsiberia = {
+	color = { 220 150 10 }
+
+	provinces = {
+		3052
+	}
+	
+	# Specific
+	# Generic
+	names = {
+		name = "COLONIAL_SIBERIA_Root_Culture_GetName_Siberia"
+	}
+	names = {
+		name = "COLONIAL_REGION_New_Root_GetName"
+	}
+}
+
+colonial_cnsamarkand = {
+	color = { 0 240 0 }
+
+	provinces = {
+		3053
+	}
+	
+	# Specific
+	# Generic
+	names = {
+		name = "COLONIAL_SAMARKAND_Root_Culture_GetName_Samarkand"
+	}
+	names = {
+		name = "COLONIAL_REGION_New_Root_GetName"
+	}
+}
+
+colonial_cnpersia = {
+	color = { 0 200 150 }
+
+	provinces = {
+		3054
+	}
+	
+	# Specific
+	# Generic
+	names = {
+		name = "COLONIAL_PERSIA_Root_Culture_GetName_Persia"
+	}
+	names = {
+		name = "COLONIAL_REGION_New_Root_GetName"
+	}
+}
+
+colonial_cnastrakhan = {
+	color = { 196 191 61 }
+
+	provinces = {
+		3055
+	}
+	
+	# Specific
+	# Generic
+	names = {
+		name = "COLONIAL_ASTRAKHAN_Root_Culture_GetName_Astrakhan"
+	}
+	names = {
+		name = "COLONIAL_REGION_New_Root_GetName"
+	}
+}
+
+colonial_cnaleppo = {
+	color = { 84 152 93 }
+
+	provinces = {
+		3056
+	}
+	
+	# Specific
+	# Generic
+	names = {
+		name = "COLONIAL_ALEPPO_Root_Culture_GetName_Aleppo"
+	}
+	names = {
+		name = "COLONIAL_REGION_New_Root_GetName"
+	}
+}
+
+colonial_cncrimea = {
+	color = { 100 230 20 }
+
+	provinces = {
+		3057
+	}
+	
+	# Specific
+	# Generic
+	names = {
+		name = "COLONIAL_CRIMEA_Root_Culture_GetName_Crimea"
+	}
+	names = {
+		name = "COLONIAL_REGION_New_Root_GetName"
+	}
+}
+
+colonial_cnkazan = {
+	color = { 178 34 34 }
+
+	provinces = {
+		3058
+	}
+	
+	# Specific
+	# Generic
+	names = {
+		name = "COLONIAL_KAZAN_Root_Culture_GetName_Kazan"
+	}
+	names = {
+		name = "COLONIAL_REGION_New_Root_GetName"
+	}
+}
+
+colonial_cnwhitesea = {
+	color = { 60 60 255 }
+
+	provinces = {
+		3059
+	}
+	
+	# Specific
+	# Generic
+	names = {
+		name = "COLONIAL_WHITESEA_Root_Culture_GetName_Whitesea"
+	}
+	names = {
+		name = "COLONIAL_REGION_New_Root_GetName"
+	}
+}
+
+colonial_cnnovgorod = {
+	color = { 230 0 0 }
+
+	provinces = {
+		3060
+	}
+	
+	# Specific
+	# Generic
+	names = {
+		name = "COLONIAL_NOVGOROD_Root_Culture_GetName_Novgorod"
+	}
+	names = {
+		name = "COLONIAL_REGION_New_Root_GetName"
+	}
+}
+
+colonial_cnkiev = {
+	color = { 50 30 210 }
+
+	provinces = {
+		3061
+	}
+	
+	# Specific
+	# Generic
+	names = {
+		name = "COLONIAL_KIEV_Root_Culture_GetName_Kiev"
+	}
+	names = {
+		name = "COLONIAL_REGION_New_Root_GetName"
+	}
+}
+
+colonial_cnconstantinople = {
+	color = { 220 150 10 }
+
+	provinces = {
+		3062
+	}
+	
+	# Specific
+	# Generic
+	names = {
+		name = "COLONIAL_CONSTANTINOPLE_Root_Culture_GetName_Constantinople"
+	}
+	names = {
+		name = "COLONIAL_REGION_New_Root_GetName"
+	}
+}
+
+colonial_cnragusa = {
+	color = { 0 240 0 }
+
+	provinces = {
+		3063
+	}
+	
+	# Specific
+	# Generic
+	names = {
+		name = "COLONIAL_RAGUSA_Root_Culture_GetName_Ragusa"
+	}
+	names = {
+		name = "COLONIAL_REGION_New_Root_GetName"
+	}
+}
+
+colonial_cnbalticsea = {
+	color = { 0 200 150 }
+
+	provinces = {
+		3064
+	}
+	
+	# Specific
+	# Generic
+	names = {
+		name = "COLONIAL_BALTICSEA_Root_Culture_GetName_Balticsea"
+	}
+	names = {
+		name = "COLONIAL_REGION_New_Root_GetName"
+	}
+}
+
+colonial_cnlubeck = {
+	color = { 196 191 61 }
+
+	provinces = {
+		3065
+	}
+	
+	# Specific
+	# Generic
+	names = {
+		name = "COLONIAL_LUBECK_Root_Culture_GetName_Lubeck"
+	}
+	names = {
+		name = "COLONIAL_REGION_New_Root_GetName"
+	}
+}
+
+colonial_cnkrakow = {
+	color = { 84 152 93 }
+
+	provinces = {
+		3066
+	}
+	
+	# Specific
+	# Generic
+	names = {
+		name = "COLONIAL_KRAKOW_Root_Culture_GetName_Krakow"
+	}
+	names = {
+		name = "COLONIAL_REGION_New_Root_GetName"
+	}
+}
+
+colonial_cnwien = {
+	color = { 100 230 20 }
+
+	provinces = {
+		3067
+	}
+	
+	# Specific
+	# Generic
+	names = {
+		name = "COLONIAL_WIEN_Root_Culture_GetName_Wien"
+	}
+	names = {
+		name = "COLONIAL_REGION_New_Root_GetName"
+	}
+}
+
+colonial_cnvenice = {
+	color = { 178 34 34 }
+
+	provinces = {
+		3068
+	}
+	
+	# Specific
+	# Generic
+	names = {
+		name = "COLONIAL_VENICE_Root_Culture_GetName_Venice"
+	}
+	names = {
+		name = "COLONIAL_REGION_New_Root_GetName"
+	}
+}
+
+colonial_cngenoa = {
+	color = { 60 60 255 }
+
+	provinces = {
+		3069
+	}
+	
+	# Specific
+	# Generic
+	names = {
+		name = "COLONIAL_GENOA_Root_Culture_GetName_Genoa"
+	}
+	names = {
+		name = "COLONIAL_REGION_New_Root_GetName"
+	}
+}
+
+colonial_cnsevilla = {
+	color = { 100 230 20 }
+
+	provinces = {
+		3070
+	}
+	
+	# Specific
+	# Generic
+	names = {
+		name = "COLONIAL_SEVILLA_Root_Culture_GetName_Sevilla"
+	}
+	names = {
+		name = "COLONIAL_REGION_New_Root_GetName"
+	}
+}
+
+colonial_cnbordeaux = {
+	color = { 178 34 34 }
+
+	provinces = {
+		3071
+	}
+	
+	# Specific
+	# Generic
+	names = {
+		name = "COLONIAL_BORDEAUX_Root_Culture_GetName_Bordeaux"
+	}
+	names = {
+		name = "COLONIAL_REGION_New_Root_GetName"
+	}
+}
+
+colonial_cnchampagne = {
+	color = { 60 60 255 }
+
+	provinces = {
+		3072
+	}
+	
+	# Specific
+	# Generic
+	names = {
+		name = "COLONIAL_CHAMPAGNE_Root_Culture_GetName_Champagne"
+	}
+	names = {
+		name = "COLONIAL_REGION_New_Root_GetName"
+	}
+}
+
+colonial_cnsaxony = {
+	color = { 60 60 255 }
+
+	provinces = {
+		3073
+	}
+	
+	# Specific
+	# Generic
+	names = {
+		name = "COLONIAL_SAXONY_Root_Culture_GetName_Saxony"
+	}
+	names = {
+		name = "COLONIAL_REGION_New_Root_GetName"
+	}
+}
+
+colonial_cnrhineland = {
+	color = { 100 230 20 }
+
+	provinces = {
+		3074
+	}
+	
+	# Specific
+	# Generic
+	names = {
+		name = "COLONIAL_RHINELAND_Root_Culture_GetName_Rhineland"
+	}
+	names = {
+		name = "COLONIAL_REGION_New_Root_GetName"
+	}
+}
+
+colonial_cnnorthsea = {
+	color = { 178 34 34 }
+
+	provinces = {
+		3075
+	}
+	
+	# Specific
+	# Generic
+	names = {
+		name = "COLONIAL_NORTHSEA_Root_Culture_GetName_Northsea"
+	}
+	names = {
+		name = "COLONIAL_REGION_New_Root_GetName"
+	}
+}
+
+colonial_cnenglishchannel = {
+	color = { 60 60 255 }
+
+	provinces = {
+		3076
+	}
+	
+	# Specific
+	# Generic
+	names = {
+		name = "COLONIAL_ENGLISHCHANNEL_Root_Culture_GetName_Englishchannel"
+	}
+	names = {
+		name = "COLONIAL_REGION_New_Root_GetName"
+	}
+}
+
+colonial_cngreatlakes = {
+	color = { 77 240 200 }
+
+	provinces = {
+		3077
+	}
+	
+	# Specific
+	# Generic
+	names = {
+		name = "COLONIAL_GREATLAKES_Root_Culture_GetName_Greatlakes"
+	}
+	names = {
+		name = "COLONIAL_REGION_New_Root_GetName"
+	}
+}
+
+colonial_cnkongo = {
+	color = { 78 134 94 }
+
+	provinces = {
+		3078
+	}
+	
+	# Specific
+	# Generic
+	names = {
+		name = "COLONIAL_KONGO_Root_Culture_GetName_Kongo"
+	}
+	names = {
+		name = "COLONIAL_REGION_New_Root_GetName"
+	}
+}
+
+colonial_cnzambezi = {
+	color = { 110 160 25 }
+
+	provinces = {
+		3079
+	}
+	
+	# Specific
+	# Generic
+	names = {
+		name = "COLONIAL_ZAMBEZI_Root_Culture_GetName_Zambezi"
+	}
+	names = {
+		name = "COLONIAL_REGION_New_Root_GetName"
+	}
+}

@@ -1,0 +1,93 @@
+country_decisions = {
+
+	ccc_options_on = {
+		major = yes
+		potential = {
+			ai = no
+			NOT = { has_country_flag = ccc_options_enabled }
+		}
+		allow = {
+			ai = no
+		}
+		effect = {
+			set_country_flag = ccc_options_enabled
+		}
+	}
+	
+	ccc_options_off = {
+		major = yes
+		potential = {
+			ai = no
+			has_country_flag = ccc_options_enabled
+		}
+		allow = {
+			ai = no
+		}
+		effect = {
+			clr_country_flag = ccc_options_enabled
+		}
+	}
+	
+	ccc_change_ai_settings = {
+		major = no
+		potential = {
+			ai = no
+			has_country_flag = ccc_options_enabled
+		}
+		allow = {
+			ai = no
+		}
+		effect = {
+			country_event = { id = intro_options.2 tooltip = "ccc_change_ai_settings_option" }
+		}
+	}
+	
+	add_province_to_hre = {
+		major = no
+		potential = {
+			ai = no
+			has_country_flag = ccc_options_enabled
+		}
+		allow = {
+			ai = no
+			capital_scope = {
+				continent = europe
+			}
+			any_neighbor_country = {
+				is_part_of_hre = yes
+			}
+			any_owned_province = {
+				limit = {
+					continent = europe
+				}
+				is_part_of_hre = no
+			}
+			OR = {
+				is_part_of_hre = yes
+				is_emperor = yes
+				AND = {
+					any_neighbor_country = {
+						is_part_of_hre = yes
+					}
+					emperor = {
+						has_opinion = {
+							who = ROOT
+							value = 100
+						}	
+					}
+				}
+			}
+		}
+		effect = {
+			random_owned_province = {
+				limit = {
+					AND = {
+						is_part_of_hre = no
+						continent = europe
+				}
+				set_in_empire = yes
+			}
+			add_imperial_influence = 1
+		}
+	}
+}

@@ -1,0 +1,9425 @@
+namespace = flavor_cnnat
+
+country_event = {
+	id = flavor_cnnat.3011
+	title = "flavor_cnnat.1t"
+	desc = "flavor_cnnat.1d"
+	picture = CONQUEST_eventPicture
+	
+	
+	trigger = {
+		is_colonial_nation = yes
+		owns = 3011	# Dummy Province
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+	hidden_effect = {
+		colonial_parent = {
+					every_owned_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_mexico_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						remove_core = owner
+						add_core = ROOT
+						cede_province = ROOT
+					}
+		}
+		set_country_flag = cn_mexico
+	}
+	}
+	option = {
+		name = "flavor_cnnat.1a"
+		hidden_effect = {
+			add_treasury = 100
+			every_owned_province = {
+				limit = { 
+					AND = { 
+						owned_by = ROOT
+						province_group = colonialdumb_region
+					}
+				}
+				remove_core = ROOT
+				cede_province = XXX
+			}
+		}
+		random_owned_province = {
+				limit = { controlled_by = ROOT  }
+				cavalry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+			}
+	}
+}
+
+country_event = {
+	id = flavor_cnnat.30110
+	title = "flavor_cnnat.2t"
+	desc = "flavor_cnnat.2d"
+	picture = CONQUEST_eventPicture
+	
+	trigger = {
+		is_colonial_nation = yes
+		has_country_flag = cn_mexico
+		colonial_parent = {
+			calc_true_if = {
+				any_owned_province = {
+					AND = {
+						province_group = colonial_mexico_region
+						is_city = yes 
+								is_overseas = yes
+					}
+				}
+				amount = 1
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+	hidden_effect = {
+		colonial_parent = {
+					every_core_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_mexico_region
+								is_city = yes 
+								is_overseas = yes
+							}	
+						}
+						remove_core = owner
+						add_core = ROOT
+						cede_province = ROOT
+					}
+					every_owned_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_mexico_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						cede_province = ROOT
+					}
+					
+		}
+	}
+	}
+	
+	option = {
+		name = "flavor_cnnat.1a"
+		add_adm_power = 10
+	}
+}
+
+country_event = {
+	id = flavor_cnnat.3004
+	title = "flavor_cnnat.1t"
+	desc = "flavor_cnnat.1d"
+	picture = CONQUEST_eventPicture
+	
+	
+	trigger = {
+		is_colonial_nation = yes
+		owns = 3004	# Dummy Province
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+	hidden_effect = {
+		colonial_parent = {
+					every_owned_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_brazil_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						remove_core = owner
+						add_core = ROOT
+						cede_province = ROOT
+					}
+		}
+		set_country_flag = cn_brazil
+	}
+	}
+	option = {
+		name = "flavor_cnnat.1a"
+		hidden_effect = {
+			add_treasury = 100
+			every_owned_province = {
+				limit = { 
+							AND = { 
+								owned_by = ROOT
+								province_group = colonialdumb_region
+							}
+				}
+				remove_core = ROOT
+				cede_province = XXX
+			}
+		}
+		random_owned_province = {
+				limit = { controlled_by = ROOT  }
+				cavalry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+			}
+	}
+}
+
+country_event = {
+	id = flavor_cnnat.30040
+	title = "flavor_cnnat.2t"
+	desc = "flavor_cnnat.2d"
+	picture = CONQUEST_eventPicture
+	
+	trigger = {
+		is_colonial_nation = yes
+		has_country_flag = cn_brazil
+		colonial_parent = {
+			calc_true_if = {
+				all_owned_province = {
+					AND = {
+						province_group = colonial_brazil_region
+						is_city = yes 
+								is_overseas = yes
+					}
+				}
+				amount = 1
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+	hidden_effect = {
+		colonial_parent = {
+					every_core_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_brazil_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						remove_core = owner
+						add_core = ROOT
+						cede_province = ROOT
+					}
+					every_owned_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_brazil_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						cede_province = ROOT
+					}
+					
+		}
+	}
+	}
+	
+	option = {
+		name = "flavor_cnnat.1a"
+		add_adm_power = 10
+	}
+}
+
+country_event = {
+	id = flavor_cnnat.3005
+	title = "flavor_cnnat.1t"
+	desc = "flavor_cnnat.1d"
+	picture = CONQUEST_eventPicture
+	
+	
+	trigger = {
+		is_colonial_nation = yes
+		owns = 3005	# Dummy Province
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+	hidden_effect = {
+		colonial_parent = {
+					every_owned_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_laplata_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						remove_core = owner
+						add_core = ROOT
+						cede_province = ROOT
+					}
+		}
+		set_country_flag = cn_laplata
+	}
+	}
+	option = {
+		name = "flavor_cnnat.1a"
+		hidden_effect = {
+			add_treasury = 100
+			every_owned_province = {
+				limit = { 
+							AND = { 
+								owned_by = ROOT
+								province_group = colonialdumb_region
+							}
+				}
+				remove_core = ROOT
+				cede_province = XXX
+			}
+		}
+		random_owned_province = {
+				limit = { controlled_by = ROOT  }
+				cavalry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+			}
+	}
+}
+
+country_event = {
+	id = flavor_cnnat.30050
+	title = "flavor_cnnat.2t"
+	desc = "flavor_cnnat.2d"
+	picture = CONQUEST_eventPicture
+	
+	trigger = {
+		is_colonial_nation = yes
+		has_country_flag = cn_laplata
+		colonial_parent = {
+			calc_true_if = {
+				all_owned_province = {
+					AND = {
+						province_group = colonial_laplata_region
+						is_city = yes 
+								is_overseas = yes
+					}
+				}
+				amount = 1
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+	hidden_effect = {
+		colonial_parent = {
+					every_core_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_laplata_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						remove_core = owner
+						add_core = ROOT
+						cede_province = ROOT
+					}
+					every_owned_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_laplata_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						cede_province = ROOT
+					}
+					
+		}
+	}
+	}
+	
+	option = {
+		name = "flavor_cnnat.1a"
+		add_adm_power = 10
+	}
+}
+
+country_event = {
+	id = flavor_cnnat.3006
+	title = "flavor_cnnat.1t"
+	desc = "flavor_cnnat.1d"
+	picture = CONQUEST_eventPicture
+	
+	
+	trigger = {
+		is_colonial_nation = yes
+		owns = 3006	# Dummy Province
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+	hidden_effect = {
+		colonial_parent = {
+					every_owned_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_patagonia_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						remove_core = owner
+						add_core = ROOT
+						cede_province = ROOT
+					}
+		}
+		set_country_flag = cn_patagonia
+	}
+	}
+	option = {
+		name = "flavor_cnnat.1a"
+		hidden_effect = {
+			add_treasury = 100
+			every_owned_province = {
+				limit = { 
+							AND = { 
+								owned_by = ROOT
+								province_group = colonialdumb_region
+							}
+				}
+				remove_core = ROOT
+				cede_province = XXX
+			}
+		}
+		random_owned_province = {
+				limit = { controlled_by = ROOT  }
+				cavalry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+			}
+	}
+}
+
+country_event = {
+	id = flavor_cnnat.30060
+	title = "flavor_cnnat.2t"
+	desc = "flavor_cnnat.2d"
+	picture = CONQUEST_eventPicture
+	
+	trigger = {
+		is_colonial_nation = yes
+		has_country_flag = cn_patagonia
+		colonial_parent = {
+			calc_true_if = {
+				all_owned_province = {
+					AND = {
+						province_group = colonial_patagonia_region
+						is_city = yes 
+								is_overseas = yes
+					}
+				}
+				amount = 1
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+	hidden_effect = {
+		colonial_parent = {
+					every_core_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_patagonia_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						remove_core = owner
+						add_core = ROOT
+						cede_province = ROOT
+					}
+					every_owned_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_patagonia_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						cede_province = ROOT
+					}
+					
+		}
+	}
+	}
+	
+	option = {
+		name = "flavor_cnnat.1a"
+		add_adm_power = 10
+	}
+}
+
+country_event = {
+	id = flavor_cnnat.3007
+	title = "flavor_cnnat.1t"
+	desc = "flavor_cnnat.1d"
+	picture = CONQUEST_eventPicture
+	
+	
+	trigger = {
+		is_colonial_nation = yes
+		owns = 3007	# Dummy Province
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+	hidden_effect = {
+		colonial_parent = {
+					every_owned_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_cuiaba_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						remove_core = owner
+						add_core = ROOT
+						cede_province = ROOT
+					}
+		}
+		set_country_flag = cn_cuiaba
+	}
+	}
+	option = {
+		name = "flavor_cnnat.1a"
+		hidden_effect = {
+			add_treasury = 100
+			every_owned_province = {
+				limit = { 
+							AND = { 
+								owned_by = ROOT
+								province_group = colonialdumb_region
+							}
+				}
+				remove_core = ROOT
+				cede_province = XXX
+			}
+		}
+		random_owned_province = {
+				limit = { controlled_by = ROOT  }
+				cavalry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+			}
+	}
+}
+
+country_event = {
+	id = flavor_cnnat.30070
+	title = "flavor_cnnat.2t"
+	desc = "flavor_cnnat.2d"
+	picture = CONQUEST_eventPicture
+	
+	trigger = {
+		is_colonial_nation = yes
+		has_country_flag = cn_cuiaba
+		colonial_parent = {
+			calc_true_if = {
+				all_owned_province = {
+					AND = {
+						province_group = colonial_cuiaba_region
+						is_city = yes 
+								is_overseas = yes
+					}
+				}
+				amount = 1
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+	hidden_effect = {
+		colonial_parent = {
+					every_core_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_cuiaba_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						remove_core = owner
+						add_core = ROOT
+						cede_province = ROOT
+					}
+					every_owned_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_cuiaba_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						cede_province = ROOT
+					}
+					
+		}
+	}
+	}
+	
+	option = {
+		name = "flavor_cnnat.1a"
+		add_adm_power = 10
+	}
+}
+
+country_event = {
+	id = flavor_cnnat.3008
+	title = "flavor_cnnat.1t"
+	desc = "flavor_cnnat.1d"
+	picture = CONQUEST_eventPicture
+	
+	
+	trigger = {
+		is_colonial_nation = yes
+		owns = 3008	# Dummy Province
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+	hidden_effect = {
+		colonial_parent = {
+					every_owned_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_peru_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						remove_core = owner
+						add_core = ROOT
+						cede_province = ROOT
+					}
+		}
+		set_country_flag = cn_peru
+	}
+	}
+	option = {
+		name = "flavor_cnnat.1a"
+		hidden_effect = {
+			add_treasury = 100
+			every_owned_province = {
+				limit = { 
+							AND = { 
+								owned_by = ROOT
+								province_group = colonialdumb_region
+							}
+				}
+				remove_core = ROOT
+				cede_province = XXX
+			}
+		}
+		random_owned_province = {
+				limit = { controlled_by = ROOT  }
+				cavalry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+			}
+	}
+}
+
+country_event = {
+	id = flavor_cnnat.30080
+	title = "flavor_cnnat.2t"
+	desc = "flavor_cnnat.2d"
+	picture = CONQUEST_eventPicture
+	
+	trigger = {
+		is_colonial_nation = yes
+		has_country_flag = cn_peru
+		colonial_parent = {
+			calc_true_if = {
+				all_owned_province = {
+					AND = {
+						province_group = colonial_peru_region
+						is_city = yes 
+								is_overseas = yes
+					}
+				}
+				amount = 1
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+	hidden_effect = {
+		colonial_parent = {
+					every_core_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_peru_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						remove_core = owner
+						add_core = ROOT
+						cede_province = ROOT
+					}
+					every_owned_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_peru_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						cede_province = ROOT
+					}
+					
+		}
+	}
+	}
+	
+	option = {
+		name = "flavor_cnnat.1a"
+		add_adm_power = 10
+	}
+}
+
+country_event = {
+	id = flavor_cnnat.3009
+	title = "flavor_cnnat.1t"
+	desc = "flavor_cnnat.1d"
+	picture = CONQUEST_eventPicture
+	
+	
+	trigger = {
+		is_colonial_nation = yes
+		owns = 3009	# Dummy Province
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+	hidden_effect = {
+		colonial_parent = {
+					every_owned_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_amazon_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						remove_core = owner
+						add_core = ROOT
+						cede_province = ROOT
+					}
+		}
+		set_country_flag = cn_amazon
+	}
+	}
+	option = {
+		name = "flavor_cnnat.1a"
+		hidden_effect = {
+			add_treasury = 100
+			every_owned_province = {
+				limit = { 
+							AND = { 
+								owned_by = ROOT
+								province_group = colonialdumb_region
+							}
+				}
+				remove_core = ROOT
+				cede_province = XXX
+			}
+		}
+		random_owned_province = {
+				limit = { controlled_by = ROOT  }
+				cavalry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+			}
+	}
+}
+
+country_event = {
+	id = flavor_cnnat.30090
+	title = "flavor_cnnat.2t"
+	desc = "flavor_cnnat.2d"
+	picture = CONQUEST_eventPicture
+	
+	trigger = {
+		is_colonial_nation = yes
+		has_country_flag = cn_amazon
+		colonial_parent = {
+			calc_true_if = {
+				all_owned_province = {
+					AND = {
+						province_group = colonial_amazon_region
+						is_city = yes 
+								is_overseas = yes
+					}
+				}
+				amount = 1
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+	hidden_effect = {
+		colonial_parent = {
+					every_core_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_amazon_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						remove_core = owner
+						add_core = ROOT
+						cede_province = ROOT
+					}
+					every_owned_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_amazon_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						cede_province = ROOT
+					}
+					
+		}
+	}
+	}
+	
+	option = {
+		name = "flavor_cnnat.1a"
+		add_adm_power = 10
+	}
+}
+
+country_event = {
+	id = flavor_cnnat.3010
+	title = "flavor_cnnat.1t"
+	desc = "flavor_cnnat.1d"
+	picture = CONQUEST_eventPicture
+	
+	
+	trigger = {
+		is_colonial_nation = yes
+		owns = 3010	# Dummy Province
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+	hidden_effect = {
+		colonial_parent = {
+					every_owned_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_panama_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						remove_core = owner
+						add_core = ROOT
+						cede_province = ROOT
+					}
+		}
+		set_country_flag = cn_panama
+	}
+	}
+	option = {
+		name = "flavor_cnnat.1a"
+		hidden_effect = {
+			add_treasury = 100
+			every_owned_province = {
+				limit = { 
+							AND = { 
+								owned_by = ROOT
+								province_group = colonialdumb_region
+							}
+				}
+				remove_core = ROOT
+				cede_province = XXX
+			}
+		}
+		random_owned_province = {
+				limit = { controlled_by = ROOT  }
+				cavalry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+			}
+	}
+}
+
+country_event = {
+	id = flavor_cnnat.30100
+	title = "flavor_cnnat.2t"
+	desc = "flavor_cnnat.2d"
+	picture = CONQUEST_eventPicture
+	
+	trigger = {
+		is_colonial_nation = yes
+		has_country_flag = cn_panama
+		colonial_parent = {
+			calc_true_if = {
+				all_owned_province = {
+					AND = {
+						province_group = colonial_panama_region
+						is_city = yes 
+								is_overseas = yes
+					}
+				}
+				amount = 1
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+	hidden_effect = {
+		colonial_parent = {
+					every_core_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_panama_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						remove_core = owner
+						add_core = ROOT
+						cede_province = ROOT
+					}
+					every_owned_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_panama_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						cede_province = ROOT
+					}
+					
+		}
+	}
+	}
+	
+	option = {
+		name = "flavor_cnnat.1a"
+		add_adm_power = 10
+	}
+}
+
+country_event = {
+	id = flavor_cnnat.3012
+	title = "flavor_cnnat.1t"
+	desc = "flavor_cnnat.1d"
+	picture = CONQUEST_eventPicture
+	
+	
+	trigger = {
+		is_colonial_nation = yes
+		owns = 3012	# Dummy Province
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+	hidden_effect = {
+		colonial_parent = {
+					every_owned_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_carribean_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						remove_core = owner
+						add_core = ROOT
+						cede_province = ROOT
+					}
+		}
+		set_country_flag = cn_carribean
+	}
+	}
+	option = {
+		name = "flavor_cnnat.1a"
+		hidden_effect = {
+			add_treasury = 100
+			every_owned_province = {
+				limit = { 
+							AND = { 
+								owned_by = ROOT
+								province_group = colonialdumb_region
+							}
+				}
+				remove_core = ROOT
+				cede_province = XXX
+			}
+		}
+		random_owned_province = {
+				limit = { controlled_by = ROOT  }
+				cavalry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+			}
+	}
+}
+
+country_event = {
+	id = flavor_cnnat.30120
+	title = "flavor_cnnat.2t"
+	desc = "flavor_cnnat.2d"
+	picture = CONQUEST_eventPicture
+	
+	trigger = {
+		is_colonial_nation = yes
+		has_country_flag = cn_carribean
+		colonial_parent = {
+			calc_true_if = {
+				all_owned_province = {
+					AND = {
+						province_group = colonial_carribean_region
+						is_city = yes 
+								is_overseas = yes
+					}
+				}
+				amount = 1
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+	hidden_effect = {
+		colonial_parent = {
+					every_core_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_carribean_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						remove_core = owner
+						add_core = ROOT
+						cede_province = ROOT
+					}
+					every_owned_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_carribean_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						cede_province = ROOT
+					}
+					
+		}
+	}
+	}
+	
+	option = {
+		name = "flavor_cnnat.1a"
+		add_adm_power = 10
+	}
+}
+
+country_event = {
+	id = flavor_cnnat.3013
+	title = "flavor_cnnat.1t"
+	desc = "flavor_cnnat.1d"
+	picture = CONQUEST_eventPicture
+	
+	
+	trigger = {
+		is_colonial_nation = yes
+		owns = 3013	# Dummy Province
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+	hidden_effect = {
+		colonial_parent = {
+					every_owned_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_riogrande_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						remove_core = owner
+						add_core = ROOT
+						cede_province = ROOT
+					}
+		}
+		set_country_flag = cn_riogrande
+	}
+	}
+	option = {
+		name = "flavor_cnnat.1a"
+		hidden_effect = {
+			add_treasury = 100
+			every_owned_province = {
+				limit = { 
+							AND = { 
+								owned_by = ROOT
+								province_group = colonialdumb_region
+							}
+				}
+				remove_core = ROOT
+				cede_province = XXX
+			}
+		}
+		random_owned_province = {
+				limit = { controlled_by = ROOT  }
+				cavalry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+			}
+	}
+}
+
+country_event = {
+	id = flavor_cnnat.30130
+	title = "flavor_cnnat.2t"
+	desc = "flavor_cnnat.2d"
+	picture = CONQUEST_eventPicture
+	
+	trigger = {
+		is_colonial_nation = yes
+		has_country_flag = cn_riogrande
+		colonial_parent = {
+			calc_true_if = {
+				all_owned_province = {
+					AND = {
+						province_group = colonial_riogrande_region
+						is_city = yes 
+								is_overseas = yes
+					}
+				}
+				amount = 1
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+	hidden_effect = {
+		colonial_parent = {
+					every_core_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_riogrande_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						remove_core = owner
+						add_core = ROOT
+						cede_province = ROOT
+					}
+					every_owned_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_riogrande_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						cede_province = ROOT
+					}
+					
+		}
+	}
+	}
+	
+	option = {
+		name = "flavor_cnnat.1a"
+		add_adm_power = 10
+	}
+}
+
+country_event = {
+	id = flavor_cnnat.3014
+	title = "flavor_cnnat.1t"
+	desc = "flavor_cnnat.1d"
+	picture = CONQUEST_eventPicture
+	
+	
+	trigger = {
+		is_colonial_nation = yes
+		owns = 3014	# Dummy Province
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+	hidden_effect = {
+		colonial_parent = {
+					every_owned_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_california_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						remove_core = owner
+						add_core = ROOT
+						cede_province = ROOT
+					}
+		}
+		set_country_flag = cn_california
+	}
+	}
+	option = {
+		name = "flavor_cnnat.1a"
+		hidden_effect = {
+			add_treasury = 100
+			every_owned_province = {
+				limit = { 
+							AND = { 
+								owned_by = ROOT
+								province_group = colonialdumb_region
+							}
+				}
+				remove_core = ROOT
+				cede_province = XXX
+			}
+		}
+		random_owned_province = {
+				limit = { controlled_by = ROOT  }
+				cavalry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+			}
+	}
+}
+
+country_event = {
+	id = flavor_cnnat.30140
+	title = "flavor_cnnat.2t"
+	desc = "flavor_cnnat.2d"
+	picture = CONQUEST_eventPicture
+	
+	trigger = {
+		is_colonial_nation = yes
+		has_country_flag = cn_california
+		colonial_parent = {
+			calc_true_if = {
+				all_owned_province = {
+					AND = {
+						province_group = colonial_california_region
+						is_city = yes 
+								is_overseas = yes
+					}
+				}
+				amount = 1
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+	hidden_effect = {
+		colonial_parent = {
+					every_core_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_california_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						remove_core = owner
+						add_core = ROOT
+						cede_province = ROOT
+					}
+					every_owned_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_california_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						cede_province = ROOT
+					}
+					
+		}
+	}
+	}
+	
+	option = {
+		name = "flavor_cnnat.1a"
+		add_adm_power = 10
+	}
+}
+
+country_event = {
+	id = flavor_cnnat.3015
+	title = "flavor_cnnat.1t"
+	desc = "flavor_cnnat.1d"
+	picture = CONQUEST_eventPicture
+	
+	
+	trigger = {
+		is_colonial_nation = yes
+		owns = 3015	# Dummy Province
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+	hidden_effect = {
+		colonial_parent = {
+					every_owned_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_mississippi_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						remove_core = owner
+						add_core = ROOT
+						cede_province = ROOT
+					}
+		}
+		set_country_flag = cn_mississippi
+	}
+	}
+	option = {
+		name = "flavor_cnnat.1a"
+		hidden_effect = {
+			add_treasury = 100
+			every_owned_province = {
+				limit = { 
+							AND = { 
+								owned_by = ROOT
+								province_group = colonialdumb_region
+							}
+				}
+				remove_core = ROOT
+				cede_province = XXX
+			}
+		}
+		random_owned_province = {
+				limit = { controlled_by = ROOT  }
+				cavalry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+			}
+	}
+}
+
+country_event = {
+	id = flavor_cnnat.30150
+	title = "flavor_cnnat.2t"
+	desc = "flavor_cnnat.2d"
+	picture = CONQUEST_eventPicture
+	
+	trigger = {
+		is_colonial_nation = yes
+		has_country_flag = cn_mississippi
+		colonial_parent = {
+			calc_true_if = {
+				all_owned_province = {
+					AND = {
+						province_group = colonial_mississippi_region
+						is_city = yes 
+								is_overseas = yes
+					}
+				}
+				amount = 1
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+	hidden_effect = {
+		colonial_parent = {
+					every_core_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_mississippi_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						remove_core = owner
+						add_core = ROOT
+						cede_province = ROOT
+					}
+					every_owned_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_mississippi_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						cede_province = ROOT
+					}
+					
+		}
+	}
+	}
+	
+	option = {
+		name = "flavor_cnnat.1a"
+		add_adm_power = 10
+	}
+}
+
+country_event = {
+	id = flavor_cnnat.3016
+	title = "flavor_cnnat.1t"
+	desc = "flavor_cnnat.1d"
+	picture = CONQUEST_eventPicture
+	
+	
+	trigger = {
+		is_colonial_nation = yes
+		owns = 3016	# Dummy Province
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+	hidden_effect = {
+		colonial_parent = {
+					every_owned_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_ohio_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						remove_core = owner
+						add_core = ROOT
+						cede_province = ROOT
+					}
+		}
+		set_country_flag = cn_ohio
+	}
+	}
+	option = {
+		name = "flavor_cnnat.1a"
+		hidden_effect = {
+			add_treasury = 100
+			every_owned_province = {
+				limit = { 
+							AND = { 
+								owned_by = ROOT
+								province_group = colonialdumb_region
+							}
+				}
+				remove_core = ROOT
+				cede_province = XXX
+			}
+		}
+		random_owned_province = {
+				limit = { controlled_by = ROOT  }
+				cavalry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+			}
+	}
+}
+
+country_event = {
+	id = flavor_cnnat.30160
+	title = "flavor_cnnat.2t"
+	desc = "flavor_cnnat.2d"
+	picture = CONQUEST_eventPicture
+	
+	trigger = {
+		is_colonial_nation = yes
+		has_country_flag = cn_ohio
+		colonial_parent = {
+			calc_true_if = {
+				all_owned_province = {
+					AND = {
+						province_group = colonial_ohio_region
+						is_city = yes 
+								is_overseas = yes
+					}
+				}
+				amount = 1
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+	hidden_effect = {
+		colonial_parent = {
+					every_core_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_ohio_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						remove_core = owner
+						add_core = ROOT
+						cede_province = ROOT
+					}
+					every_owned_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_ohio_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						cede_province = ROOT
+					}
+					
+		}
+	}
+	}
+	
+	option = {
+		name = "flavor_cnnat.1a"
+		add_adm_power = 10
+	}
+}
+
+country_event = {
+	id = flavor_cnnat.3017
+	title = "flavor_cnnat.1t"
+	desc = "flavor_cnnat.1d"
+	picture = CONQUEST_eventPicture
+	
+	
+	trigger = {
+		is_colonial_nation = yes
+		owns = 3017	# Dummy Province
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+	hidden_effect = {
+		colonial_parent = {
+					every_owned_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_hudson_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						remove_core = owner
+						add_core = ROOT
+						cede_province = ROOT
+					}
+		}
+		set_country_flag = cn_hudson
+	}
+	}
+	option = {
+		name = "flavor_cnnat.1a"
+		hidden_effect = {
+			add_treasury = 100
+			every_owned_province = {
+				limit = { 
+							AND = { 
+								owned_by = ROOT
+								province_group = colonialdumb_region
+							}
+				}
+				remove_core = ROOT
+				cede_province = XXX
+			}
+		}
+		random_owned_province = {
+				limit = { controlled_by = ROOT  }
+				cavalry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+			}
+	}
+}
+
+country_event = {
+	id = flavor_cnnat.30170
+	title = "flavor_cnnat.2t"
+	desc = "flavor_cnnat.2d"
+	picture = CONQUEST_eventPicture
+	
+	trigger = {
+		is_colonial_nation = yes
+		has_country_flag = cn_hudson
+		colonial_parent = {
+			calc_true_if = {
+				all_owned_province = {
+					AND = {
+						province_group = colonial_hudson_region
+						is_city = yes 
+								is_overseas = yes
+					}
+				}
+				amount = 1
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+	hidden_effect = {
+		colonial_parent = {
+					every_core_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_hudson_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						remove_core = owner
+						add_core = ROOT
+						cede_province = ROOT
+					}
+					every_owned_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_hudson_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						cede_province = ROOT
+					}
+					
+		}
+	}
+	}
+	
+	option = {
+		name = "flavor_cnnat.1a"
+		add_adm_power = 10
+	}
+}
+
+country_event = {
+	id = flavor_cnnat.3018
+	title = "flavor_cnnat.1t"
+	desc = "flavor_cnnat.1d"
+	picture = CONQUEST_eventPicture
+	
+	
+	trigger = {
+		is_colonial_nation = yes
+		owns = 3018	# Dummy Province
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+	hidden_effect = {
+		colonial_parent = {
+					every_owned_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_chesapeake_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						remove_core = owner
+						add_core = ROOT
+						cede_province = ROOT
+					}
+		}
+		set_country_flag = cn_chesapeake
+	}
+	}
+	option = {
+		name = "flavor_cnnat.1a"
+		hidden_effect = {
+			add_treasury = 100
+			every_owned_province = {
+				limit = { 
+							AND = { 
+								owned_by = ROOT
+								province_group = colonialdumb_region
+							}
+				}
+				remove_core = ROOT
+				cede_province = XXX
+			}
+		}
+		random_owned_province = {
+				limit = { controlled_by = ROOT  }
+				cavalry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+			}
+	}
+}
+
+country_event = {
+	id = flavor_cnnat.30180
+	title = "flavor_cnnat.2t"
+	desc = "flavor_cnnat.2d"
+	picture = CONQUEST_eventPicture
+	
+	trigger = {
+		is_colonial_nation = yes
+		has_country_flag = cn_chesapeake
+		colonial_parent = {
+			calc_true_if = {
+				all_owned_province = {
+					AND = {
+						province_group = colonial_chesapeake_region
+						is_city = yes 
+								is_overseas = yes
+					}
+				}
+				amount = 1
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+	hidden_effect = {
+		colonial_parent = {
+					every_core_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_chesapeake_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						remove_core = owner
+						add_core = ROOT
+						cede_province = ROOT
+					}
+					every_owned_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_chesapeake_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						cede_province = ROOT
+					}
+					
+		}
+	}
+	}
+	
+	option = {
+		name = "flavor_cnnat.1a"
+		add_adm_power = 10
+	}
+}
+
+country_event = {
+	id = flavor_cnnat.3019
+	title = "flavor_cnnat.1t"
+	desc = "flavor_cnnat.1d"
+	picture = CONQUEST_eventPicture
+	
+	
+	trigger = {
+		is_colonial_nation = yes
+		owns = 3019	# Dummy Province
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+	hidden_effect = {
+		colonial_parent = {
+					every_owned_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_lawrence_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						remove_core = owner
+						add_core = ROOT
+						cede_province = ROOT
+					}
+		}
+		set_country_flag = cn_lawrence
+	}
+	}
+	option = {
+		name = "flavor_cnnat.1a"
+		hidden_effect = {
+			add_treasury = 100
+			every_owned_province = {
+				limit = { 
+							AND = { 
+								owned_by = ROOT
+								province_group = colonialdumb_region
+							}
+				}
+				remove_core = ROOT
+				cede_province = XXX
+			}
+		}
+		random_owned_province = {
+				limit = { controlled_by = ROOT  }
+				cavalry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+			}
+	}
+}
+
+country_event = {
+	id = flavor_cnnat.30190
+	title = "flavor_cnnat.2t"
+	desc = "flavor_cnnat.2d"
+	picture = CONQUEST_eventPicture
+	
+	trigger = {
+		is_colonial_nation = yes
+		has_country_flag = cn_lawrence
+		colonial_parent = {
+			calc_true_if = {
+				all_owned_province = {
+					AND = {
+						province_group = colonial_lawrence_region
+						is_city = yes 
+								is_overseas = yes
+					}
+				}
+				amount = 1
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+	hidden_effect = {
+		colonial_parent = {
+					every_core_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_lawrence_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						remove_core = owner
+						add_core = ROOT
+						cede_province = ROOT
+					}
+					every_owned_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_lawrence_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						cede_province = ROOT
+					}
+					
+		}
+	}
+	}
+	
+	option = {
+		name = "flavor_cnnat.1a"
+		add_adm_power = 10
+	}
+}
+
+country_event = {
+	id = flavor_cnnat.3020
+	title = "flavor_cnnat.1t"
+	desc = "flavor_cnnat.1d"
+	picture = CONQUEST_eventPicture
+	
+	
+	trigger = {
+		is_colonial_nation = yes
+		owns = 3020	# Dummy Province
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+	hidden_effect = {
+		colonial_parent = {
+					every_owned_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_westafrica_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						remove_core = owner
+						add_core = ROOT
+						cede_province = ROOT
+					}
+		}
+		set_country_flag = cn_westafrica
+	}
+	}
+	option = {
+		name = "flavor_cnnat.1a"
+		hidden_effect = {
+			add_treasury = 100
+			every_owned_province = {
+				limit = { 
+							AND = { 
+								owned_by = ROOT
+								province_group = colonialdumb_region
+							}
+				}
+				remove_core = ROOT
+				cede_province = XXX
+			}
+		}
+		random_owned_province = {
+				limit = { controlled_by = ROOT  }
+				cavalry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+			}
+	}
+}
+
+country_event = {
+	id = flavor_cnnat.30200
+	title = "flavor_cnnat.2t"
+	desc = "flavor_cnnat.2d"
+	picture = CONQUEST_eventPicture
+	
+	trigger = {
+		is_colonial_nation = yes
+		has_country_flag = cn_westafrica
+		colonial_parent = {
+			calc_true_if = {
+				all_owned_province = {
+					AND = {
+						province_group = colonial_westafrica_region
+						is_city = yes 
+								is_overseas = yes
+					}
+				}
+				amount = 1
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+	hidden_effect = {
+		colonial_parent = {
+					every_core_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_westafrica_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						remove_core = owner
+						add_core = ROOT
+						cede_province = ROOT
+					}
+					every_owned_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_westafrica_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						cede_province = ROOT
+					}
+					
+		}
+	}
+	}
+	
+	option = {
+		name = "flavor_cnnat.1a"
+		add_adm_power = 10
+	}
+}
+
+country_event = {
+	id = flavor_cnnat.3021
+	title = "flavor_cnnat.1t"
+	desc = "flavor_cnnat.1d"
+	picture = CONQUEST_eventPicture
+	
+	
+	trigger = {
+		is_colonial_nation = yes
+		owns = 3021	# Dummy Province
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+	hidden_effect = {
+		colonial_parent = {
+					every_owned_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_southafrica_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						remove_core = owner
+						add_core = ROOT
+						cede_province = ROOT
+					}
+		}
+		set_country_flag = cn_southafrica
+	}
+	}
+	option = {
+		name = "flavor_cnnat.1a"
+		hidden_effect = {
+			add_treasury = 100
+			every_owned_province = {
+				limit = { 
+							AND = { 
+								owned_by = ROOT
+								province_group = colonialdumb_region
+							}
+				}
+				remove_core = ROOT
+				cede_province = XXX
+			}
+		}
+		random_owned_province = {
+				limit = { controlled_by = ROOT  }
+				cavalry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+			}
+	}
+}
+
+country_event = {
+	id = flavor_cnnat.30210
+	title = "flavor_cnnat.2t"
+	desc = "flavor_cnnat.2d"
+	picture = CONQUEST_eventPicture
+	
+	trigger = {
+		is_colonial_nation = yes
+		has_country_flag = cn_southafrica
+		colonial_parent = {
+			calc_true_if = {
+				all_owned_province = {
+					AND = {
+						province_group = colonial_southafrica_region
+						is_city = yes 
+								is_overseas = yes
+					}
+				}
+				amount = 1
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+	hidden_effect = {
+		colonial_parent = {
+					every_core_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_southafrica_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						remove_core = owner
+						add_core = ROOT
+						cede_province = ROOT
+					}
+					every_owned_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_southafrica_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						cede_province = ROOT
+					}
+					
+		}
+	}
+	}
+	
+	option = {
+		name = "flavor_cnnat.1a"
+		add_adm_power = 10
+	}
+}
+
+country_event = {
+	id = flavor_cnnat.3022
+	title = "flavor_cnnat.1t"
+	desc = "flavor_cnnat.1d"
+	picture = CONQUEST_eventPicture
+	
+	
+	trigger = {
+		is_colonial_nation = yes
+		owns = 3022	# Dummy Province
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+	hidden_effect = {
+		colonial_parent = {
+					every_owned_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_eastafrica_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						remove_core = owner
+						add_core = ROOT
+						cede_province = ROOT
+					}
+		}
+		set_country_flag = cn_eastafrica
+	}
+	}
+	option = {
+		name = "flavor_cnnat.1a"
+		hidden_effect = {
+			add_treasury = 100
+			every_owned_province = {
+				limit = { 
+							AND = { 
+								owned_by = ROOT
+								province_group = colonialdumb_region
+							}
+				}
+				remove_core = ROOT
+				cede_province = XXX
+			}
+		}
+		random_owned_province = {
+				limit = { controlled_by = ROOT  }
+				cavalry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+			}
+	}
+}
+
+country_event = {
+	id = flavor_cnnat.30220
+	title = "flavor_cnnat.2t"
+	desc = "flavor_cnnat.2d"
+	picture = CONQUEST_eventPicture
+	
+	trigger = {
+		is_colonial_nation = yes
+		has_country_flag = cn_eastafrica
+		colonial_parent = {
+			calc_true_if = {
+				all_owned_province = {
+					AND = {
+						province_group = colonial_eastafrica_region
+						is_city = yes 
+								is_overseas = yes
+					}
+				}
+				amount = 1
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+	hidden_effect = {
+		colonial_parent = {
+					every_core_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_eastafrica_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						remove_core = owner
+						add_core = ROOT
+						cede_province = ROOT
+					}
+					every_owned_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_eastafrica_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						cede_province = ROOT
+					}
+					
+		}
+	}
+	}
+	
+	option = {
+		name = "flavor_cnnat.1a"
+		add_adm_power = 10
+	}
+}
+
+country_event = {
+	id = flavor_cnnat.3023
+	title = "flavor_cnnat.1t"
+	desc = "flavor_cnnat.1d"
+	picture = CONQUEST_eventPicture
+	
+	
+	trigger = {
+		is_colonial_nation = yes
+		owns = 3023	# Dummy Province
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+	hidden_effect = {
+		colonial_parent = {
+					every_owned_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_arabia_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						remove_core = owner
+						add_core = ROOT
+						cede_province = ROOT
+					}
+		}
+		set_country_flag = cn_arabia
+	}
+	}
+	option = {
+		name = "flavor_cnnat.1a"
+		hidden_effect = {
+			add_treasury = 100
+			every_owned_province = {
+				limit = { 
+							AND = { 
+								owned_by = ROOT
+								province_group = colonialdumb_region
+							}
+				}
+				remove_core = ROOT
+				cede_province = XXX
+			}
+		}
+		random_owned_province = {
+				limit = { controlled_by = ROOT  }
+				cavalry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+			}
+	}
+}
+
+country_event = {
+	id = flavor_cnnat.30230
+	title = "flavor_cnnat.2t"
+	desc = "flavor_cnnat.2d"
+	picture = CONQUEST_eventPicture
+	
+	trigger = {
+		is_colonial_nation = yes
+		has_country_flag = cn_arabia
+		colonial_parent = {
+			calc_true_if = {
+				all_owned_province = {
+					AND = {
+						province_group = colonial_arabia_region
+						is_city = yes 
+								is_overseas = yes
+					}
+				}
+				amount = 1
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+	hidden_effect = {
+		colonial_parent = {
+					every_core_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_arabia_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						remove_core = owner
+						add_core = ROOT
+						cede_province = ROOT
+					}
+					every_owned_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_arabia_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						cede_province = ROOT
+					}
+					
+		}
+	}
+	}
+	
+	option = {
+		name = "flavor_cnnat.1a"
+		add_adm_power = 10
+	}
+}
+
+country_event = {
+	id = flavor_cnnat.3024
+	title = "flavor_cnnat.1t"
+	desc = "flavor_cnnat.1d"
+	picture = CONQUEST_eventPicture
+	
+	
+	trigger = {
+		is_colonial_nation = yes
+		owns = 3024	# Dummy Province
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+	hidden_effect = {
+		colonial_parent = {
+					every_owned_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_hormuz_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						remove_core = owner
+						add_core = ROOT
+						cede_province = ROOT
+					}
+		}
+		set_country_flag = cn_hormuz
+	}
+	}
+	option = {
+		name = "flavor_cnnat.1a"
+		hidden_effect = {
+			add_treasury = 100
+			every_owned_province = {
+				limit = { 
+							AND = { 
+								owned_by = ROOT
+								province_group = colonialdumb_region
+							}
+				}
+				remove_core = ROOT
+				cede_province = XXX
+			}
+		}
+		random_owned_province = {
+				limit = { controlled_by = ROOT  }
+				cavalry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+			}
+	}
+}
+
+country_event = {
+	id = flavor_cnnat.30240
+	title = "flavor_cnnat.2t"
+	desc = "flavor_cnnat.2d"
+	picture = CONQUEST_eventPicture
+	
+	trigger = {
+		is_colonial_nation = yes
+		has_country_flag = cn_hormuz
+		colonial_parent = {
+			calc_true_if = {
+				all_owned_province = {
+					AND = {
+						province_group = colonial_hormuz_region
+						is_city = yes 
+								is_overseas = yes
+					}
+				}
+				amount = 1
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+	hidden_effect = {
+		colonial_parent = {
+					every_core_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_hormuz_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						remove_core = owner
+						add_core = ROOT
+						cede_province = ROOT
+					}
+					every_owned_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_hormuz_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						cede_province = ROOT
+					}
+					
+		}
+	}
+	}
+	
+	option = {
+		name = "flavor_cnnat.1a"
+		add_adm_power = 10
+	}
+}
+
+country_event = {
+	id = flavor_cnnat.3025
+	title = "flavor_cnnat.1t"
+	desc = "flavor_cnnat.1d"
+	picture = CONQUEST_eventPicture
+	
+	
+	trigger = {
+		is_colonial_nation = yes
+		owns = 3025	# Dummy Province
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+	hidden_effect = {
+		colonial_parent = {
+					every_owned_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_konkan_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						remove_core = owner
+						add_core = ROOT
+						cede_province = ROOT
+					}
+		}
+		set_country_flag = cn_konkan
+	}
+	}
+	option = {
+		name = "flavor_cnnat.1a"
+		hidden_effect = {
+			add_treasury = 100
+			every_owned_province = {
+				limit = { 
+							AND = { 
+								owned_by = ROOT
+								province_group = colonialdumb_region
+							}
+				}
+				remove_core = ROOT
+				cede_province = XXX
+			}
+		}
+		random_owned_province = {
+				limit = { controlled_by = ROOT  }
+				cavalry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+			}
+	}
+}
+
+country_event = {
+	id = flavor_cnnat.30250
+	title = "flavor_cnnat.2t"
+	desc = "flavor_cnnat.2d"
+	picture = CONQUEST_eventPicture
+	
+	trigger = {
+		is_colonial_nation = yes
+		has_country_flag = cn_konkan
+		colonial_parent = {
+			calc_true_if = {
+				all_owned_province = {
+					AND = {
+						province_group = colonial_konkan_region
+						is_city = yes 
+								is_overseas = yes
+					}
+				}
+				amount = 1
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+	hidden_effect = {
+		colonial_parent = {
+					every_core_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_konkan_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						remove_core = owner
+						add_core = ROOT
+						cede_province = ROOT
+					}
+					every_owned_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_konkan_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						cede_province = ROOT
+					}
+					
+		}
+	}
+	}
+	
+	option = {
+		name = "flavor_cnnat.1a"
+		add_adm_power = 10
+	}
+}
+
+country_event = {
+	id = flavor_cnnat.3026
+	title = "flavor_cnnat.1t"
+	desc = "flavor_cnnat.1d"
+	picture = CONQUEST_eventPicture
+	
+	
+	trigger = {
+		is_colonial_nation = yes
+		owns = 3026	# Dummy Province
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+	hidden_effect = {
+		colonial_parent = {
+					every_owned_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_coromandel_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						remove_core = owner
+						add_core = ROOT
+						cede_province = ROOT
+					}
+		}
+		set_country_flag = cn_coromandel
+	}
+	}
+	option = {
+		name = "flavor_cnnat.1a"
+		hidden_effect = {
+			add_treasury = 100
+			every_owned_province = {
+				limit = { 
+							AND = { 
+								owned_by = ROOT
+								province_group = colonialdumb_region
+							}
+				}
+				remove_core = ROOT
+				cede_province = XXX
+			}
+		}
+		random_owned_province = {
+				limit = { controlled_by = ROOT  }
+				cavalry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+			}
+	}
+}
+
+country_event = {
+	id = flavor_cnnat.30260
+	title = "flavor_cnnat.2t"
+	desc = "flavor_cnnat.2d"
+	picture = CONQUEST_eventPicture
+	
+	trigger = {
+		is_colonial_nation = yes
+		has_country_flag = cn_coromandel
+		colonial_parent = {
+			calc_true_if = {
+				all_owned_province = {
+					AND = {
+						province_group = colonial_coromandel_region
+						is_city = yes 
+								is_overseas = yes
+					}
+				}
+				amount = 1
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+	hidden_effect = {
+		colonial_parent = {
+					every_core_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_coromandel_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						remove_core = owner
+						add_core = ROOT
+						cede_province = ROOT
+					}
+					every_owned_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_coromandel_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						cede_province = ROOT
+					}
+					
+		}
+	}
+	}
+	
+	option = {
+		name = "flavor_cnnat.1a"
+		add_adm_power = 10
+	}
+}
+
+country_event = {
+	id = flavor_cnnat.3027
+	title = "flavor_cnnat.1t"
+	desc = "flavor_cnnat.1d"
+	picture = CONQUEST_eventPicture
+	
+	
+	trigger = {
+		is_colonial_nation = yes
+		owns = 3027	# Dummy Province
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+	hidden_effect = {
+		colonial_parent = {
+					every_owned_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_westindia_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						remove_core = owner
+						add_core = ROOT
+						cede_province = ROOT
+					}
+		}
+		set_country_flag = cn_westindia
+	}
+	}
+	option = {
+		name = "flavor_cnnat.1a"
+		hidden_effect = {
+			add_treasury = 100
+			every_owned_province = {
+				limit = { 
+							AND = { 
+								owned_by = ROOT
+								province_group = colonialdumb_region
+							}
+				}
+				remove_core = ROOT
+				cede_province = XXX
+			}
+		}
+		random_owned_province = {
+				limit = { controlled_by = ROOT  }
+				cavalry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+			}
+	}
+}
+
+country_event = {
+	id = flavor_cnnat.30270
+	title = "flavor_cnnat.2t"
+	desc = "flavor_cnnat.2d"
+	picture = CONQUEST_eventPicture
+	
+	trigger = {
+		is_colonial_nation = yes
+		has_country_flag = cn_westindia
+		colonial_parent = {
+			calc_true_if = {
+				all_owned_province = {
+					AND = {
+						province_group = colonial_westindia_region
+						is_city = yes 
+								is_overseas = yes
+					}
+				}
+				amount = 1
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+	hidden_effect = {
+		colonial_parent = {
+					every_core_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_westindia_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						remove_core = owner
+						add_core = ROOT
+						cede_province = ROOT
+					}
+					every_owned_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_westindia_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						cede_province = ROOT
+					}
+					
+		}
+	}
+	}
+	
+	option = {
+		name = "flavor_cnnat.1a"
+		add_adm_power = 10
+	}
+}
+
+country_event = {
+	id = flavor_cnnat.3028
+	title = "flavor_cnnat.1t"
+	desc = "flavor_cnnat.1d"
+	picture = CONQUEST_eventPicture
+	
+	
+	trigger = {
+		is_colonial_nation = yes
+		owns = 3028	# Dummy Province
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+	hidden_effect = {
+		colonial_parent = {
+					every_owned_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_northindia_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						remove_core = owner
+						add_core = ROOT
+						cede_province = ROOT
+					}
+		}
+		set_country_flag = cn_northindia
+	}
+	}
+	option = {
+		name = "flavor_cnnat.1a"
+		hidden_effect = {
+			add_treasury = 100
+			every_owned_province = {
+				limit = { 
+							AND = { 
+								owned_by = ROOT
+								province_group = colonialdumb_region
+							}
+				}
+				remove_core = ROOT
+				cede_province = XXX
+			}
+		}
+		random_owned_province = {
+				limit = { controlled_by = ROOT  }
+				cavalry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+			}
+	}
+}
+
+country_event = {
+	id = flavor_cnnat.30280
+	title = "flavor_cnnat.2t"
+	desc = "flavor_cnnat.2d"
+	picture = CONQUEST_eventPicture
+	
+	trigger = {
+		is_colonial_nation = yes
+		has_country_flag = cn_northindia
+		colonial_parent = {
+			calc_true_if = {
+				all_owned_province = {
+					AND = {
+						province_group = colonial_northindia_region
+						is_city = yes 
+								is_overseas = yes
+					}
+				}
+				amount = 1
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+	hidden_effect = {
+		colonial_parent = {
+					every_core_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_northindia_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						remove_core = owner
+						add_core = ROOT
+						cede_province = ROOT
+					}
+					every_owned_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_northindia_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						cede_province = ROOT
+					}
+					
+		}
+	}
+	}
+	
+	option = {
+		name = "flavor_cnnat.1a"
+		add_adm_power = 10
+	}
+}
+
+country_event = {
+	id = flavor_cnnat.3029
+	title = "flavor_cnnat.1t"
+	desc = "flavor_cnnat.1d"
+	picture = CONQUEST_eventPicture
+	
+	
+	trigger = {
+		is_colonial_nation = yes
+		owns = 3029	# Dummy Province
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+	hidden_effect = {
+		colonial_parent = {
+					every_owned_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_eastindia_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						remove_core = owner
+						add_core = ROOT
+						cede_province = ROOT
+					}
+		}
+		set_country_flag = cn_eastindia
+	}
+	}
+	option = {
+		name = "flavor_cnnat.1a"
+		hidden_effect = {
+			add_treasury = 100
+			every_owned_province = {
+				limit = { 
+							AND = { 
+								owned_by = ROOT
+								province_group = colonialdumb_region
+							}
+				}
+				remove_core = ROOT
+				cede_province = XXX
+			}
+		}
+		random_owned_province = {
+				limit = { controlled_by = ROOT  }
+				cavalry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+			}
+	}
+}
+
+country_event = {
+	id = flavor_cnnat.30290
+	title = "flavor_cnnat.2t"
+	desc = "flavor_cnnat.2d"
+	picture = CONQUEST_eventPicture
+	
+	trigger = {
+		is_colonial_nation = yes
+		has_country_flag = cn_eastindia
+		colonial_parent = {
+			calc_true_if = {
+				all_owned_province = {
+					AND = {
+						province_group = colonial_eastindia_region
+						is_city = yes 
+								is_overseas = yes
+					}
+				}
+				amount = 1
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+	hidden_effect = {
+		colonial_parent = {
+					every_core_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_eastindia_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						remove_core = owner
+						add_core = ROOT
+						cede_province = ROOT
+					}
+					every_owned_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_eastindia_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						cede_province = ROOT
+					}
+					
+		}
+	}
+	}
+	
+	option = {
+		name = "flavor_cnnat.1a"
+		add_adm_power = 10
+	}
+}
+
+country_event = {
+	id = flavor_cnnat.3030
+	title = "flavor_cnnat.1t"
+	desc = "flavor_cnnat.1d"
+	picture = CONQUEST_eventPicture
+	
+	
+	trigger = {
+		is_colonial_nation = yes
+		owns = 3030	# Dummy Province
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+	hidden_effect = {
+		colonial_parent = {
+					every_owned_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_indochina_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						remove_core = owner
+						add_core = ROOT
+						cede_province = ROOT
+					}
+		}
+		set_country_flag = cn_indochina
+	}
+	}
+	option = {
+		name = "flavor_cnnat.1a"
+		hidden_effect = {
+			add_treasury = 100
+			every_owned_province = {
+				limit = { 
+							AND = { 
+								owned_by = ROOT
+								province_group = colonialdumb_region
+							}
+				}
+				remove_core = ROOT
+				cede_province = XXX
+			}
+		}
+		random_owned_province = {
+				limit = { controlled_by = ROOT  }
+				cavalry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+			}
+	}
+}
+
+country_event = {
+	id = flavor_cnnat.30300
+	title = "flavor_cnnat.2t"
+	desc = "flavor_cnnat.2d"
+	picture = CONQUEST_eventPicture
+	
+	trigger = {
+		is_colonial_nation = yes
+		has_country_flag = cn_indochina
+		colonial_parent = {
+			calc_true_if = {
+				all_owned_province = {
+					AND = {
+						province_group = colonial_indochina_region
+						is_city = yes 
+								is_overseas = yes
+					}
+				}
+				amount = 1
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+	hidden_effect = {
+		colonial_parent = {
+					every_core_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_indochina_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						remove_core = owner
+						add_core = ROOT
+						cede_province = ROOT
+					}
+					every_owned_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_indochina_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						cede_province = ROOT
+					}
+					
+		}
+	}
+	}
+	
+	option = {
+		name = "flavor_cnnat.1a"
+		add_adm_power = 10
+	}
+}
+
+country_event = {
+	id = flavor_cnnat.3031
+	title = "flavor_cnnat.1t"
+	desc = "flavor_cnnat.1d"
+	picture = CONQUEST_eventPicture
+	
+	
+	trigger = {
+		is_colonial_nation = yes
+		owns = 3031	# Dummy Province
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+	hidden_effect = {
+		colonial_parent = {
+					every_owned_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_indonesia_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						remove_core = owner
+						add_core = ROOT
+						cede_province = ROOT
+					}
+		}
+		set_country_flag = cn_indonesia
+	}
+	}
+	option = {
+		name = "flavor_cnnat.1a"
+		hidden_effect = {
+			add_treasury = 100
+			every_owned_province = {
+				limit = { 
+							AND = { 
+								owned_by = ROOT
+								province_group = colonialdumb_region
+							}
+				}
+				remove_core = ROOT
+				cede_province = XXX
+			}
+		}
+		random_owned_province = {
+				limit = { controlled_by = ROOT  }
+				cavalry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+			}
+	}
+}
+
+country_event = {
+	id = flavor_cnnat.30310
+	title = "flavor_cnnat.2t"
+	desc = "flavor_cnnat.2d"
+	picture = CONQUEST_eventPicture
+	
+	trigger = {
+		is_colonial_nation = yes
+		has_country_flag = cn_indonesia
+		colonial_parent = {
+			calc_true_if = {
+				all_owned_province = {
+					AND = {
+						province_group = colonial_indonesia_region
+						is_city = yes 
+								is_overseas = yes
+					}
+				}
+				amount = 1
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+	hidden_effect = {
+		colonial_parent = {
+					every_core_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_indonesia_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						remove_core = owner
+						add_core = ROOT
+						cede_province = ROOT
+					}
+					every_owned_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_indonesia_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						cede_province = ROOT
+					}
+					
+		}
+	}
+	}
+	
+	option = {
+		name = "flavor_cnnat.1a"
+		add_adm_power = 10
+	}
+}
+
+country_event = {
+	id = flavor_cnnat.3032
+	title = "flavor_cnnat.1t"
+	desc = "flavor_cnnat.1d"
+	picture = CONQUEST_eventPicture
+	
+	
+	trigger = {
+		is_colonial_nation = yes
+		owns = 3032	# Dummy Province
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+	hidden_effect = {
+		colonial_parent = {
+					every_owned_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_philippines_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						remove_core = owner
+						add_core = ROOT
+						cede_province = ROOT
+					}
+		}
+		set_country_flag = cn_philippines
+	}
+	}
+	option = {
+		name = "flavor_cnnat.1a"
+		hidden_effect = {
+			add_treasury = 100
+			every_owned_province = {
+				limit = { 
+							AND = { 
+								owned_by = ROOT
+								province_group = colonialdumb_region
+							}
+				}
+				remove_core = ROOT
+				cede_province = XXX
+			}
+		}
+		random_owned_province = {
+				limit = { controlled_by = ROOT  }
+				cavalry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+			}
+	}
+}
+
+country_event = {
+	id = flavor_cnnat.30320
+	title = "flavor_cnnat.2t"
+	desc = "flavor_cnnat.2d"
+	picture = CONQUEST_eventPicture
+	
+	trigger = {
+		is_colonial_nation = yes
+		has_country_flag = cn_philippines
+		colonial_parent = {
+			calc_true_if = {
+				all_owned_province = {
+					AND = {
+						province_group = colonial_philippines_region
+						is_city = yes 
+								is_overseas = yes
+					}
+				}
+				amount = 1
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+	hidden_effect = {
+		colonial_parent = {
+					every_core_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_philippines_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						remove_core = owner
+						add_core = ROOT
+						cede_province = ROOT
+					}
+					every_owned_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_philippines_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						cede_province = ROOT
+					}
+					
+		}
+	}
+	}
+	
+	option = {
+		name = "flavor_cnnat.1a"
+		add_adm_power = 10
+	}
+}
+
+country_event = {
+	id = flavor_cnnat.3033
+	title = "flavor_cnnat.1t"
+	desc = "flavor_cnnat.1d"
+	picture = CONQUEST_eventPicture
+	
+	
+	trigger = {
+		is_colonial_nation = yes
+		owns = 3033	# Dummy Province
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+	hidden_effect = {
+		colonial_parent = {
+					every_owned_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_malacca_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						remove_core = owner
+						add_core = ROOT
+						cede_province = ROOT
+					}
+		}
+		set_country_flag = cn_malacca
+	}
+	}
+	option = {
+		name = "flavor_cnnat.1a"
+		hidden_effect = {
+			add_treasury = 100
+			every_owned_province = {
+				limit = { 
+							AND = { 
+								owned_by = ROOT
+								province_group = colonialdumb_region
+							}
+				}
+				remove_core = ROOT
+				cede_province = XXX
+			}
+		}
+		random_owned_province = {
+				limit = { controlled_by = ROOT  }
+				cavalry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+			}
+	}
+}
+
+country_event = {
+	id = flavor_cnnat.30330
+	title = "flavor_cnnat.2t"
+	desc = "flavor_cnnat.2d"
+	picture = CONQUEST_eventPicture
+	
+	trigger = {
+		is_colonial_nation = yes
+		has_country_flag = cn_malacca
+		colonial_parent = {
+			calc_true_if = {
+				all_owned_province = {
+					AND = {
+						province_group = colonial_malacca_region
+						is_city = yes 
+								is_overseas = yes
+					}
+				}
+				amount = 1
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+	hidden_effect = {
+		colonial_parent = {
+					every_core_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_malacca_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						remove_core = owner
+						add_core = ROOT
+						cede_province = ROOT
+					}
+					every_owned_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_malacca_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						cede_province = ROOT
+					}
+					
+		}
+	}
+	}
+	
+	option = {
+		name = "flavor_cnnat.1a"
+		add_adm_power = 10
+	}
+}
+
+country_event = {
+	id = flavor_cnnat.3034
+	title = "flavor_cnnat.1t"
+	desc = "flavor_cnnat.1d"
+	picture = CONQUEST_eventPicture
+	
+	
+	trigger = {
+		is_colonial_nation = yes
+		owns = 3034	# Dummy Province
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+	hidden_effect = {
+		colonial_parent = {
+					every_owned_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_australia_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						remove_core = owner
+						add_core = ROOT
+						cede_province = ROOT
+					}
+		}
+		set_country_flag = cn_australia
+	}
+	}
+	option = {
+		name = "flavor_cnnat.1a"
+		hidden_effect = {
+			add_treasury = 100
+			every_owned_province = {
+				limit = { 
+							AND = { 
+								owned_by = ROOT
+								province_group = colonialdumb_region
+							}
+				}
+				remove_core = ROOT
+				cede_province = XXX
+			}
+		}
+		random_owned_province = {
+				limit = { controlled_by = ROOT  }
+				cavalry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+			}
+	}
+}
+
+country_event = {
+	id = flavor_cnnat.30340
+	title = "flavor_cnnat.2t"
+	desc = "flavor_cnnat.2d"
+	picture = CONQUEST_eventPicture
+	
+	trigger = {
+		is_colonial_nation = yes
+		has_country_flag = cn_australia
+		colonial_parent = {
+			calc_true_if = {
+				all_owned_province = {
+					AND = {
+						province_group = colonial_australia_region
+						is_city = yes 
+								is_overseas = yes
+					}
+				}
+				amount = 1
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+	hidden_effect = {
+		colonial_parent = {
+					every_core_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_australia_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						remove_core = owner
+						add_core = ROOT
+						cede_province = ROOT
+					}
+					every_owned_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_australia_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						cede_province = ROOT
+					}
+					
+		}
+	}
+	}
+	
+	option = {
+		name = "flavor_cnnat.1a"
+		add_adm_power = 10
+	}
+}
+
+country_event = {
+	id = flavor_cnnat.3035
+	title = "flavor_cnnat.1t"
+	desc = "flavor_cnnat.1d"
+	picture = CONQUEST_eventPicture
+	
+	
+	trigger = {
+		is_colonial_nation = yes
+		owns = 3035	# Dummy Province
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+	hidden_effect = {
+		colonial_parent = {
+					every_owned_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_southchina_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						remove_core = owner
+						add_core = ROOT
+						cede_province = ROOT
+					}
+		}
+		set_country_flag = cn_southchina
+	}
+	}
+	option = {
+		name = "flavor_cnnat.1a"
+		hidden_effect = {
+			add_treasury = 100
+			every_owned_province = {
+				limit = { 
+							AND = { 
+								owned_by = ROOT
+								province_group = colonialdumb_region
+							}
+				}
+				remove_core = ROOT
+				cede_province = XXX
+			}
+		}
+		random_owned_province = {
+				limit = { controlled_by = ROOT  }
+				cavalry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+			}
+	}
+}
+
+country_event = {
+	id = flavor_cnnat.30350
+	title = "flavor_cnnat.2t"
+	desc = "flavor_cnnat.2d"
+	picture = CONQUEST_eventPicture
+	
+	trigger = {
+		is_colonial_nation = yes
+		has_country_flag = cn_southchina
+		colonial_parent = {
+			calc_true_if = {
+				all_owned_province = {
+					AND = {
+						province_group = colonial_southchina_region
+						is_city = yes 
+								is_overseas = yes
+					}
+				}
+				amount = 1
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+	hidden_effect = {
+		colonial_parent = {
+					every_core_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_southchina_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						remove_core = owner
+						add_core = ROOT
+						cede_province = ROOT
+					}
+					every_owned_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_southchina_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						cede_province = ROOT
+					}
+					
+		}
+	}
+	}
+	
+	option = {
+		name = "flavor_cnnat.1a"
+		add_adm_power = 10
+	}
+}
+
+country_event = {
+	id = flavor_cnnat.3036
+	title = "flavor_cnnat.1t"
+	desc = "flavor_cnnat.1d"
+	picture = CONQUEST_eventPicture
+	
+	
+	trigger = {
+		is_colonial_nation = yes
+		owns = 3036	# Dummy Province
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+	hidden_effect = {
+		colonial_parent = {
+					every_owned_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_eastchina_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						remove_core = owner
+						add_core = ROOT
+						cede_province = ROOT
+					}
+		}
+		set_country_flag = cn_eastchina
+	}
+	}
+	option = {
+		name = "flavor_cnnat.1a"
+		hidden_effect = {
+			add_treasury = 100
+			every_owned_province = {
+				limit = { 
+							AND = { 
+								owned_by = ROOT
+								province_group = colonialdumb_region
+							}
+				}
+				remove_core = ROOT
+				cede_province = XXX
+			}
+		}
+		random_owned_province = {
+				limit = { controlled_by = ROOT  }
+				cavalry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+			}
+	}
+}
+
+country_event = {
+	id = flavor_cnnat.30360
+	title = "flavor_cnnat.2t"
+	desc = "flavor_cnnat.2d"
+	picture = CONQUEST_eventPicture
+	
+	trigger = {
+		is_colonial_nation = yes
+		has_country_flag = cn_eastchina
+		colonial_parent = {
+			calc_true_if = {
+				all_owned_province = {
+					AND = {
+						province_group = colonial_eastchina_region
+						is_city = yes 
+								is_overseas = yes
+					}
+				}
+				amount = 1
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+	hidden_effect = {
+		colonial_parent = {
+					every_core_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_eastchina_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						remove_core = owner
+						add_core = ROOT
+						cede_province = ROOT
+					}
+					every_owned_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_eastchina_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						cede_province = ROOT
+					}
+					
+		}
+	}
+	}
+	
+	option = {
+		name = "flavor_cnnat.1a"
+		add_adm_power = 10
+	}
+}
+
+country_event = {
+	id = flavor_cnnat.3037
+	title = "flavor_cnnat.1t"
+	desc = "flavor_cnnat.1d"
+	picture = CONQUEST_eventPicture
+	
+	
+	trigger = {
+		is_colonial_nation = yes
+		owns = 3037	# Dummy Province
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+	hidden_effect = {
+		colonial_parent = {
+					every_owned_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_northchina_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						remove_core = owner
+						add_core = ROOT
+						cede_province = ROOT
+					}
+		}
+		set_country_flag = cn_northchina
+	}
+	}
+	option = {
+		name = "flavor_cnnat.1a"
+		hidden_effect = {
+			add_treasury = 100
+			every_owned_province = {
+				limit = { 
+							AND = { 
+								owned_by = ROOT
+								province_group = colonialdumb_region
+							}
+				}
+				remove_core = ROOT
+				cede_province = XXX
+			}
+		}
+		random_owned_province = {
+				limit = { controlled_by = ROOT  }
+				cavalry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+			}
+	}
+}
+
+country_event = {
+	id = flavor_cnnat.30370
+	title = "flavor_cnnat.2t"
+	desc = "flavor_cnnat.2d"
+	picture = CONQUEST_eventPicture
+	
+	trigger = {
+		is_colonial_nation = yes
+		has_country_flag = cn_northchina
+		colonial_parent = {
+			calc_true_if = {
+				all_owned_province = {
+					AND = {
+						province_group = colonial_northchina_region
+						is_city = yes 
+								is_overseas = yes
+					}
+				}
+				amount = 1
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+	hidden_effect = {
+		colonial_parent = {
+					every_core_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_northchina_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						remove_core = owner
+						add_core = ROOT
+						cede_province = ROOT
+					}
+					every_owned_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_northchina_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						cede_province = ROOT
+					}
+					
+		}
+	}
+	}
+	
+	option = {
+		name = "flavor_cnnat.1a"
+		add_adm_power = 10
+	}
+}
+
+country_event = {
+	id = flavor_cnnat.3038
+	title = "flavor_cnnat.1t"
+	desc = "flavor_cnnat.1d"
+	picture = CONQUEST_eventPicture
+	
+	
+	trigger = {
+		is_colonial_nation = yes
+		owns = 3038	# Dummy Province
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+	hidden_effect = {
+		colonial_parent = {
+					every_owned_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_japan_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						remove_core = owner
+						add_core = ROOT
+						cede_province = ROOT
+					}
+		}
+		set_country_flag = cn_japan
+	}
+	}
+	option = {
+		name = "flavor_cnnat.1a"
+		hidden_effect = {
+			add_treasury = 100
+			every_owned_province = {
+				limit = { 
+							AND = { 
+								owned_by = ROOT
+								province_group = colonialdumb_region
+							}
+				}
+				remove_core = ROOT
+				cede_province = XXX
+			}
+		}
+		random_owned_province = {
+				limit = { controlled_by = ROOT  }
+				cavalry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+			}
+	}
+}
+
+country_event = {
+	id = flavor_cnnat.30380
+	title = "flavor_cnnat.2t"
+	desc = "flavor_cnnat.2d"
+	picture = CONQUEST_eventPicture
+	
+	trigger = {
+		is_colonial_nation = yes
+		has_country_flag = cn_japan
+		colonial_parent = {
+			calc_true_if = {
+				all_owned_province = {
+					AND = {
+						province_group = colonial_japan_region
+						is_city = yes 
+								is_overseas = yes
+					}
+				}
+				amount = 1
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+	hidden_effect = {
+		colonial_parent = {
+					every_core_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_japan_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						remove_core = owner
+						add_core = ROOT
+						cede_province = ROOT
+					}
+					every_owned_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_japan_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						cede_province = ROOT
+					}
+					
+		}
+	}
+	}
+	
+	option = {
+		name = "flavor_cnnat.1a"
+		add_adm_power = 10
+	}
+}
+
+country_event = {
+	id = flavor_cnnat.3039
+	title = "flavor_cnnat.1t"
+	desc = "flavor_cnnat.1d"
+	picture = CONQUEST_eventPicture
+	
+	
+	trigger = {
+		is_colonial_nation = yes
+		owns = 3039	# Dummy Province
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+	hidden_effect = {
+		colonial_parent = {
+					every_owned_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_safi_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						remove_core = owner
+						add_core = ROOT
+						cede_province = ROOT
+					}
+		}
+		set_country_flag = cn_safi
+	}
+	}
+	option = {
+		name = "flavor_cnnat.1a"
+		hidden_effect = {
+			add_treasury = 100
+			every_owned_province = {
+				limit = { 
+							AND = { 
+								owned_by = ROOT
+								province_group = colonialdumb_region
+							}
+				}
+				remove_core = ROOT
+				cede_province = XXX
+			}
+		}
+		random_owned_province = {
+				limit = { controlled_by = ROOT  }
+				cavalry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+			}
+	}
+}
+
+country_event = {
+	id = flavor_cnnat.30390
+	title = "flavor_cnnat.2t"
+	desc = "flavor_cnnat.2d"
+	picture = CONQUEST_eventPicture
+	
+	trigger = {
+		is_colonial_nation = yes
+		has_country_flag = cn_safi
+		colonial_parent = {
+			calc_true_if = {
+				all_owned_province = {
+					AND = {
+						province_group = colonial_safi_region
+						is_city = yes 
+								is_overseas = yes
+					}
+				}
+				amount = 1
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+	hidden_effect = {
+		colonial_parent = {
+					every_core_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_safi_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						remove_core = owner
+						add_core = ROOT
+						cede_province = ROOT
+					}
+					every_owned_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_safi_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						cede_province = ROOT
+					}
+					
+		}
+	}
+	}
+	
+	option = {
+		name = "flavor_cnnat.1a"
+		add_adm_power = 10
+	}
+}
+
+country_event = {
+	id = flavor_cnnat.3040
+	title = "flavor_cnnat.1t"
+	desc = "flavor_cnnat.1d"
+	picture = CONQUEST_eventPicture
+	
+	
+	trigger = {
+		is_colonial_nation = yes
+		owns = 3040	# Dummy Province
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+	hidden_effect = {
+		colonial_parent = {
+					every_owned_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_tunis_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						remove_core = owner
+						add_core = ROOT
+						cede_province = ROOT
+					}
+		}
+		set_country_flag = cn_tunis
+	}
+	}
+	option = {
+		name = "flavor_cnnat.1a"
+		hidden_effect = {
+			add_treasury = 100
+			every_owned_province = {
+				limit = { 
+							AND = { 
+								owned_by = ROOT
+								province_group = colonialdumb_region
+							}
+				}
+				remove_core = ROOT
+				cede_province = XXX
+			}
+		}
+		random_owned_province = {
+				limit = { controlled_by = ROOT  }
+				cavalry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+			}
+	}
+}
+
+country_event = {
+	id = flavor_cnnat.30400
+	title = "flavor_cnnat.2t"
+	desc = "flavor_cnnat.2d"
+	picture = CONQUEST_eventPicture
+	
+	trigger = {
+		is_colonial_nation = yes
+		has_country_flag = cn_tunis
+		colonial_parent = {
+			calc_true_if = {
+				all_owned_province = {
+					AND = {
+						province_group = colonial_tunis_region
+						is_city = yes 
+								is_overseas = yes
+					}
+				}
+				amount = 1
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+	hidden_effect = {
+		colonial_parent = {
+					every_core_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_tunis_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						remove_core = owner
+						add_core = ROOT
+						cede_province = ROOT
+					}
+					every_owned_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_tunis_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						cede_province = ROOT
+					}
+					
+		}
+	}
+	}
+	
+	option = {
+		name = "flavor_cnnat.1a"
+		add_adm_power = 10
+	}
+}
+
+country_event = {
+	id = flavor_cnnat.3041
+	title = "flavor_cnnat.1t"
+	desc = "flavor_cnnat.1d"
+	picture = CONQUEST_eventPicture
+	
+	
+	trigger = {
+		is_colonial_nation = yes
+		owns = 3041	# Dummy Province
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+	hidden_effect = {
+		colonial_parent = {
+					every_owned_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_alexandria_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						remove_core = owner
+						add_core = ROOT
+						cede_province = ROOT
+					}
+		}
+		set_country_flag = cn_alexandria
+	}
+	}
+	option = {
+		name = "flavor_cnnat.1a"
+		hidden_effect = {
+			add_treasury = 100
+			every_owned_province = {
+				limit = { 
+							AND = { 
+								owned_by = ROOT
+								province_group = colonialdumb_region
+							}
+				}
+				remove_core = ROOT
+				cede_province = XXX
+			}
+		}
+		random_owned_province = {
+				limit = { controlled_by = ROOT  }
+				cavalry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+			}
+	}
+}
+
+country_event = {
+	id = flavor_cnnat.30410
+	title = "flavor_cnnat.2t"
+	desc = "flavor_cnnat.2d"
+	picture = CONQUEST_eventPicture
+	
+	trigger = {
+		is_colonial_nation = yes
+		has_country_flag = cn_alexandria
+		colonial_parent = {
+			calc_true_if = {
+				all_owned_province = {
+					AND = {
+						province_group = colonial_alexandria_region
+						is_city = yes 
+								is_overseas = yes
+					}
+				}
+				amount = 1
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+	hidden_effect = {
+		colonial_parent = {
+					every_core_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_alexandria_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						remove_core = owner
+						add_core = ROOT
+						cede_province = ROOT
+					}
+					every_owned_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_alexandria_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						cede_province = ROOT
+					}
+					
+		}
+	}
+	}
+	
+	option = {
+		name = "flavor_cnnat.1a"
+		add_adm_power = 10
+	}
+}
+
+country_event = {
+	id = flavor_cnnat.3042
+	title = "flavor_cnnat.1t"
+	desc = "flavor_cnnat.1d"
+	picture = CONQUEST_eventPicture
+	
+	
+	trigger = {
+		is_colonial_nation = yes
+		owns = 3042	# Dummy Province
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+	hidden_effect = {
+		colonial_parent = {
+					every_owned_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_basra_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						remove_core = owner
+						add_core = ROOT
+						cede_province = ROOT
+					}
+		}
+		set_country_flag = cn_basra
+	}
+	}
+	option = {
+		name = "flavor_cnnat.1a"
+		hidden_effect = {
+			add_treasury = 100
+			every_owned_province = {
+				limit = { 
+							AND = { 
+								owned_by = ROOT
+								province_group = colonialdumb_region
+							}
+				}
+				remove_core = ROOT
+				cede_province = XXX
+			}
+		}
+		random_owned_province = {
+				limit = { controlled_by = ROOT  }
+				cavalry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+			}
+	}
+}
+
+country_event = {
+	id = flavor_cnnat.30420
+	title = "flavor_cnnat.2t"
+	desc = "flavor_cnnat.2d"
+	picture = CONQUEST_eventPicture
+	
+	trigger = {
+		is_colonial_nation = yes
+		has_country_flag = cn_basra
+		colonial_parent = {
+			calc_true_if = {
+				all_owned_province = {
+					AND = {
+						province_group = colonial_basra_region
+						is_city = yes 
+								is_overseas = yes
+					}
+				}
+				amount = 1
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+	hidden_effect = {
+		colonial_parent = {
+					every_core_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_basra_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						remove_core = owner
+						add_core = ROOT
+						cede_province = ROOT
+					}
+					every_owned_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_basra_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						cede_province = ROOT
+					}
+					
+		}
+	}
+	}
+	
+	option = {
+		name = "flavor_cnnat.1a"
+		add_adm_power = 10
+	}
+}
+
+country_event = {
+	id = flavor_cnnat.3043
+	title = "flavor_cnnat.1t"
+	desc = "flavor_cnnat.1d"
+	picture = CONQUEST_eventPicture
+	
+	
+	trigger = {
+		is_colonial_nation = yes
+		owns = 3043	# Dummy Province
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+	hidden_effect = {
+		colonial_parent = {
+					every_owned_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_girin_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						remove_core = owner
+						add_core = ROOT
+						cede_province = ROOT
+					}
+		}
+		set_country_flag = cn_girin
+	}
+	}
+	option = {
+		name = "flavor_cnnat.1a"
+		hidden_effect = {
+			add_treasury = 100
+			every_owned_province = {
+				limit = { 
+							AND = { 
+								owned_by = ROOT
+								province_group = colonialdumb_region
+							}
+				}
+				remove_core = ROOT
+				cede_province = XXX
+			}
+		}
+		random_owned_province = {
+				limit = { controlled_by = ROOT  }
+				cavalry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+			}
+	}
+}
+
+country_event = {
+	id = flavor_cnnat.30430
+	title = "flavor_cnnat.2t"
+	desc = "flavor_cnnat.2d"
+	picture = CONQUEST_eventPicture
+	
+	trigger = {
+		is_colonial_nation = yes
+		has_country_flag = cn_girin
+		colonial_parent = {
+			calc_true_if = {
+				all_owned_province = {
+					AND = {
+						province_group = colonial_girin_region
+						is_city = yes 
+								is_overseas = yes
+					}
+				}
+				amount = 1
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+	hidden_effect = {
+		colonial_parent = {
+					every_core_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_girin_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						remove_core = owner
+						add_core = ROOT
+						cede_province = ROOT
+					}
+					every_owned_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_girin_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						cede_province = ROOT
+					}
+					
+		}
+	}
+	}
+	
+	option = {
+		name = "flavor_cnnat.1a"
+		add_adm_power = 10
+	}
+}
+
+country_event = {
+	id = flavor_cnnat.3044
+	title = "flavor_cnnat.1t"
+	desc = "flavor_cnnat.1d"
+	picture = CONQUEST_eventPicture
+	
+	
+	trigger = {
+		is_colonial_nation = yes
+		owns = 3044	# Dummy Province
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+	hidden_effect = {
+		colonial_parent = {
+					every_owned_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_timbuktu_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						remove_core = owner
+						add_core = ROOT
+						cede_province = ROOT
+					}
+		}
+		set_country_flag = cn_timbuktu
+	}
+	}
+	option = {
+		name = "flavor_cnnat.1a"
+		hidden_effect = {
+			add_treasury = 100
+			every_owned_province = {
+				limit = { 
+							AND = { 
+								owned_by = ROOT
+								province_group = colonialdumb_region
+							}
+				}
+				remove_core = ROOT
+				cede_province = XXX
+			}
+		}
+		random_owned_province = {
+				limit = { controlled_by = ROOT  }
+				cavalry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+			}
+	}
+}
+
+country_event = {
+	id = flavor_cnnat.30440
+	title = "flavor_cnnat.2t"
+	desc = "flavor_cnnat.2d"
+	picture = CONQUEST_eventPicture
+	
+	trigger = {
+		is_colonial_nation = yes
+		has_country_flag = cn_timbuktu
+		colonial_parent = {
+			calc_true_if = {
+				all_owned_province = {
+					AND = {
+						province_group = colonial_timbuktu_region
+						is_city = yes 
+								is_overseas = yes
+					}
+				}
+				amount = 1
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+	hidden_effect = {
+		colonial_parent = {
+					every_core_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_timbuktu_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						remove_core = owner
+						add_core = ROOT
+						cede_province = ROOT
+					}
+					every_owned_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_timbuktu_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						cede_province = ROOT
+					}
+					
+		}
+	}
+	}
+	
+	option = {
+		name = "flavor_cnnat.1a"
+		add_adm_power = 10
+	}
+}
+
+country_event = {
+	id = flavor_cnnat.3045
+	title = "flavor_cnnat.1t"
+	desc = "flavor_cnnat.1d"
+	picture = CONQUEST_eventPicture
+	
+	
+	trigger = {
+		is_colonial_nation = yes
+		owns = 3045	# Dummy Province
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+	hidden_effect = {
+		colonial_parent = {
+					every_owned_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_katsina_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						remove_core = owner
+						add_core = ROOT
+						cede_province = ROOT
+					}
+		}
+		set_country_flag = cn_katsina
+	}
+	}
+	option = {
+		name = "flavor_cnnat.1a"
+		hidden_effect = {
+			add_treasury = 100
+			every_owned_province = {
+				limit = { 
+							AND = { 
+								owned_by = ROOT
+								province_group = colonialdumb_region
+							}
+				}
+				remove_core = ROOT
+				cede_province = XXX
+			}
+		}
+		random_owned_province = {
+				limit = { controlled_by = ROOT  }
+				cavalry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+			}
+	}
+}
+
+country_event = {
+	id = flavor_cnnat.30450
+	title = "flavor_cnnat.2t"
+	desc = "flavor_cnnat.2d"
+	picture = CONQUEST_eventPicture
+	
+	trigger = {
+		is_colonial_nation = yes
+		has_country_flag = cn_katsina
+		colonial_parent = {
+			calc_true_if = {
+				all_owned_province = {
+					AND = {
+						province_group = colonial_katsina_region
+						is_city = yes 
+								is_overseas = yes
+					}
+				}
+				amount = 1
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+	hidden_effect = {
+		colonial_parent = {
+					every_core_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_katsina_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						remove_core = owner
+						add_core = ROOT
+						cede_province = ROOT
+					}
+					every_owned_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_katsina_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						cede_province = ROOT
+					}
+					
+		}
+	}
+	}
+	
+	option = {
+		name = "flavor_cnnat.1a"
+		add_adm_power = 10
+	}
+}
+
+country_event = {
+	id = flavor_cnnat.3046
+	title = "flavor_cnnat.1t"
+	desc = "flavor_cnnat.1d"
+	picture = CONQUEST_eventPicture
+	
+	
+	trigger = {
+		is_colonial_nation = yes
+		owns = 3046	# Dummy Province
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+	hidden_effect = {
+		colonial_parent = {
+					every_owned_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_lhasa_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						remove_core = owner
+						add_core = ROOT
+						cede_province = ROOT
+					}
+		}
+		set_country_flag = cn_lhasa
+	}
+	}
+	option = {
+		name = "flavor_cnnat.1a"
+		hidden_effect = {
+			add_treasury = 100
+			every_owned_province = {
+				limit = { 
+							AND = { 
+								owned_by = ROOT
+								province_group = colonialdumb_region
+							}
+				}
+				remove_core = ROOT
+				cede_province = XXX
+			}
+		}
+		random_owned_province = {
+				limit = { controlled_by = ROOT  }
+				cavalry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+			}
+	}
+}
+
+country_event = {
+	id = flavor_cnnat.30460
+	title = "flavor_cnnat.2t"
+	desc = "flavor_cnnat.2d"
+	picture = CONQUEST_eventPicture
+	
+	trigger = {
+		is_colonial_nation = yes
+		has_country_flag = cn_lhasa
+		colonial_parent = {
+			calc_true_if = {
+				all_owned_province = {
+					AND = {
+						province_group = colonial_lhasa_region
+						is_city = yes 
+								is_overseas = yes
+					}
+				}
+				amount = 1
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+	hidden_effect = {
+		colonial_parent = {
+					every_core_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_lhasa_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						remove_core = owner
+						add_core = ROOT
+						cede_province = ROOT
+					}
+					every_owned_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_lhasa_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						cede_province = ROOT
+					}
+					
+		}
+	}
+	}
+	
+	option = {
+		name = "flavor_cnnat.1a"
+		add_adm_power = 10
+	}
+}
+
+country_event = {
+	id = flavor_cnnat.3047
+	title = "flavor_cnnat.1t"
+	desc = "flavor_cnnat.1d"
+	picture = CONQUEST_eventPicture
+	
+	
+	trigger = {
+		is_colonial_nation = yes
+		owns = 3047	# Dummy Province
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+	hidden_effect = {
+		colonial_parent = {
+					every_owned_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_xian_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						remove_core = owner
+						add_core = ROOT
+						cede_province = ROOT
+					}
+		}
+		set_country_flag = cn_xian
+	}
+	}
+	option = {
+		name = "flavor_cnnat.1a"
+		hidden_effect = {
+			add_treasury = 100
+			every_owned_province = {
+				limit = { 
+							AND = { 
+								owned_by = ROOT
+								province_group = colonialdumb_region
+							}
+				}
+				remove_core = ROOT
+				cede_province = XXX
+			}
+		}
+		random_owned_province = {
+				limit = { controlled_by = ROOT  }
+				cavalry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+			}
+	}
+}
+
+country_event = {
+	id = flavor_cnnat.30470
+	title = "flavor_cnnat.2t"
+	desc = "flavor_cnnat.2d"
+	picture = CONQUEST_eventPicture
+	
+	trigger = {
+		is_colonial_nation = yes
+		has_country_flag = cn_xian
+		colonial_parent = {
+			calc_true_if = {
+				all_owned_province = {
+					AND = {
+						province_group = colonial_xian_region
+						is_city = yes 
+								is_overseas = yes
+					}
+				}
+				amount = 1
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+	hidden_effect = {
+		colonial_parent = {
+					every_core_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_xian_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						remove_core = owner
+						add_core = ROOT
+						cede_province = ROOT
+					}
+					every_owned_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_xian_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						cede_province = ROOT
+					}
+					
+		}
+	}
+	}
+	
+	option = {
+		name = "flavor_cnnat.1a"
+		add_adm_power = 10
+	}
+}
+
+country_event = {
+	id = flavor_cnnat.3048
+	title = "flavor_cnnat.1t"
+	desc = "flavor_cnnat.1d"
+	picture = CONQUEST_eventPicture
+	
+	
+	trigger = {
+		is_colonial_nation = yes
+		owns = 3048	# Dummy Province
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+	hidden_effect = {
+		colonial_parent = {
+					every_owned_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_chengdu_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						remove_core = owner
+						add_core = ROOT
+						cede_province = ROOT
+					}
+		}
+		set_country_flag = cn_chengdu
+	}
+	}
+	option = {
+		name = "flavor_cnnat.1a"
+		hidden_effect = {
+			add_treasury = 100
+			every_owned_province = {
+				limit = { 
+							AND = { 
+								owned_by = ROOT
+								province_group = colonialdumb_region
+							}
+				}
+				remove_core = ROOT
+				cede_province = XXX
+			}
+		}
+		random_owned_province = {
+				limit = { controlled_by = ROOT  }
+				cavalry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+			}
+	}
+}
+
+country_event = {
+	id = flavor_cnnat.30480
+	title = "flavor_cnnat.2t"
+	desc = "flavor_cnnat.2d"
+	picture = CONQUEST_eventPicture
+	
+	trigger = {
+		is_colonial_nation = yes
+		has_country_flag = cn_chengdu
+		colonial_parent = {
+			calc_true_if = {
+				all_owned_province = {
+					AND = {
+						province_group = colonial_chengdu_region
+						is_city = yes 
+								is_overseas = yes
+					}
+				}
+				amount = 1
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+	hidden_effect = {
+		colonial_parent = {
+					every_core_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_chengdu_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						remove_core = owner
+						add_core = ROOT
+						cede_province = ROOT
+					}
+					every_owned_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_chengdu_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						cede_province = ROOT
+					}
+					
+		}
+	}
+	}
+	
+	option = {
+		name = "flavor_cnnat.1a"
+		add_adm_power = 10
+	}
+}
+
+country_event = {
+	id = flavor_cnnat.3049
+	title = "flavor_cnnat.1t"
+	desc = "flavor_cnnat.1d"
+	picture = CONQUEST_eventPicture
+	
+	
+	trigger = {
+		is_colonial_nation = yes
+		owns = 3049	# Dummy Province
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+	hidden_effect = {
+		colonial_parent = {
+					every_owned_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_yumen_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						remove_core = owner
+						add_core = ROOT
+						cede_province = ROOT
+					}
+		}
+		set_country_flag = cn_yumen
+	}
+	}
+	option = {
+		name = "flavor_cnnat.1a"
+		hidden_effect = {
+			add_treasury = 100
+			every_owned_province = {
+				limit = { 
+							AND = { 
+								owned_by = ROOT
+								province_group = colonialdumb_region
+							}
+				}
+				remove_core = ROOT
+				cede_province = XXX
+			}
+		}
+		random_owned_province = {
+				limit = { controlled_by = ROOT  }
+				cavalry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+			}
+	}
+}
+
+country_event = {
+	id = flavor_cnnat.30490
+	title = "flavor_cnnat.2t"
+	desc = "flavor_cnnat.2d"
+	picture = CONQUEST_eventPicture
+	
+	trigger = {
+		is_colonial_nation = yes
+		has_country_flag = cn_yumen
+		colonial_parent = {
+			calc_true_if = {
+				all_owned_province = {
+					AND = {
+						province_group = colonial_yumen_region
+						is_city = yes 
+								is_overseas = yes
+					}
+				}
+				amount = 1
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+	hidden_effect = {
+		colonial_parent = {
+					every_core_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_yumen_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						remove_core = owner
+						add_core = ROOT
+						cede_province = ROOT
+					}
+					every_owned_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_yumen_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						cede_province = ROOT
+					}
+					
+		}
+	}
+	}
+	
+	option = {
+		name = "flavor_cnnat.1a"
+		add_adm_power = 10
+	}
+}
+
+country_event = {
+	id = flavor_cnnat.3050
+	title = "flavor_cnnat.1t"
+	desc = "flavor_cnnat.1d"
+	picture = CONQUEST_eventPicture
+	
+	
+	trigger = {
+		is_colonial_nation = yes
+		owns = 3050	# Dummy Province
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+	hidden_effect = {
+		colonial_parent = {
+					every_owned_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_kashmir_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						remove_core = owner
+						add_core = ROOT
+						cede_province = ROOT
+					}
+		}
+		set_country_flag = cn_kashmir
+	}
+	}
+	option = {
+		name = "flavor_cnnat.1a"
+		hidden_effect = {
+			add_treasury = 100
+			every_owned_province = {
+				limit = { 
+							AND = { 
+								owned_by = ROOT
+								province_group = colonialdumb_region
+							}
+				}
+				remove_core = ROOT
+				cede_province = XXX
+			}
+		}
+		random_owned_province = {
+				limit = { controlled_by = ROOT  }
+				cavalry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+			}
+	}
+}
+
+country_event = {
+	id = flavor_cnnat.30500
+	title = "flavor_cnnat.2t"
+	desc = "flavor_cnnat.2d"
+	picture = CONQUEST_eventPicture
+	
+	trigger = {
+		is_colonial_nation = yes
+		has_country_flag = cn_kashmir
+		colonial_parent = {
+			calc_true_if = {
+				all_owned_province = {
+					AND = {
+						province_group = colonial_kashmir_region
+						is_city = yes 
+								is_overseas = yes
+					}
+				}
+				amount = 1
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+	hidden_effect = {
+		colonial_parent = {
+					every_core_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_kashmir_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						remove_core = owner
+						add_core = ROOT
+						cede_province = ROOT
+					}
+					every_owned_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_kashmir_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						cede_province = ROOT
+					}
+					
+		}
+	}
+	}
+	
+	option = {
+		name = "flavor_cnnat.1a"
+		add_adm_power = 10
+	}
+}
+
+country_event = {
+	id = flavor_cnnat.3051
+	title = "flavor_cnnat.1t"
+	desc = "flavor_cnnat.1d"
+	picture = CONQUEST_eventPicture
+	
+	
+	trigger = {
+		is_colonial_nation = yes
+		owns = 3051	# Dummy Province
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+	hidden_effect = {
+		colonial_parent = {
+					every_owned_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_ethiopia_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						remove_core = owner
+						add_core = ROOT
+						cede_province = ROOT
+					}
+		}
+		set_country_flag = cn_ethiopia
+	}
+	}
+	option = {
+		name = "flavor_cnnat.1a"
+		hidden_effect = {
+			add_treasury = 100
+			every_owned_province = {
+				limit = { 
+							AND = { 
+								owned_by = ROOT
+								province_group = colonialdumb_region
+							}
+				}
+				remove_core = ROOT
+				cede_province = XXX
+			}
+		}
+		random_owned_province = {
+				limit = { controlled_by = ROOT  }
+				cavalry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+			}
+	}
+}
+
+country_event = {
+	id = flavor_cnnat.30510
+	title = "flavor_cnnat.2t"
+	desc = "flavor_cnnat.2d"
+	picture = CONQUEST_eventPicture
+	
+	trigger = {
+		is_colonial_nation = yes
+		has_country_flag = cn_ethiopia
+		colonial_parent = {
+			calc_true_if = {
+				all_owned_province = {
+					AND = {
+						province_group = colonial_ethiopia_region
+						is_city = yes 
+								is_overseas = yes
+					}
+				}
+				amount = 1
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+	hidden_effect = {
+		colonial_parent = {
+					every_core_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_ethiopia_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						remove_core = owner
+						add_core = ROOT
+						cede_province = ROOT
+					}
+					every_owned_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_ethiopia_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						cede_province = ROOT
+					}
+					
+		}
+	}
+	}
+	
+	option = {
+		name = "flavor_cnnat.1a"
+		add_adm_power = 10
+	}
+}
+
+country_event = {
+	id = flavor_cnnat.3052
+	title = "flavor_cnnat.1t"
+	desc = "flavor_cnnat.1d"
+	picture = CONQUEST_eventPicture
+	
+	
+	trigger = {
+		is_colonial_nation = yes
+		owns = 3052	# Dummy Province
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+	hidden_effect = {
+		colonial_parent = {
+					every_owned_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_siberia_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						remove_core = owner
+						add_core = ROOT
+						cede_province = ROOT
+					}
+		}
+		set_country_flag = cn_siberia
+	}
+	}
+	option = {
+		name = "flavor_cnnat.1a"
+		hidden_effect = {
+			add_treasury = 100
+			every_owned_province = {
+				limit = { 
+							AND = { 
+								owned_by = ROOT
+								province_group = colonialdumb_region
+							}
+				}
+				remove_core = ROOT
+				cede_province = XXX
+			}
+		}
+		random_owned_province = {
+				limit = { controlled_by = ROOT  }
+				cavalry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+			}
+	}
+}
+
+country_event = {
+	id = flavor_cnnat.30520
+	title = "flavor_cnnat.2t"
+	desc = "flavor_cnnat.2d"
+	picture = CONQUEST_eventPicture
+	
+	trigger = {
+		is_colonial_nation = yes
+		has_country_flag = cn_siberia
+		colonial_parent = {
+			calc_true_if = {
+				all_owned_province = {
+					AND = {
+						province_group = colonial_siberia_region
+						is_city = yes 
+								is_overseas = yes
+					}
+				}
+				amount = 1
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+	hidden_effect = {
+		colonial_parent = {
+					every_core_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_siberia_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						remove_core = owner
+						add_core = ROOT
+						cede_province = ROOT
+					}
+					every_owned_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_siberia_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						cede_province = ROOT
+					}
+					
+		}
+	}
+	}
+	
+	option = {
+		name = "flavor_cnnat.1a"
+		add_adm_power = 10
+	}
+}
+
+country_event = {
+	id = flavor_cnnat.3053
+	title = "flavor_cnnat.1t"
+	desc = "flavor_cnnat.1d"
+	picture = CONQUEST_eventPicture
+	
+	
+	trigger = {
+		is_colonial_nation = yes
+		owns = 3053	# Dummy Province
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+	hidden_effect = {
+		colonial_parent = {
+					every_owned_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_samarkand_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						remove_core = owner
+						add_core = ROOT
+						cede_province = ROOT
+					}
+		}
+		set_country_flag = cn_samarkand
+	}
+	}
+	option = {
+		name = "flavor_cnnat.1a"
+		hidden_effect = {
+			add_treasury = 100
+			every_owned_province = {
+				limit = { 
+							AND = { 
+								owned_by = ROOT
+								province_group = colonialdumb_region
+							}
+				}
+				remove_core = ROOT
+				cede_province = XXX
+			}
+		}
+		random_owned_province = {
+				limit = { controlled_by = ROOT  }
+				cavalry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+			}
+	}
+}
+
+country_event = {
+	id = flavor_cnnat.30530
+	title = "flavor_cnnat.2t"
+	desc = "flavor_cnnat.2d"
+	picture = CONQUEST_eventPicture
+	
+	trigger = {
+		is_colonial_nation = yes
+		has_country_flag = cn_samarkand
+		colonial_parent = {
+			calc_true_if = {
+				all_owned_province = {
+					AND = {
+						province_group = colonial_samarkand_region
+						is_city = yes 
+								is_overseas = yes
+					}
+				}
+				amount = 1
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+	hidden_effect = {
+		colonial_parent = {
+					every_core_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_samarkand_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						remove_core = owner
+						add_core = ROOT
+						cede_province = ROOT
+					}
+					every_owned_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_samarkand_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						cede_province = ROOT
+					}
+					
+		}
+	}
+	}
+	
+	option = {
+		name = "flavor_cnnat.1a"
+		add_adm_power = 10
+	}
+}
+
+country_event = {
+	id = flavor_cnnat.3054
+	title = "flavor_cnnat.1t"
+	desc = "flavor_cnnat.1d"
+	picture = CONQUEST_eventPicture
+	
+	
+	trigger = {
+		is_colonial_nation = yes
+		owns = 3054	# Dummy Province
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+	hidden_effect = {
+		colonial_parent = {
+					every_owned_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_persia_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						remove_core = owner
+						add_core = ROOT
+						cede_province = ROOT
+					}
+		}
+		set_country_flag = cn_persia
+	}
+	}
+	option = {
+		name = "flavor_cnnat.1a"
+		hidden_effect = {
+			add_treasury = 100
+			every_owned_province = {
+				limit = { 
+							AND = { 
+								owned_by = ROOT
+								province_group = colonialdumb_region
+							}
+				}
+				remove_core = ROOT
+				cede_province = XXX
+			}
+		}
+		random_owned_province = {
+				limit = { controlled_by = ROOT  }
+				cavalry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+			}
+	}
+}
+
+country_event = {
+	id = flavor_cnnat.30540
+	title = "flavor_cnnat.2t"
+	desc = "flavor_cnnat.2d"
+	picture = CONQUEST_eventPicture
+	
+	trigger = {
+		is_colonial_nation = yes
+		has_country_flag = cn_persia
+		colonial_parent = {
+			calc_true_if = {
+				all_owned_province = {
+					AND = {
+						province_group = colonial_persia_region
+						is_city = yes 
+								is_overseas = yes
+					}
+				}
+				amount = 1
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+	hidden_effect = {
+		colonial_parent = {
+					every_core_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_persia_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						remove_core = owner
+						add_core = ROOT
+						cede_province = ROOT
+					}
+					every_owned_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_persia_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						cede_province = ROOT
+					}
+					
+		}
+	}
+	}
+	
+	option = {
+		name = "flavor_cnnat.1a"
+		add_adm_power = 10
+	}
+}
+
+country_event = {
+	id = flavor_cnnat.3055
+	title = "flavor_cnnat.1t"
+	desc = "flavor_cnnat.1d"
+	picture = CONQUEST_eventPicture
+	
+	
+	trigger = {
+		is_colonial_nation = yes
+		owns = 3055	# Dummy Province
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+	hidden_effect = {
+		colonial_parent = {
+					every_owned_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_astrakhan_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						remove_core = owner
+						add_core = ROOT
+						cede_province = ROOT
+					}
+		}
+		set_country_flag = cn_astrakhan
+	}
+	}
+	option = {
+		name = "flavor_cnnat.1a"
+		hidden_effect = {
+			add_treasury = 100
+			every_owned_province = {
+				limit = { 
+							AND = { 
+								owned_by = ROOT
+								province_group = colonialdumb_region
+							}
+				}
+				remove_core = ROOT
+				cede_province = XXX
+			}
+		}
+		random_owned_province = {
+				limit = { controlled_by = ROOT  }
+				cavalry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+			}
+	}
+}
+
+country_event = {
+	id = flavor_cnnat.30550
+	title = "flavor_cnnat.2t"
+	desc = "flavor_cnnat.2d"
+	picture = CONQUEST_eventPicture
+	
+	trigger = {
+		is_colonial_nation = yes
+		has_country_flag = cn_astrakhan
+		colonial_parent = {
+			calc_true_if = {
+				all_owned_province = {
+					AND = {
+						province_group = colonial_astrakhan_region
+						is_city = yes 
+								is_overseas = yes
+					}
+				}
+				amount = 1
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+	hidden_effect = {
+		colonial_parent = {
+					every_core_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_astrakhan_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						remove_core = owner
+						add_core = ROOT
+						cede_province = ROOT
+					}
+					every_owned_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_astrakhan_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						cede_province = ROOT
+					}
+					
+		}
+	}
+	}
+	
+	option = {
+		name = "flavor_cnnat.1a"
+		add_adm_power = 10
+	}
+}
+
+country_event = {
+	id = flavor_cnnat.3056
+	title = "flavor_cnnat.1t"
+	desc = "flavor_cnnat.1d"
+	picture = CONQUEST_eventPicture
+	
+	
+	trigger = {
+		is_colonial_nation = yes
+		owns = 3056	# Dummy Province
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+	hidden_effect = {
+		colonial_parent = {
+					every_owned_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_aleppo_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						remove_core = owner
+						add_core = ROOT
+						cede_province = ROOT
+					}
+		}
+		set_country_flag = cn_aleppo
+	}
+	}
+	option = {
+		name = "flavor_cnnat.1a"
+		hidden_effect = {
+			add_treasury = 100
+			every_owned_province = {
+				limit = { 
+							AND = { 
+								owned_by = ROOT
+								province_group = colonialdumb_region
+							}
+				}
+				remove_core = ROOT
+				cede_province = XXX
+			}
+		}
+		random_owned_province = {
+				limit = { controlled_by = ROOT  }
+				cavalry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+			}
+	}
+}
+
+country_event = {
+	id = flavor_cnnat.30560
+	title = "flavor_cnnat.2t"
+	desc = "flavor_cnnat.2d"
+	picture = CONQUEST_eventPicture
+	
+	trigger = {
+		is_colonial_nation = yes
+		has_country_flag = cn_aleppo
+		colonial_parent = {
+			calc_true_if = {
+				all_owned_province = {
+					AND = {
+						province_group = colonial_aleppo_region
+						is_city = yes 
+								is_overseas = yes
+					}
+				}
+				amount = 1
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+	hidden_effect = {
+		colonial_parent = {
+					every_core_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_aleppo_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						remove_core = owner
+						add_core = ROOT
+						cede_province = ROOT
+					}
+					every_owned_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_aleppo_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						cede_province = ROOT
+					}
+					
+		}
+	}
+	}
+	
+	option = {
+		name = "flavor_cnnat.1a"
+		add_adm_power = 10
+	}
+}
+
+country_event = {
+	id = flavor_cnnat.3057
+	title = "flavor_cnnat.1t"
+	desc = "flavor_cnnat.1d"
+	picture = CONQUEST_eventPicture
+	
+	
+	trigger = {
+		is_colonial_nation = yes
+		owns = 3057	# Dummy Province
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+	hidden_effect = {
+		colonial_parent = {
+					every_owned_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_crimea_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						remove_core = owner
+						add_core = ROOT
+						cede_province = ROOT
+					}
+		}
+		set_country_flag = cn_crimea
+	}
+	}
+	option = {
+		name = "flavor_cnnat.1a"
+		hidden_effect = {
+			add_treasury = 100
+			every_owned_province = {
+				limit = { 
+							AND = { 
+								owned_by = ROOT
+								province_group = colonialdumb_region
+							}
+				}
+				remove_core = ROOT
+				cede_province = XXX
+			}
+		}
+		random_owned_province = {
+				limit = { controlled_by = ROOT  }
+				cavalry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+			}
+	}
+}
+
+country_event = {
+	id = flavor_cnnat.30570
+	title = "flavor_cnnat.2t"
+	desc = "flavor_cnnat.2d"
+	picture = CONQUEST_eventPicture
+	
+	trigger = {
+		is_colonial_nation = yes
+		has_country_flag = cn_crimea
+		colonial_parent = {
+			calc_true_if = {
+				all_owned_province = {
+					AND = {
+						province_group = colonial_crimea_region
+						is_city = yes 
+								is_overseas = yes
+					}
+				}
+				amount = 1
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+	hidden_effect = {
+		colonial_parent = {
+					every_core_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_crimea_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						remove_core = owner
+						add_core = ROOT
+						cede_province = ROOT
+					}
+					every_owned_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_crimea_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						cede_province = ROOT
+					}
+					
+		}
+	}
+	}
+	
+	option = {
+		name = "flavor_cnnat.1a"
+		add_adm_power = 10
+	}
+}
+
+country_event = {
+	id = flavor_cnnat.3058
+	title = "flavor_cnnat.1t"
+	desc = "flavor_cnnat.1d"
+	picture = CONQUEST_eventPicture
+	
+	
+	trigger = {
+		is_colonial_nation = yes
+		owns = 3058	# Dummy Province
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+	hidden_effect = {
+		colonial_parent = {
+					every_owned_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_kazan_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						remove_core = owner
+						add_core = ROOT
+						cede_province = ROOT
+					}
+		}
+		set_country_flag = cn_kazan
+	}
+	}
+	option = {
+		name = "flavor_cnnat.1a"
+		hidden_effect = {
+			add_treasury = 100
+			every_owned_province = {
+				limit = { 
+							AND = { 
+								owned_by = ROOT
+								province_group = colonialdumb_region
+							}
+				}
+				remove_core = ROOT
+				cede_province = XXX
+			}
+		}
+		random_owned_province = {
+				limit = { controlled_by = ROOT  }
+				cavalry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+			}
+	}
+}
+
+country_event = {
+	id = flavor_cnnat.30580
+	title = "flavor_cnnat.2t"
+	desc = "flavor_cnnat.2d"
+	picture = CONQUEST_eventPicture
+	
+	trigger = {
+		is_colonial_nation = yes
+		has_country_flag = cn_kazan
+		colonial_parent = {
+			calc_true_if = {
+				all_owned_province = {
+					AND = {
+						province_group = colonial_kazan_region
+						is_city = yes 
+								is_overseas = yes
+					}
+				}
+				amount = 1
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+	hidden_effect = {
+		colonial_parent = {
+					every_core_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_kazan_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						remove_core = owner
+						add_core = ROOT
+						cede_province = ROOT
+					}
+					every_owned_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_kazan_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						cede_province = ROOT
+					}
+					
+		}
+	}
+	}
+	
+	option = {
+		name = "flavor_cnnat.1a"
+		add_adm_power = 10
+	}
+}
+
+country_event = {
+	id = flavor_cnnat.3059
+	title = "flavor_cnnat.1t"
+	desc = "flavor_cnnat.1d"
+	picture = CONQUEST_eventPicture
+	
+	
+	trigger = {
+		is_colonial_nation = yes
+		owns = 3059	# Dummy Province
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+	hidden_effect = {
+		colonial_parent = {
+					every_owned_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_whitesea_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						remove_core = owner
+						add_core = ROOT
+						cede_province = ROOT
+					}
+		}
+		set_country_flag = cn_whitesea
+	}
+	}
+	option = {
+		name = "flavor_cnnat.1a"
+		hidden_effect = {
+			add_treasury = 100
+			every_owned_province = {
+				limit = { 
+							AND = { 
+								owned_by = ROOT
+								province_group = colonialdumb_region
+							}
+				}
+				remove_core = ROOT
+				cede_province = XXX
+			}
+		}
+		random_owned_province = {
+				limit = { controlled_by = ROOT  }
+				cavalry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+			}
+	}
+}
+
+country_event = {
+	id = flavor_cnnat.30590
+	title = "flavor_cnnat.2t"
+	desc = "flavor_cnnat.2d"
+	picture = CONQUEST_eventPicture
+	
+	trigger = {
+		is_colonial_nation = yes
+		has_country_flag = cn_whitesea
+		colonial_parent = {
+			calc_true_if = {
+				all_owned_province = {
+					AND = {
+						province_group = colonial_whitesea_region
+						is_city = yes 
+								is_overseas = yes
+					}
+				}
+				amount = 1
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+	hidden_effect = {
+		colonial_parent = {
+					every_core_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_whitesea_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						remove_core = owner
+						add_core = ROOT
+						cede_province = ROOT
+					}
+					every_owned_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_whitesea_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						cede_province = ROOT
+					}
+					
+		}
+	}
+	}
+	
+	option = {
+		name = "flavor_cnnat.1a"
+		add_adm_power = 10
+	}
+}
+
+country_event = {
+	id = flavor_cnnat.3060
+	title = "flavor_cnnat.1t"
+	desc = "flavor_cnnat.1d"
+	picture = CONQUEST_eventPicture
+	
+	
+	trigger = {
+		is_colonial_nation = yes
+		owns = 3060	# Dummy Province
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+	hidden_effect = {
+		colonial_parent = {
+					every_owned_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_novgorod_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						remove_core = owner
+						add_core = ROOT
+						cede_province = ROOT
+					}
+		}
+		set_country_flag = cn_novgorod
+	}
+	}
+	option = {
+		name = "flavor_cnnat.1a"
+		hidden_effect = {
+			add_treasury = 100
+			every_owned_province = {
+				limit = { 
+							AND = { 
+								owned_by = ROOT
+								province_group = colonialdumb_region
+							}
+				}
+				remove_core = ROOT
+				cede_province = XXX
+			}
+		}
+		random_owned_province = {
+				limit = { controlled_by = ROOT  }
+				cavalry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+			}
+	}
+}
+
+country_event = {
+	id = flavor_cnnat.30600
+	title = "flavor_cnnat.2t"
+	desc = "flavor_cnnat.2d"
+	picture = CONQUEST_eventPicture
+	
+	trigger = {
+		is_colonial_nation = yes
+		has_country_flag = cn_novgorod
+		colonial_parent = {
+			calc_true_if = {
+				all_owned_province = {
+					AND = {
+						province_group = colonial_novgorod_region
+						is_city = yes 
+								is_overseas = yes
+					}
+				}
+				amount = 1
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+	hidden_effect = {
+		colonial_parent = {
+					every_core_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_novgorod_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						remove_core = owner
+						add_core = ROOT
+						cede_province = ROOT
+					}
+					every_owned_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_novgorod_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						cede_province = ROOT
+					}
+					
+		}
+	}
+	}
+	
+	option = {
+		name = "flavor_cnnat.1a"
+		add_adm_power = 10
+	}
+}
+
+country_event = {
+	id = flavor_cnnat.3061
+	title = "flavor_cnnat.1t"
+	desc = "flavor_cnnat.1d"
+	picture = CONQUEST_eventPicture
+	
+	
+	trigger = {
+		is_colonial_nation = yes
+		owns = 3061	# Dummy Province
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+	hidden_effect = {
+		colonial_parent = {
+					every_owned_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_kiev_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						remove_core = owner
+						add_core = ROOT
+						cede_province = ROOT
+					}
+		}
+		set_country_flag = cn_kiev
+	}
+	}
+	option = {
+		name = "flavor_cnnat.1a"
+		hidden_effect = {
+			add_treasury = 100
+			every_owned_province = {
+				limit = { 
+							AND = { 
+								owned_by = ROOT
+								province_group = colonialdumb_region
+							}
+				}
+				remove_core = ROOT
+				cede_province = XXX
+			}
+		}
+		random_owned_province = {
+				limit = { controlled_by = ROOT  }
+				cavalry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+			}
+	}
+}
+
+country_event = {
+	id = flavor_cnnat.30610
+	title = "flavor_cnnat.2t"
+	desc = "flavor_cnnat.2d"
+	picture = CONQUEST_eventPicture
+	
+	trigger = {
+		is_colonial_nation = yes
+		has_country_flag = cn_kiev
+		colonial_parent = {
+			calc_true_if = {
+				all_owned_province = {
+					AND = {
+						province_group = colonial_kiev_region
+						is_city = yes 
+								is_overseas = yes
+					}
+				}
+				amount = 1
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+	hidden_effect = {
+		colonial_parent = {
+					every_core_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_kiev_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						remove_core = owner
+						add_core = ROOT
+						cede_province = ROOT
+					}
+					every_owned_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_kiev_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						cede_province = ROOT
+					}
+					
+		}
+	}
+	}
+	
+	option = {
+		name = "flavor_cnnat.1a"
+		add_adm_power = 10
+	}
+}
+
+country_event = {
+	id = flavor_cnnat.3062
+	title = "flavor_cnnat.1t"
+	desc = "flavor_cnnat.1d"
+	picture = CONQUEST_eventPicture
+	
+	
+	trigger = {
+		is_colonial_nation = yes
+		owns = 3062	# Dummy Province
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+	hidden_effect = {
+		colonial_parent = {
+					every_owned_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_constantinople_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						remove_core = owner
+						add_core = ROOT
+						cede_province = ROOT
+					}
+		}
+		set_country_flag = cn_constantinople
+	}
+	}
+	option = {
+		name = "flavor_cnnat.1a"
+		hidden_effect = {
+			add_treasury = 100
+			every_owned_province = {
+				limit = { 
+							AND = { 
+								owned_by = ROOT
+								province_group = colonialdumb_region
+							}
+				}
+				remove_core = ROOT
+				cede_province = XXX
+			}
+		}
+		random_owned_province = {
+				limit = { controlled_by = ROOT  }
+				cavalry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+			}
+	}
+}
+
+country_event = {
+	id = flavor_cnnat.30620
+	title = "flavor_cnnat.2t"
+	desc = "flavor_cnnat.2d"
+	picture = CONQUEST_eventPicture
+	
+	trigger = {
+		is_colonial_nation = yes
+		has_country_flag = cn_constantinople
+		colonial_parent = {
+			calc_true_if = {
+				all_owned_province = {
+					AND = {
+						province_group = colonial_constantinople_region
+						is_city = yes 
+								is_overseas = yes
+					}
+				}
+				amount = 1
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+	hidden_effect = {
+		colonial_parent = {
+					every_core_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_constantinople_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						remove_core = owner
+						add_core = ROOT
+						cede_province = ROOT
+					}
+					every_owned_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_constantinople_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						cede_province = ROOT
+					}
+					
+		}
+	}
+	}
+	
+	option = {
+		name = "flavor_cnnat.1a"
+		add_adm_power = 10
+	}
+}
+
+country_event = {
+	id = flavor_cnnat.3063
+	title = "flavor_cnnat.1t"
+	desc = "flavor_cnnat.1d"
+	picture = CONQUEST_eventPicture
+	
+	
+	trigger = {
+		is_colonial_nation = yes
+		owns = 3063	# Dummy Province
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+	hidden_effect = {
+		colonial_parent = {
+					every_owned_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_ragusa_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						remove_core = owner
+						add_core = ROOT
+						cede_province = ROOT
+					}
+		}
+		set_country_flag = cn_ragusa
+	}
+	}
+	option = {
+		name = "flavor_cnnat.1a"
+		hidden_effect = {
+			add_treasury = 100
+			every_owned_province = {
+				limit = { 
+							AND = { 
+								owned_by = ROOT
+								province_group = colonialdumb_region
+							}
+				}
+				remove_core = ROOT
+				cede_province = XXX
+			}
+		}
+		random_owned_province = {
+				limit = { controlled_by = ROOT  }
+				cavalry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+			}
+	}
+}
+
+country_event = {
+	id = flavor_cnnat.30630
+	title = "flavor_cnnat.2t"
+	desc = "flavor_cnnat.2d"
+	picture = CONQUEST_eventPicture
+	
+	trigger = {
+		is_colonial_nation = yes
+		has_country_flag = cn_ragusa
+		colonial_parent = {
+			calc_true_if = {
+				all_owned_province = {
+					AND = {
+						province_group = colonial_ragusa_region
+						is_city = yes 
+								is_overseas = yes
+					}
+				}
+				amount = 1
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+	hidden_effect = {
+		colonial_parent = {
+					every_core_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_ragusa_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						remove_core = owner
+						add_core = ROOT
+						cede_province = ROOT
+					}
+					every_owned_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_ragusa_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						cede_province = ROOT
+					}
+					
+		}
+	}
+	}
+	
+	option = {
+		name = "flavor_cnnat.1a"
+		add_adm_power = 10
+	}
+}
+
+country_event = {
+	id = flavor_cnnat.3064
+	title = "flavor_cnnat.1t"
+	desc = "flavor_cnnat.1d"
+	picture = CONQUEST_eventPicture
+	
+	
+	trigger = {
+		is_colonial_nation = yes
+		owns = 3064	# Dummy Province
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+	hidden_effect = {
+		colonial_parent = {
+					every_owned_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_balticsea_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						remove_core = owner
+						add_core = ROOT
+						cede_province = ROOT
+					}
+		}
+		set_country_flag = cn_balticsea
+	}
+	}
+	option = {
+		name = "flavor_cnnat.1a"
+		hidden_effect = {
+			add_treasury = 100
+			every_owned_province = {
+				limit = { 
+							AND = { 
+								owned_by = ROOT
+								province_group = colonialdumb_region
+							}
+				}
+				remove_core = ROOT
+				cede_province = XXX
+			}
+		}
+		random_owned_province = {
+				limit = { controlled_by = ROOT  }
+				cavalry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+			}
+	}
+}
+
+country_event = {
+	id = flavor_cnnat.30640
+	title = "flavor_cnnat.2t"
+	desc = "flavor_cnnat.2d"
+	picture = CONQUEST_eventPicture
+	
+	trigger = {
+		is_colonial_nation = yes
+		has_country_flag = cn_balticsea
+		colonial_parent = {
+			calc_true_if = {
+				all_owned_province = {
+					AND = {
+						province_group = colonial_balticsea_region
+						is_city = yes 
+								is_overseas = yes
+					}
+				}
+				amount = 1
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+	hidden_effect = {
+		colonial_parent = {
+					every_core_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_balticsea_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						remove_core = owner
+						add_core = ROOT
+						cede_province = ROOT
+					}
+					every_owned_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_balticsea_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						cede_province = ROOT
+					}
+					
+		}
+	}
+	}
+	
+	option = {
+		name = "flavor_cnnat.1a"
+		add_adm_power = 10
+	}
+}
+
+country_event = {
+	id = flavor_cnnat.3065
+	title = "flavor_cnnat.1t"
+	desc = "flavor_cnnat.1d"
+	picture = CONQUEST_eventPicture
+	
+	
+	trigger = {
+		is_colonial_nation = yes
+		owns = 3065	# Dummy Province
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+	hidden_effect = {
+		colonial_parent = {
+					every_owned_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_lubeck_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						remove_core = owner
+						add_core = ROOT
+						cede_province = ROOT
+					}
+		}
+		set_country_flag = cn_lubeck
+	}
+	}
+	option = {
+		name = "flavor_cnnat.1a"
+		hidden_effect = {
+			add_treasury = 100
+			every_owned_province = {
+				limit = { 
+							AND = { 
+								owned_by = ROOT
+								province_group = colonialdumb_region
+							}
+				}
+				remove_core = ROOT
+				cede_province = XXX
+			}
+		}
+		random_owned_province = {
+				limit = { controlled_by = ROOT  }
+				cavalry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+			}
+	}
+}
+
+country_event = {
+	id = flavor_cnnat.30650
+	title = "flavor_cnnat.2t"
+	desc = "flavor_cnnat.2d"
+	picture = CONQUEST_eventPicture
+	
+	trigger = {
+		is_colonial_nation = yes
+		has_country_flag = cn_lubeck
+		colonial_parent = {
+			calc_true_if = {
+				all_owned_province = {
+					AND = {
+						province_group = colonial_lubeck_region
+						is_city = yes 
+								is_overseas = yes
+					}
+				}
+				amount = 1
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+	hidden_effect = {
+		colonial_parent = {
+					every_core_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_lubeck_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						remove_core = owner
+						add_core = ROOT
+						cede_province = ROOT
+					}
+					every_owned_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_lubeck_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						cede_province = ROOT
+					}
+					
+		}
+	}
+	}
+	
+	option = {
+		name = "flavor_cnnat.1a"
+		add_adm_power = 10
+	}
+}
+
+country_event = {
+	id = flavor_cnnat.3066
+	title = "flavor_cnnat.1t"
+	desc = "flavor_cnnat.1d"
+	picture = CONQUEST_eventPicture
+	
+	
+	trigger = {
+		is_colonial_nation = yes
+		owns = 3066	# Dummy Province
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+	hidden_effect = {
+		colonial_parent = {
+					every_owned_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_krakow_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						remove_core = owner
+						add_core = ROOT
+						cede_province = ROOT
+					}
+		}
+		set_country_flag = cn_krakow
+	}
+	}
+	option = {
+		name = "flavor_cnnat.1a"
+		hidden_effect = {
+			add_treasury = 100
+			every_owned_province = {
+				limit = { 
+							AND = { 
+								owned_by = ROOT
+								province_group = colonialdumb_region
+							}
+				}
+				remove_core = ROOT
+				cede_province = XXX
+			}
+		}
+		random_owned_province = {
+				limit = { controlled_by = ROOT  }
+				cavalry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+			}
+	}
+}
+
+country_event = {
+	id = flavor_cnnat.30660
+	title = "flavor_cnnat.2t"
+	desc = "flavor_cnnat.2d"
+	picture = CONQUEST_eventPicture
+	
+	trigger = {
+		is_colonial_nation = yes
+		has_country_flag = cn_krakow
+		colonial_parent = {
+			calc_true_if = {
+				all_owned_province = {
+					AND = {
+						province_group = colonial_krakow_region
+						is_city = yes 
+								is_overseas = yes
+					}
+				}
+				amount = 1
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+	hidden_effect = {
+		colonial_parent = {
+					every_core_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_krakow_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						remove_core = owner
+						add_core = ROOT
+						cede_province = ROOT
+					}
+					every_owned_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_krakow_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						cede_province = ROOT
+					}
+					
+		}
+	}
+	}
+	
+	option = {
+		name = "flavor_cnnat.1a"
+		add_adm_power = 10
+	}
+}
+
+country_event = {
+	id = flavor_cnnat.3067
+	title = "flavor_cnnat.1t"
+	desc = "flavor_cnnat.1d"
+	picture = CONQUEST_eventPicture
+	
+	
+	trigger = {
+		is_colonial_nation = yes
+		owns = 3067	# Dummy Province
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+	hidden_effect = {
+		colonial_parent = {
+					every_owned_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_wien_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						remove_core = owner
+						add_core = ROOT
+						cede_province = ROOT
+					}
+		}
+		set_country_flag = cn_wien
+	}
+	}
+	option = {
+		name = "flavor_cnnat.1a"
+		hidden_effect = {
+			add_treasury = 100
+			every_owned_province = {
+				limit = { 
+							AND = { 
+								owned_by = ROOT
+								province_group = colonialdumb_region
+							}
+				}
+				remove_core = ROOT
+				cede_province = XXX
+			}
+		}
+		random_owned_province = {
+				limit = { controlled_by = ROOT  }
+				cavalry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+			}
+	}
+}
+
+country_event = {
+	id = flavor_cnnat.30670
+	title = "flavor_cnnat.2t"
+	desc = "flavor_cnnat.2d"
+	picture = CONQUEST_eventPicture
+	
+	trigger = {
+		is_colonial_nation = yes
+		has_country_flag = cn_wien
+		colonial_parent = {
+			calc_true_if = {
+				all_owned_province = {
+					AND = {
+						province_group = colonial_wien_region
+						is_city = yes 
+								is_overseas = yes
+					}
+				}
+				amount = 1
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+	hidden_effect = {
+		colonial_parent = {
+					every_core_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_wien_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						remove_core = owner
+						add_core = ROOT
+						cede_province = ROOT
+					}
+					every_owned_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_wien_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						cede_province = ROOT
+					}
+					
+		}
+	}
+	}
+	
+	option = {
+		name = "flavor_cnnat.1a"
+		add_adm_power = 10
+	}
+}
+
+country_event = {
+	id = flavor_cnnat.3068
+	title = "flavor_cnnat.1t"
+	desc = "flavor_cnnat.1d"
+	picture = CONQUEST_eventPicture
+	
+	
+	trigger = {
+		is_colonial_nation = yes
+		owns = 3068	# Dummy Province
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+	hidden_effect = {
+		colonial_parent = {
+					every_owned_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_venice_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						remove_core = owner
+						add_core = ROOT
+						cede_province = ROOT
+					}
+		}
+		set_country_flag = cn_venice
+	}
+	}
+	option = {
+		name = "flavor_cnnat.1a"
+		hidden_effect = {
+			add_treasury = 100
+			every_owned_province = {
+				limit = { 
+							AND = { 
+								owned_by = ROOT
+								province_group = colonialdumb_region
+							}
+				}
+				remove_core = ROOT
+				cede_province = XXX
+			}
+		}
+		random_owned_province = {
+				limit = { controlled_by = ROOT  }
+				cavalry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+			}
+	}
+}
+
+country_event = {
+	id = flavor_cnnat.30680
+	title = "flavor_cnnat.2t"
+	desc = "flavor_cnnat.2d"
+	picture = CONQUEST_eventPicture
+	
+	trigger = {
+		is_colonial_nation = yes
+		has_country_flag = cn_venice
+		colonial_parent = {
+			calc_true_if = {
+				all_owned_province = {
+					AND = {
+						province_group = colonial_venice_region
+						is_city = yes 
+								is_overseas = yes
+					}
+				}
+				amount = 1
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+	hidden_effect = {
+		colonial_parent = {
+					every_core_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_venice_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						remove_core = owner
+						add_core = ROOT
+						cede_province = ROOT
+					}
+					every_owned_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_venice_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						cede_province = ROOT
+					}
+					
+		}
+	}
+	}
+	
+	option = {
+		name = "flavor_cnnat.1a"
+		add_adm_power = 10
+	}
+}
+
+country_event = {
+	id = flavor_cnnat.3069
+	title = "flavor_cnnat.1t"
+	desc = "flavor_cnnat.1d"
+	picture = CONQUEST_eventPicture
+	
+	
+	trigger = {
+		is_colonial_nation = yes
+		owns = 3069	# Dummy Province
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+	hidden_effect = {
+		colonial_parent = {
+					every_owned_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_genoa_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						remove_core = owner
+						add_core = ROOT
+						cede_province = ROOT
+					}
+		}
+		set_country_flag = cn_genoa
+	}
+	}
+	option = {
+		name = "flavor_cnnat.1a"
+		hidden_effect = {
+			add_treasury = 100
+			every_owned_province = {
+				limit = { 
+							AND = { 
+								owned_by = ROOT
+								province_group = colonialdumb_region
+							}
+				}
+				remove_core = ROOT
+				cede_province = XXX
+			}
+		}
+		random_owned_province = {
+				limit = { controlled_by = ROOT  }
+				cavalry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+			}
+	}
+}
+
+country_event = {
+	id = flavor_cnnat.30690
+	title = "flavor_cnnat.2t"
+	desc = "flavor_cnnat.2d"
+	picture = CONQUEST_eventPicture
+	
+	trigger = {
+		is_colonial_nation = yes
+		has_country_flag = cn_genoa
+		colonial_parent = {
+			calc_true_if = {
+				all_owned_province = {
+					AND = {
+						province_group = colonial_genoa_region
+						is_city = yes 
+								is_overseas = yes
+					}
+				}
+				amount = 1
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+	hidden_effect = {
+		colonial_parent = {
+					every_core_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_genoa_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						remove_core = owner
+						add_core = ROOT
+						cede_province = ROOT
+					}
+					every_owned_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_genoa_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						cede_province = ROOT
+					}
+					
+		}
+	}
+	}
+	
+	option = {
+		name = "flavor_cnnat.1a"
+		add_adm_power = 10
+	}
+}
+
+country_event = {
+	id = flavor_cnnat.3070
+	title = "flavor_cnnat.1t"
+	desc = "flavor_cnnat.1d"
+	picture = CONQUEST_eventPicture
+	
+	
+	trigger = {
+		is_colonial_nation = yes
+		owns = 3070	# Dummy Province
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+	hidden_effect = {
+		colonial_parent = {
+					every_owned_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_sevilla_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						remove_core = owner
+						add_core = ROOT
+						cede_province = ROOT
+					}
+		}
+		set_country_flag = cn_sevilla
+	}
+	}
+	option = {
+		name = "flavor_cnnat.1a"
+		hidden_effect = {
+			add_treasury = 100
+			every_owned_province = {
+				limit = { 
+							AND = { 
+								owned_by = ROOT
+								province_group = colonialdumb_region
+							}
+				}
+				remove_core = ROOT
+				cede_province = XXX
+			}
+		}
+		random_owned_province = {
+				limit = { controlled_by = ROOT  }
+				cavalry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+			}
+	}
+}
+
+country_event = {
+	id = flavor_cnnat.30700
+	title = "flavor_cnnat.2t"
+	desc = "flavor_cnnat.2d"
+	picture = CONQUEST_eventPicture
+	
+	trigger = {
+		is_colonial_nation = yes
+		has_country_flag = cn_sevilla
+		colonial_parent = {
+			calc_true_if = {
+				all_owned_province = {
+					AND = {
+						province_group = colonial_sevilla_region
+						is_city = yes 
+								is_overseas = yes
+					}
+				}
+				amount = 1
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+	hidden_effect = {
+		colonial_parent = {
+					every_core_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_sevilla_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						remove_core = owner
+						add_core = ROOT
+						cede_province = ROOT
+					}
+					every_owned_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_sevilla_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						cede_province = ROOT
+					}
+					
+		}
+	}
+	}
+	
+	option = {
+		name = "flavor_cnnat.1a"
+		add_adm_power = 10
+	}
+}
+
+country_event = {
+	id = flavor_cnnat.3071
+	title = "flavor_cnnat.1t"
+	desc = "flavor_cnnat.1d"
+	picture = CONQUEST_eventPicture
+	
+	
+	trigger = {
+		is_colonial_nation = yes
+		owns = 3071	# Dummy Province
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+	hidden_effect = {
+		colonial_parent = {
+					every_owned_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_bordeaux_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						remove_core = owner
+						add_core = ROOT
+						cede_province = ROOT
+					}
+		}
+		set_country_flag = cn_bordeaux
+	}
+	}
+	option = {
+		name = "flavor_cnnat.1a"
+		hidden_effect = {
+			add_treasury = 100
+			every_owned_province = {
+				limit = { 
+							AND = { 
+								owned_by = ROOT
+								province_group = colonialdumb_region
+							}
+				}
+				remove_core = ROOT
+				cede_province = XXX
+			}
+		}
+		random_owned_province = {
+				limit = { controlled_by = ROOT  }
+				cavalry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+			}
+	}
+}
+
+country_event = {
+	id = flavor_cnnat.30710
+	title = "flavor_cnnat.2t"
+	desc = "flavor_cnnat.2d"
+	picture = CONQUEST_eventPicture
+	
+	trigger = {
+		is_colonial_nation = yes
+		has_country_flag = cn_bordeaux
+		colonial_parent = {
+			calc_true_if = {
+				all_owned_province = {
+					AND = {
+						province_group = colonial_bordeaux_region
+						is_city = yes 
+								is_overseas = yes
+					}
+				}
+				amount = 1
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+	hidden_effect = {
+		colonial_parent = {
+					every_core_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_bordeaux_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						remove_core = owner
+						add_core = ROOT
+						cede_province = ROOT
+					}
+					every_owned_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_bordeaux_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						cede_province = ROOT
+					}
+					
+		}
+	}
+	}
+	
+	option = {
+		name = "flavor_cnnat.1a"
+		add_adm_power = 10
+	}
+}
+
+country_event = {
+	id = flavor_cnnat.3072
+	title = "flavor_cnnat.1t"
+	desc = "flavor_cnnat.1d"
+	picture = CONQUEST_eventPicture
+	
+	
+	trigger = {
+		is_colonial_nation = yes
+		owns = 3072	# Dummy Province
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+	hidden_effect = {
+		colonial_parent = {
+					every_owned_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_champagne_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						remove_core = owner
+						add_core = ROOT
+						cede_province = ROOT
+					}
+		}
+		set_country_flag = cn_champagne
+	}
+	}
+	option = {
+		name = "flavor_cnnat.1a"
+		hidden_effect = {
+			add_treasury = 100
+			every_owned_province = {
+				limit = { 
+							AND = { 
+								owned_by = ROOT
+								province_group = colonialdumb_region
+							}
+				}
+				remove_core = ROOT
+				cede_province = XXX
+			}
+		}
+		random_owned_province = {
+				limit = { controlled_by = ROOT  }
+				cavalry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+			}
+	}
+}
+
+country_event = {
+	id = flavor_cnnat.30720
+	title = "flavor_cnnat.2t"
+	desc = "flavor_cnnat.2d"
+	picture = CONQUEST_eventPicture
+	
+	trigger = {
+		is_colonial_nation = yes
+		has_country_flag = cn_champagne
+		colonial_parent = {
+			calc_true_if = {
+				all_owned_province = {
+					AND = {
+						province_group = colonial_champagne_region
+						is_city = yes 
+								is_overseas = yes
+					}
+				}
+				amount = 1
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+	hidden_effect = {
+		colonial_parent = {
+					every_core_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_champagne_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						remove_core = owner
+						add_core = ROOT
+						cede_province = ROOT
+					}
+					every_owned_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_champagne_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						cede_province = ROOT
+					}
+					
+		}
+	}
+	}
+	
+	option = {
+		name = "flavor_cnnat.1a"
+		add_adm_power = 10
+	}
+}
+
+country_event = {
+	id = flavor_cnnat.3073
+	title = "flavor_cnnat.1t"
+	desc = "flavor_cnnat.1d"
+	picture = CONQUEST_eventPicture
+	
+	
+	trigger = {
+		is_colonial_nation = yes
+		owns = 3073	# Dummy Province
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+	hidden_effect = {
+		colonial_parent = {
+					every_owned_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_saxony_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						remove_core = owner
+						add_core = ROOT
+						cede_province = ROOT
+					}
+		}
+		set_country_flag = cn_saxony
+	}
+	}
+	option = {
+		name = "flavor_cnnat.1a"
+		hidden_effect = {
+			add_treasury = 100
+			every_owned_province = {
+				limit = { 
+							AND = { 
+								owned_by = ROOT
+								province_group = colonialdumb_region
+							}
+				}
+				remove_core = ROOT
+				cede_province = XXX
+			}
+		}
+		random_owned_province = {
+				limit = { controlled_by = ROOT  }
+				cavalry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+			}
+	}
+}
+
+country_event = {
+	id = flavor_cnnat.30730
+	title = "flavor_cnnat.2t"
+	desc = "flavor_cnnat.2d"
+	picture = CONQUEST_eventPicture
+	
+	trigger = {
+		is_colonial_nation = yes
+		has_country_flag = cn_saxony
+		colonial_parent = {
+			calc_true_if = {
+				all_owned_province = {
+					AND = {
+						province_group = colonial_saxony_region
+						is_city = yes 
+								is_overseas = yes
+					}
+				}
+				amount = 1
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+	hidden_effect = {
+		colonial_parent = {
+					every_core_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_saxony_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						remove_core = owner
+						add_core = ROOT
+						cede_province = ROOT
+					}
+					every_owned_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_saxony_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						cede_province = ROOT
+					}
+					
+		}
+	}
+	}
+	
+	option = {
+		name = "flavor_cnnat.1a"
+		add_adm_power = 10
+	}
+}
+
+country_event = {
+	id = flavor_cnnat.3074
+	title = "flavor_cnnat.1t"
+	desc = "flavor_cnnat.1d"
+	picture = CONQUEST_eventPicture
+	
+	
+	trigger = {
+		is_colonial_nation = yes
+		owns = 3074	# Dummy Province
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+	hidden_effect = {
+		colonial_parent = {
+					every_owned_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_rhineland_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						remove_core = owner
+						add_core = ROOT
+						cede_province = ROOT
+					}
+		}
+		set_country_flag = cn_rhineland
+	}
+	}
+	option = {
+		name = "flavor_cnnat.1a"
+		hidden_effect = {
+			add_treasury = 100
+			every_owned_province = {
+				limit = { 
+							AND = { 
+								owned_by = ROOT
+								province_group = colonialdumb_region
+							}
+				}
+				remove_core = ROOT
+				cede_province = XXX
+			}
+		}
+		random_owned_province = {
+				limit = { controlled_by = ROOT  }
+				cavalry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+			}
+	}
+}
+
+country_event = {
+	id = flavor_cnnat.30740
+	title = "flavor_cnnat.2t"
+	desc = "flavor_cnnat.2d"
+	picture = CONQUEST_eventPicture
+	
+	trigger = {
+		is_colonial_nation = yes
+		has_country_flag = cn_rhineland
+		colonial_parent = {
+			calc_true_if = {
+				all_owned_province = {
+					AND = {
+						province_group = colonial_rhineland_region
+						is_city = yes 
+								is_overseas = yes
+					}
+				}
+				amount = 1
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+	hidden_effect = {
+		colonial_parent = {
+					every_core_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_rhineland_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						remove_core = owner
+						add_core = ROOT
+						cede_province = ROOT
+					}
+					every_owned_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_rhineland_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						cede_province = ROOT
+					}
+					
+		}
+	}
+	}
+	
+	option = {
+		name = "flavor_cnnat.1a"
+		add_adm_power = 10
+	}
+}
+
+country_event = {
+	id = flavor_cnnat.3075
+	title = "flavor_cnnat.1t"
+	desc = "flavor_cnnat.1d"
+	picture = CONQUEST_eventPicture
+	
+	
+	trigger = {
+		is_colonial_nation = yes
+		owns = 3075	# Dummy Province
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+	hidden_effect = {
+		colonial_parent = {
+					every_owned_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_northsea_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						remove_core = owner
+						add_core = ROOT
+						cede_province = ROOT
+					}
+		}
+		set_country_flag = cn_northsea
+	}
+	}
+	option = {
+		name = "flavor_cnnat.1a"
+		hidden_effect = {
+			add_treasury = 100
+			every_owned_province = {
+				limit = { 
+							AND = { 
+								owned_by = ROOT
+								province_group = colonialdumb_region
+							}
+				}
+				remove_core = ROOT
+				cede_province = XXX
+			}
+		}
+		random_owned_province = {
+				limit = { controlled_by = ROOT  }
+				cavalry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+			}
+	}
+}
+
+country_event = {
+	id = flavor_cnnat.30750
+	title = "flavor_cnnat.2t"
+	desc = "flavor_cnnat.2d"
+	picture = CONQUEST_eventPicture
+	
+	trigger = {
+		is_colonial_nation = yes
+		has_country_flag = cn_northsea
+		colonial_parent = {
+			calc_true_if = {
+				all_owned_province = {
+					AND = {
+						province_group = colonial_northsea_region
+						is_city = yes 
+								is_overseas = yes
+					}
+				}
+				amount = 1
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+	hidden_effect = {
+		colonial_parent = {
+					every_core_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_northsea_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						remove_core = owner
+						add_core = ROOT
+						cede_province = ROOT
+					}
+					every_owned_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_northsea_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						cede_province = ROOT
+					}
+					
+		}
+	}
+	}
+	
+	option = {
+		name = "flavor_cnnat.1a"
+		add_adm_power = 10
+	}
+}
+
+country_event = {
+	id = flavor_cnnat.3076
+	title = "flavor_cnnat.1t"
+	desc = "flavor_cnnat.1d"
+	picture = CONQUEST_eventPicture
+	
+	
+	trigger = {
+		is_colonial_nation = yes
+		owns = 3076	# Dummy Province
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+	hidden_effect = {
+		colonial_parent = {
+					every_owned_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_englishchannel_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						remove_core = owner
+						add_core = ROOT
+						cede_province = ROOT
+					}
+		}
+		set_country_flag = cn_englishchannel
+	}
+	}
+	option = {
+		name = "flavor_cnnat.1a"
+		hidden_effect = {
+			add_treasury = 100
+			every_owned_province = {
+				limit = { 
+							AND = { 
+								owned_by = ROOT
+								province_group = colonialdumb_region
+							}
+				}
+				remove_core = ROOT
+				cede_province = XXX
+			}
+		}
+		random_owned_province = {
+				limit = { controlled_by = ROOT  }
+				cavalry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+			}
+	}
+}
+
+country_event = {
+	id = flavor_cnnat.30760
+	title = "flavor_cnnat.2t"
+	desc = "flavor_cnnat.2d"
+	picture = CONQUEST_eventPicture
+	
+	trigger = {
+		is_colonial_nation = yes
+		has_country_flag = cn_englishchannel
+		colonial_parent = {
+			calc_true_if = {
+				all_owned_province = {
+					AND = {
+						province_group = colonial_englishchannel_region
+						is_city = yes 
+								is_overseas = yes
+					}
+				}
+				amount = 1
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+	hidden_effect = {
+		colonial_parent = {
+					every_core_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_englishchannel_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						remove_core = owner
+						add_core = ROOT
+						cede_province = ROOT
+					}
+					every_owned_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_englishchannel_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						cede_province = ROOT
+					}
+					
+		}
+	}
+	}
+	
+	option = {
+		name = "flavor_cnnat.1a"
+		add_adm_power = 10
+	}
+}
+
+country_event = {
+	id = flavor_cnnat.3077
+	title = "flavor_cnnat.1t"
+	desc = "flavor_cnnat.1d"
+	picture = CONQUEST_eventPicture
+	
+	
+	trigger = {
+		is_colonial_nation = yes
+		owns = 3077	# Dummy Province
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+	hidden_effect = {
+		colonial_parent = {
+					every_owned_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_greatlakes_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						remove_core = owner
+						add_core = ROOT
+						cede_province = ROOT
+					}
+		}
+		set_country_flag = cn_greatlakes
+	}
+	}
+	option = {
+		name = "flavor_cnnat.1a"
+		hidden_effect = {
+			add_treasury = 100
+			every_owned_province = {
+				limit = { 
+							AND = { 
+								owned_by = ROOT
+								province_group = colonialdumb_region
+							}
+				}
+				remove_core = ROOT
+				cede_province = XXX
+			}
+		}
+		random_owned_province = {
+				limit = { controlled_by = ROOT  }
+				cavalry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+			}
+	}
+}
+
+country_event = {
+	id = flavor_cnnat.30770
+	title = "flavor_cnnat.2t"
+	desc = "flavor_cnnat.2d"
+	picture = CONQUEST_eventPicture
+	
+	trigger = {
+		is_colonial_nation = yes
+		has_country_flag = cn_greatlakes
+		colonial_parent = {
+			calc_true_if = {
+				all_owned_province = {
+					AND = {
+						province_group = colonial_greatlakes_region
+						is_city = yes 
+								is_overseas = yes
+					}
+				}
+				amount = 1
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+	hidden_effect = {
+		colonial_parent = {
+					every_core_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_greatlakes_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						remove_core = owner
+						add_core = ROOT
+						cede_province = ROOT
+					}
+					every_owned_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_greatlakes_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						cede_province = ROOT
+					}
+					
+		}
+	}
+	}
+	
+	option = {
+		name = "flavor_cnnat.1a"
+		add_adm_power = 10
+	}
+}
+
+country_event = {
+	id = flavor_cnnat.3078
+	title = "flavor_cnnat.1t"
+	desc = "flavor_cnnat.1d"
+	picture = CONQUEST_eventPicture
+	
+	
+	trigger = {
+		is_colonial_nation = yes
+		owns = 3078	# Dummy Province
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+	hidden_effect = {
+		colonial_parent = {
+					every_owned_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_kongo_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						remove_core = owner
+						add_core = ROOT
+						cede_province = ROOT
+					}
+		}
+		set_country_flag = cn_kongo
+	}
+	}
+	option = {
+		name = "flavor_cnnat.1a"
+		hidden_effect = {
+			add_treasury = 100
+			every_owned_province = {
+				limit = { 
+							AND = { 
+								owned_by = ROOT
+								province_group = colonialdumb_region
+							}
+				}
+				remove_core = ROOT
+				cede_province = XXX
+			}
+		}
+		random_owned_province = {
+				limit = { controlled_by = ROOT  }
+				cavalry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+			}
+	}
+}
+
+country_event = {
+	id = flavor_cnnat.30780
+	title = "flavor_cnnat.2t"
+	desc = "flavor_cnnat.2d"
+	picture = CONQUEST_eventPicture
+	
+	trigger = {
+		is_colonial_nation = yes
+		has_country_flag = cn_kongo
+		colonial_parent = {
+			calc_true_if = {
+				all_owned_province = {
+					AND = {
+						province_group = colonial_kongo_region
+						is_city = yes 
+								is_overseas = yes
+					}
+				}
+				amount = 1
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+	hidden_effect = {
+		colonial_parent = {
+					every_core_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_kongo_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						remove_core = owner
+						add_core = ROOT
+						cede_province = ROOT
+					}
+					every_owned_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_kongo_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						cede_province = ROOT
+					}
+					
+		}
+	}
+	}
+	
+	option = {
+		name = "flavor_cnnat.1a"
+		add_adm_power = 10
+	}
+}
+
+country_event = {
+	id = flavor_cnnat.3079
+	title = "flavor_cnnat.1t"
+	desc = "flavor_cnnat.1d"
+	picture = CONQUEST_eventPicture
+	
+	
+	trigger = {
+		is_colonial_nation = yes
+		owns = 3079	# Dummy Province
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+	hidden_effect = {
+		colonial_parent = {
+					every_owned_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_zambezi_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						remove_core = owner
+						add_core = ROOT
+						cede_province = ROOT
+					}
+		}
+		set_country_flag = cn_zambezi
+	}
+	}
+	option = {
+		name = "flavor_cnnat.1a"
+		hidden_effect = {
+			add_treasury = 100
+			every_owned_province = {
+				limit = { 
+							AND = { 
+								owned_by = ROOT
+								province_group = colonialdumb_region
+							}
+				}
+				remove_core = ROOT
+				cede_province = XXX
+			}
+		}
+		random_owned_province = {
+				limit = { controlled_by = ROOT  }
+				cavalry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+				infantry = ROOT
+			}
+	}
+}
+
+country_event = {
+	id = flavor_cnnat.30790
+	title = "flavor_cnnat.2t"
+	desc = "flavor_cnnat.2d"
+	picture = CONQUEST_eventPicture
+	
+	trigger = {
+		is_colonial_nation = yes
+		has_country_flag = cn_zambezi
+		colonial_parent = {
+			calc_true_if = {
+				all_owned_province = {
+					AND = {
+						province_group = colonial_zambezi_region
+						is_city = yes 
+								is_overseas = yes
+					}
+				}
+				amount = 1
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+	hidden_effect = {
+		colonial_parent = {
+					every_core_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_zambezi_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						remove_core = owner
+						add_core = ROOT
+						cede_province = ROOT
+					}
+					every_owned_province = {
+			            limit = {
+							AND = {
+								province_group = colonial_zambezi_region
+								is_city = yes 
+								is_overseas = yes
+							}
+						}
+						cede_province = ROOT
+					}
+					
+		}
+	}
+	}
+	
+	option = {
+		name = "flavor_cnnat.1a"
+		add_adm_power = 10
+	}
+}
