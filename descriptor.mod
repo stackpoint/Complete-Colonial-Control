@@ -1,16 +1,2 @@
 name="Complete Colonial Control"
-archive="mod/completecolonialcontrol.zip"
-tags={
-	"balance"
-	"events"
-	"expansion"
-	"fixes"
-	"gameplay"
-	"graphics"
-	"map"
-	"military"
-	"trade"
-	"utilities"
-}
-picture="CCC.PNG"
-supported_version="1.17.*.*"
+supported_version="1.30.*"

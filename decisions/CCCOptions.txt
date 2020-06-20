@@ -57,9 +57,7 @@ country_decisions = {
 				is_part_of_hre = yes
 			}
 			any_owned_province = {
-				limit = {
-					continent = europe
-				}
+				continent = europe
 				is_part_of_hre = no
 			}
 			OR = {
@@ -84,6 +82,7 @@ country_decisions = {
 					AND = {
 						is_part_of_hre = no
 						continent = europe
+					}
 				}
 				set_in_empire = yes
 			}

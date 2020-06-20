@@ -1,0 +1,17 @@
+# Friction along a colonial border
+cb_colony_border_war = {
+	prerequisites = {
+		is_colonial_nation = yes
+		is_neighbor_of = FROM
+		home_trade_node = {
+			any_trade_node_member_province = {
+				owned_by = FROM
+				any_neighbor_province = {
+					owned_by = ROOT
+				}
+			}
+		}
+	}
+
+	war_goal = take_border
+}
